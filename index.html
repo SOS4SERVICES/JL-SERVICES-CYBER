@@ -1,133 +1,1479 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SOS4 SERVICES</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Estilos y animaciones -->
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>SOS4 SERVICES | Seguridad Industrial</title>
 
-  <!-- FontAwesome para íconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta
+    name="description"
+    content="SOS4 SERVICES - Seguridad industrial, sistemas de gas y fuego, capacitación, certificación, protección civil y servicios especializados."
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+
 </head>
 
+
 <body>
-  <header>
-    <img src="img/logo.ico" alt="SOS4 Services" class="logo" />
-    <h2>𝙎𝙊𝙎4 𝙎𝙀𝙍𝙑𝙄𝘾𝙀𝙎</h2>
-    <!-- Botón menú hamburguesa -->
-    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="main-header">
+
+  <div class="header-container">
+
+    <a href="#inicio" class="brand">
+
+      <img
+        src="img/logo.ico"
+        alt="SOS4 SERVICES"
+        class="logo"
+      >
+
+      <div class="brand-text">
+        <span class="brand-name">SOS4 SERVICES</span>
+        <small>Safety • Engineering • Solutions</small>
+      </div>
+
+    </a>
+
+
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+      type="button"
+    >
       <i class="fas fa-bars"></i>
     </button>
 
-    <nav id="nav-menu">
-      <a href="#inicio"><i class="icon-3d fas fa-home"></i> Inicio</a>
 
-      <!-- Menú desplegable Nosotros -->
+    <nav id="nav-menu">
+
+      <a href="#inicio">
+        <i class="fas fa-house"></i>
+        Inicio
+      </a>
+
+
       <div class="dropdown">
-        <a href="#nosotros" class="dropbtn"><i class="icon-3d fas fa-users"></i> Nosotros <i class="fas fa-caret-down"></i></a>
+
+        <a href="#nosotros" class="dropbtn">
+
+          <i class="fas fa-building"></i>
+
+          Nosotros
+
+          <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+
         <div class="dropdown-content">
-          <a href="nosotros/mision.html"><i class="fas fa-bullseye"></i> Misión, Visión y Valores</a>
-          <a href="nosotros/acerca.html"><i class="fas fa-address-card"></i> Acerca de Nosotros</a>
-          <a href="nosotros/filosofia.html"><i class="fas fa-lightbulb"></i> Filosofía Empresarial</a>
-          <a href="nosotros/alcance.html"><i class="fas fa-globe"></i> Alcance</a>
+
+          <a href="nosotros/mision.html">
+            <i class="fas fa-bullseye"></i>
+            Misión, Visión y Valores
+          </a>
+
+          <a href="nosotros/acerca.html">
+            <i class="fas fa-address-card"></i>
+            Acerca de Nosotros
+          </a>
+
+          <a href="nosotros/filosofia.html">
+            <i class="fas fa-lightbulb"></i>
+            Filosofía Empresarial
+          </a>
+
+          <a href="nosotros/alcance.html">
+            <i class="fas fa-globe-americas"></i>
+            Alcance
+          </a>
+
         </div>
+
       </div>
 
-      <a href="#servicios"><i class="icon-3d fas fa-concierge-bell"></i> Servicios</a>
-      <a href="#galeria"><i class="icon-3d fas fa-images"></i> Galería</a>
-      <a href="#contacto"><i class="icon-3d fas fa-envelope"></i> Contacto</a>
+
+      <a href="#servicios">
+        <i class="fas fa-gears"></i>
+        Servicios
+      </a>
+
+
+      <a href="#galeria">
+        <i class="fas fa-images"></i>
+        Galería
+      </a>
+
+
+      <a href="#contacto">
+        <i class="fas fa-envelope"></i>
+        Contacto
+      </a>
+
+
+      <a
+        href="https://wa.me/529931019909"
+        class="nav-contacto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+        Cotizar
+
+      </a>
+
     </nav>
-  </header>
-  <section id="inicio" class="hero" data-aos="fade-in">
-    <h1>Seguridad, Innovación y Confianza</h1>
-    <p>Soluciones industriales para el sector petrolero, público y privado.</p>
-  </section>
 
-  <section id="nosotros" data-aos="fade-up">
-    <h2>¿Quiénes Somos?</h2>
-    <p>06 Años de experiencia, SOS4 SERVICES es una empresa mexicana dedicada a la seguridad industrial, inspección, capacitación y certificación especializada.</p>
-    <p>Con años de experiencia, somos aliados estratégicos en la industria terrestre y marina.</p>
-  </section>
+  </div>
 
-  <section id="servicios" data-aos="fade-up">
-    <h2>Servicios</h2>
-    <div class="servicio-grid">
-      <a href="servicios/capacitacion.html"><i class="icon-3d fas fa-chalkboard-teacher"></i> Capacitación</a>
-      <a href="servicios/certificacion.html"><i class="icon-3d fas fa-certificate"></i> Certificación</a>
-      <a href="servicios/proteccion-civil.html"><i class="icon-3d fas fa-shield-alt"></i> Protección Civil</a>
-      <a href="servicios/seguridad-industrial.html"><i class="icon-3d fas fa-hard-hat"></i> Seguridad Industrial</a>
-      <a href="servicios/salud-en-el-trabajo.html"><i class="icon-3d fas fa-heartbeat"></i> Salud en el Trabajo</a>
-      <a href="servicios/medio-ambiente.html"><i class="icon-3d fas fa-leaf"></i> Medio Ambiente</a>
-      <a href="servicios/gestion-integral.html"><i class="icon-3d fas fa-cogs"></i> Gestión Integral (ISO)</a>
-      <a href="servicios/extintores-pqs.html"><i class="icon-3d fas fa-fire-extinguisher"></i> Extintores PQS</a>
-      <a href="servicios/extintores-co2.html"><i class="icon-3d fas fa-fire-alt"></i> Extintores CO₂</a>
-      <a href="servicios/detectores-gas.html"><i class="icon-3d fas fa-radiation-alt"></i> Detectores de Gas</a>
-      <a href="servicios/monitores-fijos.html"><i class="icon-3d fas fa-tv"></i> Sistemas de Gas y fuego</a>
-      <a href="servicios/pruebas-no-destructivas.html"><i class="icon-3d fas fa-vial"></i> Pruebas No Destructivas</a>
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+
+<section
+  id="inicio"
+  class="hero hero-modern"
+>
+
+  <div class="hero-overlay"></div>
+
+
+  <div class="hero-content">
+
+
+    <div
+      class="hero-info"
+      data-aos="fade-right"
+    >
+
+      <span class="hero-badge">
+
+        <i class="fas fa-shield-halved"></i>
+
+        Seguridad Industrial & Ingeniería
+
+      </span>
+
+
+      <h1>
+
+        Protección industrial
+
+        <span>
+          con tecnología y experiencia
+        </span>
+
+      </h1>
+
+
+      <p>
+
+        Soluciones especializadas para proteger
+        personas, instalaciones y operaciones
+        en los sectores energético, petrolero,
+        industrial, público y privado.
+
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a
+          href="#servicios"
+          class="btn-primary"
+        >
+
+          <i class="fas fa-gears"></i>
+
+          Nuestros Servicios
+
+        </a>
+
+
+        <a
+          href="#contacto"
+          class="btn-secondary"
+        >
+
+          <i class="fas fa-paper-plane"></i>
+
+          Solicitar información
+
+        </a>
+
+      </div>
+
+
+      <div class="hero-mini-info">
+
+        <div>
+          <i class="fas fa-check-circle"></i>
+          <span>Personal especializado</span>
+        </div>
+
+        <div>
+          <i class="fas fa-check-circle"></i>
+          <span>Soluciones industriales</span>
+        </div>
+
+        <div>
+          <i class="fas fa-check-circle"></i>
+          <span>Atención profesional</span>
+        </div>
+
+      </div>
+
     </div>
-  </section>
 
-  <section id="galeria" data-aos="zoom-in">
-    <h2>Galería</h2>
-    <div class="galeria">
-      <img src="img/servicio1.jpeg" alt="Servicio en campo" />
-      <img src="img/servicio2.jpeg" alt="Capacitación" />
-      <img src="img/servicio3.jpeg" alt="Equipo especializado" />
+
+
+    <div
+      class="hero-card"
+      data-aos="fade-left"
+    >
+
+      <div class="hero-card-icon">
+        <i class="fas fa-shield-halved"></i>
+      </div>
+
+      <h3>
+        Seguridad que protege operaciones
+      </h3>
+
+      <p>
+
+        Implementamos soluciones orientadas
+        a prevención, protección, inspección
+        y seguridad operacional.
+
+      </p>
+
+      <div class="hero-card-line"></div>
+
+      <span>
+        SOS4 SERVICES
+      </span>
+
     </div>
-  </section>
 
-  <section id="contacto" data-aos="fade-up">
-    <h2>Correos de Contacto</h2>
-    <h2>gerencia_operaciones444@sos4services.com.mx</h2>
-    <h2>solutions_electric404@sos4services.com.mx</h2>
-    <form id="contact-form">
-      <input type="text" name="nombre" placeholder="Nombre completo" required />
-      <input type="email" name="email" placeholder="Correo electrónico" required />
-      <input type="tel" name="telefono" placeholder="Teléfono" />
-      <textarea name="mensaje" placeholder="Tu mensaje..." required></textarea>
-      <button type="submit">Enviar por Correo</button>
-      <a href="https://wa.me/529331596397" class="whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Enviar por WhatsApp</a>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     INDICADORES
+===================================================== -->
+
+<section class="stats-section">
+
+  <div class="stats-container">
+
+
+    <div
+      class="stat-card"
+      data-aos="zoom-in"
+    >
+
+      <i class="fas fa-calendar-check"></i>
+
+      <strong>+6</strong>
+
+      <span>
+        Años de experiencia
+      </span>
+
+    </div>
+
+
+    <div
+      class="stat-card"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+    >
+
+      <i class="fas fa-industry"></i>
+
+      <strong>Industrial</strong>
+
+      <span>
+        Terrestre y Marina
+      </span>
+
+    </div>
+
+
+    <div
+      class="stat-card"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+
+      <i class="fas fa-user-shield"></i>
+
+      <strong>Seguridad</strong>
+
+      <span>
+        Como prioridad
+      </span>
+
+    </div>
+
+
+    <div
+      class="stat-card"
+      data-aos="zoom-in"
+      data-aos-delay="300"
+    >
+
+      <i class="fas fa-screwdriver-wrench"></i>
+
+      <strong>Soluciones</strong>
+
+      <span>
+        Especializadas
+      </span>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NOSOTROS
+===================================================== -->
+
+<section
+  id="nosotros"
+  class="about-section"
+>
+
+
+  <div class="section-title" data-aos="fade-up">
+
+    <span>
+      SOS4 SERVICES
+    </span>
+
+    <h2>
+      ¿Quiénes Somos?
+    </h2>
+
+    <p>
+
+      Seguridad, conocimiento técnico
+      y experiencia al servicio de la industria.
+
+    </p>
+
+  </div>
+
+
+
+  <div class="about-grid">
+
+
+    <div
+      class="about-content"
+      data-aos="fade-right"
+    >
+
+      <h3>
+        Especialistas en seguridad industrial
+      </h3>
+
+
+      <p>
+
+        SOS4 SERVICES es una empresa mexicana
+        con más de seis años de experiencia,
+        especializada en seguridad industrial,
+        inspección, capacitación, certificación
+        y soluciones técnicas.
+
+      </p>
+
+
+      <p>
+
+        Trabajamos como aliados estratégicos
+        para operaciones terrestres y marinas,
+        atendiendo necesidades del sector
+        petrolero, energético, industrial,
+        público y privado.
+
+      </p>
+
+
+      <a
+        href="nosotros/acerca.html"
+        class="btn-about"
+      >
+
+        Conocer la empresa
+
+        <i class="fas fa-arrow-right"></i>
+
+      </a>
+
+    </div>
+
+
+
+    <div
+      class="about-features"
+      data-aos="fade-left"
+    >
+
+
+      <div class="feature-box">
+
+        <i class="fas fa-shield-halved"></i>
+
+        <div>
+
+          <h4>
+            Seguridad
+          </h4>
+
+          <p>
+            Prevención y protección
+            de personas e instalaciones.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature-box">
+
+        <i class="fas fa-microchip"></i>
+
+        <div>
+
+          <h4>
+            Innovación
+          </h4>
+
+          <p>
+            Implementación de soluciones
+            técnicas modernas.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="feature-box">
+
+        <i class="fas fa-handshake"></i>
+
+        <div>
+
+          <h4>
+            Confianza
+          </h4>
+
+          <p>
+            Compromiso profesional
+            con nuestros clientes.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICIOS
+===================================================== -->
+
+<section
+  id="servicios"
+  class="services-section"
+>
+
+
+  <div
+    class="section-title"
+    data-aos="fade-up"
+  >
+
+    <span>
+      LO QUE HACEMOS
+    </span>
+
+    <h2>
+      Nuestros Servicios
+    </h2>
+
+    <p>
+
+      Soluciones especializadas
+      para diferentes necesidades industriales.
+
+    </p>
+
+  </div>
+
+
+
+  <div class="servicio-grid">
+
+
+    <a href="servicios/capacitacion.html">
+
+      <i class="fas fa-chalkboard-teacher"></i>
+
+      <div>
+        <h3>Capacitación</h3>
+        <p>
+          Formación especializada
+          para personal industrial.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/certificacion.html">
+
+      <i class="fas fa-certificate"></i>
+
+      <div>
+        <h3>Certificación</h3>
+        <p>
+          Evaluación y cumplimiento
+          técnico.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/proteccion-civil.html">
+
+      <i class="fas fa-shield-halved"></i>
+
+      <div>
+        <h3>Protección Civil</h3>
+        <p>
+          Prevención y respuesta
+          ante emergencias.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/seguridad-industrial.html">
+
+      <i class="fas fa-helmet-safety"></i>
+
+      <div>
+        <h3>Seguridad Industrial</h3>
+        <p>
+          Soluciones para entornos
+          de alto riesgo.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/salud-en-el-trabajo.html">
+
+      <i class="fas fa-heart-pulse"></i>
+
+      <div>
+        <h3>Salud en el Trabajo</h3>
+        <p>
+          Prevención y bienestar
+          ocupacional.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/medio-ambiente.html">
+
+      <i class="fas fa-leaf"></i>
+
+      <div>
+        <h3>Medio Ambiente</h3>
+        <p>
+          Gestión responsable
+          y sustentabilidad.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/gestion-integral.html">
+
+      <i class="fas fa-gears"></i>
+
+      <div>
+        <h3>Gestión Integral ISO</h3>
+        <p>
+          Sistemas integrados
+          de gestión.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/extintores-pqs.html">
+
+      <i class="fas fa-fire-extinguisher"></i>
+
+      <div>
+        <h3>Extintores PQS</h3>
+        <p>
+          Protección contra incendios
+          industriales.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/extintores-co2.html">
+
+      <i class="fas fa-fire"></i>
+
+      <div>
+        <h3>Extintores CO₂</h3>
+        <p>
+          Sistemas de protección
+          especializados.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/detectores-gas.html">
+
+      <i class="fas fa-wind"></i>
+
+      <div>
+        <h3>Detectores de Gas</h3>
+        <p>
+          Detección portátil
+          y monitoreo de gases.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/monitores-fijos.html">
+
+      <i class="fas fa-tower-broadcast"></i>
+
+      <div>
+        <h3>Sistemas de Gas y Fuego</h3>
+        <p>
+          Monitoreo y protección
+          industrial.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+
+    <a href="servicios/pruebas-no-destructivas.html">
+
+      <i class="fas fa-magnifying-glass"></i>
+
+      <div>
+        <h3>Pruebas No Destructivas</h3>
+        <p>
+          Inspección y evaluación
+          especializada.
+        </p>
+      </div>
+
+      <i class="fas fa-arrow-right service-arrow"></i>
+
+    </a>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA INDUSTRIAL
+===================================================== -->
+
+<section
+  class="industrial-cta"
+  data-aos="zoom-in"
+>
+
+
+  <div>
+
+    <span>
+      ¿Necesitas una solución especializada?
+    </span>
+
+    <h2>
+      Protegemos tu operación.
+    </h2>
+
+    <p>
+
+      Nuestro equipo puede ayudarte
+      a encontrar la solución adecuada
+      para tus instalaciones.
+
+    </p>
+
+  </div>
+
+
+  <a
+    href="https://wa.me/529333102098"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <i class="fab fa-whatsapp"></i>
+
+    Hablar con un asesor
+
+  </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     GALERÍA
+===================================================== -->
+
+<section
+  id="galeria"
+  class="gallery-section"
+>
+
+
+  <div
+    class="section-title"
+    data-aos="fade-up"
+  >
+
+    <span>
+      EXPERIENCIA EN CAMPO
+    </span>
+
+    <h2>
+      Galería
+    </h2>
+
+  </div>
+
+
+
+  <div
+    class="galeria gallery-modern"
+  >
+
+
+    <figure
+      class="gallery-item gallery-large"
+      data-aos="zoom-in"
+    >
+
+      <img
+        src="img/servicio1.jpeg"
+        alt="Servicio industrial en campo"
+      >
+
+      <figcaption>
+
+        <i class="fas fa-industry"></i>
+
+        Servicios en campo
+
+      </figcaption>
+
+    </figure>
+
+
+
+    <figure
+      class="gallery-item"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+    >
+
+      <img
+        src="img/servicio2.jpeg"
+        alt="Capacitación industrial"
+      >
+
+      <figcaption>
+
+        <i class="fas fa-graduation-cap"></i>
+
+        Capacitación
+
+      </figcaption>
+
+    </figure>
+
+
+
+    <figure
+      class="gallery-item"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+
+      <img
+        src="img/servicio3.jpeg"
+        alt="Equipo industrial especializado"
+      >
+
+      <figcaption>
+
+        <i class="fas fa-gears"></i>
+
+        Equipo especializado
+
+      </figcaption>
+
+    </figure>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACTO
+===================================================== -->
+
+<section
+  id="contacto"
+  class="contact-section"
+>
+
+
+  <div
+    class="section-title"
+    data-aos="fade-up"
+  >
+
+    <span>
+      CONTACTO
+    </span>
+
+    <h2>
+      Estamos para ayudarte
+    </h2>
+
+    <p>
+
+      Cuéntanos qué servicio necesitas
+      y nuestro equipo se pondrá en contacto contigo.
+
+    </p>
+
+  </div>
+
+
+
+  <div class="contact-grid">
+
+
+    <!-- INFORMACIÓN -->
+
+    <div
+      class="contact-info"
+      data-aos="fade-right"
+    >
+
+
+      <div class="contact-card">
+
+        <i class="fas fa-briefcase"></i>
+
+        <div>
+
+          <span>
+            Gerencia Comercial
+          </span>
+
+          <a href="mailto:gerencia.comercial369@sos4services.com.mx">
+
+            gerencia.comercial369@sos4services.com.mx
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="contact-card">
+
+        <i class="fas fa-envelope"></i>
+
+        <div>
+
+          <span>
+            Operaciones
+          </span>
+
+          <a href="mailto:gerencia_operaciones444@sos4services.com.mx">
+
+            gerencia_operaciones444@sos4services.com.mx
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="contact-card">
+
+        <i class="fas fa-bolt"></i>
+
+        <div>
+
+          <span>
+            Soluciones Eléctricas
+          </span>
+
+          <a href="mailto:solutions_electric404@sos4services.com.mx">
+
+            solutions_electric404@sos4services.com.mx
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="contact-card">
+
+        <i class="fab fa-whatsapp"></i>
+
+        <div>
+
+          <span>
+            WhatsApp
+          </span>
+
+          <a
+            href="https://wa.me/529141229788"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            Contactar ahora
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- FORMULARIO -->
+
+    <form
+      id="contact-form"
+      data-aos="fade-left"
+    >
+
+
+      <div class="form-row">
+
+
+        <div class="input-group">
+
+          <i class="fas fa-user"></i>
+
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre completo"
+            maxlength="100"
+            autocomplete="name"
+            required
+          >
+
+        </div>
+
+
+        <div class="input-group">
+
+          <i class="fas fa-phone"></i>
+
+          <input
+            type="tel"
+            name="telefono"
+            placeholder="Teléfono"
+            maxlength="30"
+            autocomplete="tel"
+          >
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="input-group">
+
+        <i class="fas fa-envelope"></i>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo electrónico"
+          autocomplete="email"
+          required
+        >
+
+      </div>
+
+
+
+      <div class="input-group textarea-group">
+
+        <i class="fas fa-message"></i>
+
+        <textarea
+          name="mensaje"
+          placeholder="¿Cómo podemos ayudarte?"
+          rows="6"
+          maxlength="5000"
+          required
+        ></textarea>
+
+      </div>
+
+
+      <!-- =========================================
+           HONEYPOT ANTI-SPAM
+      ========================================== -->
+
+      <div
+        style="
+          position:absolute;
+          left:-9999px;
+          width:1px;
+          height:1px;
+          overflow:hidden;
+          opacity:0;
+          pointer-events:none;
+        "
+        aria-hidden="true"
+      >
+
+        <label for="website">
+          Website
+        </label>
+
+        <input
+          type="text"
+          name="website"
+          id="website"
+          tabindex="-1"
+          autocomplete="off"
+        >
+
+      </div>
+
+
+
+      <button type="submit">
+
+        <i class="fas fa-paper-plane"></i>
+
+        Enviar mensaje
+
+      </button>
+
+
     </form>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 SOS4 SERVICES. Todos los derechos reservados.</p>
-  </footer>
 
-  <!-- Scripts -->
-  <script defer src="contacto.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      AOS.init({ duration: 1000 });
+  </div>
 
-      const toggle = document.getElementById('menu-toggle');
-      const navMenu = document.getElementById('nav-menu');
+</section>
 
-      toggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-      });
 
-      document.querySelectorAll('#nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-          navMenu.classList.remove('active');
-        });
-      });
+</main>
 
-      document.addEventListener('click', (e) => {
-        const isClickInsideMenu = navMenu.contains(e.target);
-        const isClickOnToggle = toggle.contains(e.target);
 
-        if (!isClickInsideMenu && !isClickOnToggle) {
-          navMenu.classList.remove('active');
-        }
-      });
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+
+      <img
+        src="img/logo.ico"
+        alt="SOS4 SERVICES"
+      >
+
+      <div>
+
+        <strong>
+          SOS4 SERVICES
+        </strong>
+
+        <p>
+          Seguridad • Innovación • Confianza
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="#inicio">
+        Inicio
+      </a>
+
+      <a href="#nosotros">
+        Nosotros
+      </a>
+
+      <a href="#servicios">
+        Servicios
+      </a>
+
+      <a href="#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-social">
+
+      <a
+        href="https://wa.me/529931019909"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <p>
+
+      &copy;
+      <span id="current-year"></span>
+      SOS4 SERVICES.
+      Todos los derechos reservados.
+
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     BOTÓN WHATSAPP FLOTANTE
+===================================================== -->
+
+<a
+  href="https://wa.me/529931019909"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* AOS */
+
+  if (typeof AOS !== "undefined") {
+
+    AOS.init({
+
+      duration: 900,
+
+      once: true,
+
+      offset: 80
+
     });
-    
-    
-  </script>
+
+  }
+
+
+
+  /* MENU MOBILE */
+
+  const toggle =
+    document.getElementById("menu-toggle");
+
+  const navMenu =
+    document.getElementById("nav-menu");
+
+
+  if (toggle && navMenu) {
+
+    toggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+      const icon =
+        toggle.querySelector("i");
+
+
+      if (!icon) return;
+
+
+      if (navMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+      } else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+
+
+    /* CERRAR MENÚ AL SELECCIONAR */
+
+    document
+      .querySelectorAll("#nav-menu a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          navMenu.classList.remove("active");
+
+          const icon =
+            toggle.querySelector("i");
+
+          if (!icon) return;
+
+          icon.classList.remove("fa-xmark");
+
+          icon.classList.add("fa-bars");
+
+        });
+
+      });
+
+
+
+    /* CERRAR MENÚ CON CLICK EXTERNO */
+
+    document.addEventListener("click", event => {
+
+      const insideMenu =
+        navMenu.contains(event.target);
+
+      const insideButton =
+        toggle.contains(event.target);
+
+
+      if (!insideMenu && !insideButton) {
+
+        navMenu.classList.remove("active");
+
+        const icon =
+          toggle.querySelector("i");
+
+        if (!icon) return;
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+  }
+
+
+
+  /* AÑO AUTOMÁTICO */
+
+  const currentYear =
+    document.getElementById("current-year");
+
+  if (currentYear) {
+
+    currentYear.textContent =
+      new Date().getFullYear();
+
+  }
+
+});
+
+</script>
+
+
+<!-- FORMULARIO DE CONTACTO -->
+<script src="contacto.js"></script>
+
+
 </body>
+
 </html>
