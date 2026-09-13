@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Detectores de Gas | SOS4 SERVICES</title>
+
+  <meta
+    name="description"
+    content="Venta, renta y mantenimiento de detectores de gas H2S, CO2, O2 y gases combustibles o explosivos para aplicaciones industriales."
+  />
+
+  <!-- CSS PRINCIPAL -->
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  />
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+
+  <!-- =====================================================
+       CSS EXCLUSIVO DETECTORES DE GAS
+  ====================================================== -->
+
+  <style>
+
+
+    /* =====================================================
+       INTRODUCCIÓN
+    ====================================================== */
+
+    .gas-intro {
+
+      max-width: 1250px;
+
+      margin:
+        60px auto 35px;
+
+      padding:
+        55px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 55px;
+
+      align-items: center;
+
+      background: #ffffff;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .gas-imagen {
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .gas-imagen img {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 560px;
+
+      height: auto;
+
+      border-radius: 20px;
+
+      border:
+        2px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .gas-info span {
+
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .gas-info h2 {
+
+      margin-bottom: 20px;
+
+      color:
+        var(--negro);
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+      line-height: 1.15;
+
+    }
+
+
+    .gas-info p {
+
+      margin-bottom: 16px;
+
+      color: #626262;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =====================================================
+       SERVICIOS PRINCIPALES
+    ====================================================== */
+
+    .gas-servicios {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 15px;
+
+      margin-top: 30px;
+
+    }
+
+
+    .gas-servicio-item {
+
+      padding:
+        20px 15px;
+
+      text-align: center;
+
+      border-radius: 15px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff7f2,
+          #ffffff
+        );
+
+      border:
+        1px solid rgba(255,90,0,.15);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .gas-servicio-item:hover {
+
+      transform:
+        translateY(-5px);
+
+      border-color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .gas-servicio-item i {
+
+      display: block;
+
+      margin-bottom: 10px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 1.7rem;
+
+    }
+
+
+    .gas-servicio-item strong {
+
+      color:
+        var(--negro);
+
+      font-size: .95rem;
+
+    }
+
+
+
+    /* =====================================================
+       TIPOS DE GAS
+    ====================================================== */
+
+    .gases-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #151515 55%,
+          #211008
+        );
+
+      box-shadow:
+        0 18px 50px rgba(0,0,0,.22);
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+    }
+
+
+    .gases-header {
+
+      max-width: 850px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+
+    }
+
+
+    .gases-header > span {
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2.5px;
+
+    }
+
+
+    .gases-header h2 {
+
+      margin:
+        8px 0 12px;
+
+      color: white;
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+    }
+
+
+    .gases-header p {
+
+      color: #cfcfcf;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       TARJETAS DE GAS
+    ====================================================== */
+
+    .gases-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+    }
+
+
+    .gas-card {
+
+      position: relative;
+
+      min-height: 280px;
+
+      padding:
+        30px 22px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      overflow: hidden;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #111111,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.30);
+
+      transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+    }
+
+
+    .gas-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      border-color:
+        var(--naranja-electrico);
+
+      box-shadow:
+        0 18px 38px rgba(255,90,0,.15);
+
+    }
+
+
+    .gas-card::before {
+
+      content: "";
+
+      position: absolute;
+
+      width: 180px;
+
+      height: 180px;
+
+      right: -80px;
+
+      top: -90px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(255,90,0,.06);
+
+    }
+
+
+    .gas-simbolo {
+
+      width: 85px;
+
+      height: 85px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin-bottom: 20px;
+
+      border-radius: 50%;
+
+      color: white;
+
+      font-size: 1.45rem;
+
+      font-weight: 900;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      box-shadow:
+        0 10px 28px rgba(255,90,0,.25);
+
+    }
+
+
+    .gas-card h3 {
+
+      margin-bottom: 10px;
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: 1.2rem;
+
+    }
+
+
+    .gas-card p {
+
+      color: #d7d7d7;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+    .gas-card small {
+
+      display: inline-block;
+
+      margin-top: 12px;
+
+      padding:
+        6px 10px;
+
+      border-radius: 20px;
+
+      color: #f4f4f4;
+
+      background:
+        rgba(255,255,255,.06);
+
+      font-size: .72rem;
+
+      font-weight: 700;
+
+    }
+
+
+
+    /* =====================================================
+       BLOQUE DE SEGURIDAD
+    ====================================================== */
+
+    .seguridad-gas {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        50px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        85px 1fr;
+
+      gap: 28px;
+
+      align-items: center;
+
+      border-radius: 20px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          120deg,
+          #050505,
+          #571700,
+          #ff5a00
+        );
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .seguridad-gas-icon {
+
+      width: 80px;
+
+      height: 80px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 20px;
+
+      background:
+        rgba(0,0,0,.25);
+
+      border:
+        1px solid rgba(255,255,255,.15);
+
+      font-size: 2rem;
+
+    }
+
+
+    .seguridad-gas span {
+
+      display: block;
+
+      margin-bottom: 6px;
+
+      color:
+        var(--ambar);
+
+      font-size: .8rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .seguridad-gas h2 {
+
+      margin-bottom: 10px;
+
+      color: white;
+
+    }
+
+
+    .seguridad-gas p {
+
+      color: #f5f5f5;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       APLICACIONES
+    ====================================================== */
+
+    .aplicaciones-gas {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background: white;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .aplicaciones-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .aplicacion-card {
+
+      padding:
+        30px 22px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      border:
+        1px solid #ededed;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .aplicacion-card:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .aplicacion-card i {
+
+      width: 62px;
+
+      height: 62px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 18px;
+
+      border-radius: 15px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.45rem;
+
+    }
+
+
+    .aplicacion-card h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .aplicacion-card p {
+
+      color: #666;
+
+      line-height: 1.6;
+
+      font-size: .92rem;
+
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 1000px) {
+
+      .gases-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+
+      .aplicaciones-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+    }
+
+
+    @media (max-width: 900px) {
+
+      .gas-intro {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .seguridad-gas {
+
+        grid-template-columns:
+          1fr;
+
+        text-align: center;
+
+      }
+
+
+      .seguridad-gas-icon {
+
+        margin: auto;
+
+      }
+
+    }
+
+
+    @media (max-width: 768px) {
+
+      .gas-intro {
+
+        margin:
+          30px 15px 35px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .gases-section,
+      .aplicaciones-gas {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          45px 22px;
+
+      }
+
+
+      .seguridad-gas {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          35px 22px;
+
+      }
+
+    }
+
+
+    @media (max-width: 560px) {
+
+      .gas-servicios {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .gases-grid,
+      .aplicaciones-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="main-header">
+
+  <div class="header-container">
+
+
+    <a
+      href="../index.html#inicio"
+      class="brand"
+    >
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+        class="logo"
+      />
+
+
+      <div class="brand-text">
+
+        <span class="brand-name">
+          SOS4 SERVICES
+        </span>
+
+        <small>
+          Safety • Engineering • Solutions
+        </small>
+
+      </div>
+
+    </a>
+
+
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+    >
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+
+    <nav id="nav-menu">
+
+
+      <a href="../index.html#inicio">
+
+        <i class="fas fa-house"></i>
+
+        Inicio
+
+      </a>
+
+
+      <div class="dropdown">
+
+        <a
+          href="../index.html#nosotros"
+          class="dropbtn"
+        >
+
+          <i class="fas fa-building"></i>
+
+          Nosotros
+
+          <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+
+        <div class="dropdown-content">
+
+          <a href="../nosotros/mision.html">
+            Misión, Visión y Valores
+          </a>
+
+          <a href="../nosotros/acerca.html">
+            Acerca de Nosotros
+          </a>
+
+          <a href="../nosotros/filosofia.html">
+            Filosofía Empresarial
+          </a>
+
+          <a href="../nosotros/alcance.html">
+            Alcance
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="../index.html#servicios">
+
+        <i class="fas fa-gears"></i>
+
+        Servicios
+
+      </a>
+
+
+      <a href="../index.html#galeria">
+
+        <i class="fas fa-images"></i>
+
+        Galería
+
+      </a>
+
+
+      <a href="../index.html#contacto">
+
+        <i class="fas fa-envelope"></i>
+
+        Contacto
+
+      </a>
+
+
+      <a
+        href="https://wa.me/529331596397"
+        class="nav-contacto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+        Cotizar
+
+      </a>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="serv-header">
+
+  <div data-aos="fade-up">
+
+    <span class="hero-badge">
+
+      <i class="fas fa-wind"></i>
+
+      DETECCIÓN DE GASES
+
+    </span>
+
+
+    <h1>
+      Detectores de Gas
+    </h1>
+
+
+    <p>
+      Soluciones para monitoreo de H₂S, CO₂,
+      O₂ y gases combustibles o explosivos.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section
+  class="gas-intro"
+  data-aos="fade-up"
+>
+
+
+  <div
+    class="gas-imagen"
+    data-aos="fade-right"
+  >
+
+    <img
+      src="../img/Dect-port.jpeg"
+      alt="Detectores de Gas SOS4 SERVICES"
+    />
+
+  </div>
+
+
+
+  <div
+    class="gas-info"
+    data-aos="fade-left"
+  >
+
+    <span>
+      SEGURIDAD ATMOSFÉRICA
+    </span>
+
+
+    <h2>
+      Venta, renta y mantenimiento especializado
+    </h2>
+
+
+    <p>
+
+      <strong>SOS4 SERVICES</strong>
+      ofrece soluciones especializadas
+      para la detección y monitoreo
+      de gases en instalaciones industriales.
+
+    </p>
+
+
+    <p>
+
+      Contamos con servicios orientados
+      a equipos para detección de H₂S,
+      CO₂, O₂ y gases combustibles
+      o explosivos.
+
+    </p>
+
+
+    <p>
+
+      Nuestro objetivo es contribuir
+      a la prevención de riesgos atmosféricos,
+      fortaleciendo la seguridad y confiabilidad
+      de las operaciones.
+    </p>
+
+
+
+    <div class="gas-servicios">
+
+
+      <div class="gas-servicio-item">
+
+        <i class="fas fa-cart-shopping"></i>
+
+        <strong>
+          Venta
+        </strong>
+
+      </div>
+
+
+      <div class="gas-servicio-item">
+
+        <i class="fas fa-handshake"></i>
+
+        <strong>
+          Renta
+        </strong>
+
+      </div>
+
+
+      <div class="gas-servicio-item">
+
+        <i class="fas fa-screwdriver-wrench"></i>
+
+        <strong>
+          Mantenimiento
+        </strong>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     TIPOS DE GAS
+===================================================== -->
+
+<section
+  class="gases-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="gases-header">
+
+    <span>
+      MONITOREO ATMOSFÉRICO
+    </span>
+
+
+    <h2>
+      Gases que podemos detectar
+    </h2>
+
+
+    <p>
+      Equipos diseñados para monitorear
+      diferentes condiciones atmosféricas
+      y riesgos presentes en la industria.
+    </p>
+
+  </div>
+
+
+
+  <div class="gases-grid">
+
+
+    <!-- H2S -->
+
+    <article
+      class="gas-card"
+      data-aos="zoom-in"
+    >
+
+      <div class="gas-simbolo">
+        H₂S
+      </div>
+
+
+      <h3>
+        Sulfuro de Hidrógeno
+      </h3>
+
+
+      <p>
+        Monitoreo de presencia de H₂S
+        en áreas donde existe riesgo
+        de exposición a gases tóxicos.
+      </p>
+
+
+      <small>
+        GAS TÓXICO
+      </small>
+
+    </article>
+
+
+
+    <!-- CO2 -->
+
+    <article
+      class="gas-card"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+    >
+
+      <div class="gas-simbolo">
+        CO₂
+      </div>
+
+
+      <h3>
+        Dióxido de Carbono
+      </h3>
+
+
+      <p>
+        Detección de concentraciones
+        de dióxido de carbono
+        en ambientes industriales.
+      </p>
+
+
+      <small>
+        MONITOREO ATMOSFÉRICO
+      </small>
+
+    </article>
+
+
+
+    <!-- O2 -->
+
+    <article
+      class="gas-card"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+
+      <div class="gas-simbolo">
+        O₂
+      </div>
+
+
+      <h3>
+        Oxígeno
+      </h3>
+
+
+      <p>
+        Monitoreo de niveles de oxígeno
+        para detectar atmósferas
+        deficientes o enriquecidas.
+      </p>
+
+
+      <small>
+        NIVEL DE OXÍGENO
+      </small>
+
+    </article>
+
+
+
+    <!-- COM / EXP -->
+
+    <article
+      class="gas-card"
+      data-aos="zoom-in"
+      data-aos-delay="300"
+    >
+
+      <div class="gas-simbolo">
+        LEL
+      </div>
+
+
+      <h3>
+        Gases Combustibles
+      </h3>
+
+
+      <p>
+        Detección de gases y vapores
+        combustibles o explosivos
+        mediante monitoreo del LEL.
+      </p>
+
+
+      <small>
+        COMBUSTIBLE / EXPLOSIVO
+      </small>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SEGURIDAD
+===================================================== -->
+
+<section
+  class="seguridad-gas"
+  data-aos="zoom-in"
+>
+
+
+  <div class="seguridad-gas-icon">
+
+    <i class="fas fa-shield-halved"></i>
+
+  </div>
+
+
+  <div>
+
+    <span>
+      PREVENCIÓN DE RIESGOS
+    </span>
+
+
+    <h2>
+      Seguridad en atmósferas peligrosas
+    </h2>
+
+
+    <p>
+      La detección oportuna de gases permite identificar
+      condiciones potencialmente peligrosas antes de que
+      representen un riesgo para el personal, instalaciones
+      o continuidad operativa.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     APLICACIONES
+===================================================== -->
+
+<section
+  class="aplicaciones-gas"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      APLICACIONES
+    </span>
+
+
+    <h2>
+      Soluciones para diferentes operaciones
+    </h2>
+
+
+    <p>
+      Nuestros servicios pueden integrarse
+      en diferentes entornos industriales.
+    </p>
+
+  </div>
+
+
+
+  <div class="aplicaciones-grid">
+
+
+    <article class="aplicacion-card">
+
+      <i class="fas fa-oil-well"></i>
+
+      <h3>
+        Sector Petrolero
+      </h3>
+
+      <p>
+        Monitoreo de gases en instalaciones
+        y operaciones petroleras.
+      </p>
+
+    </article>
+
+
+
+    <article class="aplicacion-card">
+
+      <i class="fas fa-industry"></i>
+
+      <h3>
+        Plantas Industriales
+      </h3>
+
+      <p>
+        Protección de áreas de proceso
+        y zonas de operación industrial.
+      </p>
+
+    </article>
+
+
+
+    <article class="aplicacion-card">
+
+      <i class="fas fa-ship"></i>
+
+      <h3>
+        Operaciones Marinas
+      </h3>
+
+      <p>
+        Soluciones para ambientes
+        costa afuera y embarcaciones.
+      </p>
+
+    </article>
+
+
+
+    <article class="aplicacion-card">
+
+      <i class="fas fa-door-closed"></i>
+
+      <h3>
+        Espacios Confinados
+      </h3>
+
+      <p>
+        Verificación atmosférica
+        antes y durante trabajos de riesgo.
+      </p>
+
+    </article>
+
+
+
+    <article class="aplicacion-card">
+
+      <i class="fas fa-fire-flame-curved"></i>
+
+      <h3>
+        Áreas Clasificadas
+      </h3>
+
+      <p>
+        Monitoreo de gases combustibles
+        en zonas de riesgo.
+      </p>
+
+    </article>
+
+
+
+    <article class="aplicacion-card">
+
+      <i class="fas fa-helmet-safety"></i>
+
+      <h3>
+        Seguridad del Personal
+      </h3>
+
+      <p>
+        Equipos para monitoreo
+        y protección durante actividades operativas.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+  class="industrial-cta"
+  data-aos="zoom-in"
+>
+
+
+  <div>
+
+    <span>
+      DETECCIÓN DE GAS SOS4 SERVICES
+    </span>
+
+
+    <h2>
+      ¿Necesitas detectores de gas?
+    </h2>
+
+
+    <p>
+      Consulta opciones de venta, renta
+      o mantenimiento para las necesidades
+      específicas de tu operación.
+    </p>
+
+  </div>
+
+
+
+  <a
+    href="https://wa.me/529331596397"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <i class="fab fa-whatsapp"></i>
+
+    Solicitar información
+
+  </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     REGRESAR
+===================================================== -->
+
+<div class="regresar">
+
+  <a href="../index.html">
+
+    <i class="fas fa-arrow-left"></i>
+
+    Regresar a Servicios
+
+  </a>
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+      />
+
+
+      <div>
+
+        <strong>
+          SOS4 SERVICES
+        </strong>
+
+        <p>
+          Seguridad • Innovación • Confianza
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="../index.html#inicio">
+        Inicio
+      </a>
+
+      <a href="../index.html#nosotros">
+        Nosotros
+      </a>
+
+      <a href="../index.html#servicios">
+        Servicios
+      </a>
+
+      <a href="../index.html#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-social">
+
+      <a
+        href="https://wa.me/529331596397"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="current-year"></span>
+      SOS4 SERVICES.
+      Todos los derechos reservados.
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP FLOTANTE
+===================================================== -->
+
+<a
+  href="https://wa.me/529331596397"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  /* AOS */
+
+  AOS.init({
+
+    duration: 800,
+
+    once: true,
+
+    offset: 60
+
+  });
+
+
+
+  /* MENU MOBILE */
+
+  const toggle =
+    document.getElementById("menu-toggle");
+
+  const navMenu =
+    document.getElementById("nav-menu");
+
+
+  if (toggle && navMenu) {
+
+    toggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+
+      const icon =
+        toggle.querySelector("i");
+
+
+      if (navMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+      }
+
+      else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+  }
+
+
+
+  /* AÑO AUTOMÁTICO */
+
+  const year =
+    document.getElementById("current-year");
+
+
+  if (year) {
+
+    year.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

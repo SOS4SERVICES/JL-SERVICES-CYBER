@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Salud en el Trabajo | SOS4 SERVICES</title>
+
+  <meta
+    name="description"
+    content="Servicios de salud en el trabajo, identificación de factores de riesgo, evaluación de cumplimiento, control de agentes contaminantes, primeros auxilios y bienestar laboral."
+  />
+
+  <!-- CSS PRINCIPAL -->
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  />
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+
+  <!-- =====================================================
+       CSS EXCLUSIVO SALUD EN EL TRABAJO
+  ====================================================== -->
+
+  <style>
+
+
+    /* =====================================================
+       INTRODUCCIÓN
+    ====================================================== */
+
+    .salud-intro {
+
+      max-width: 1250px;
+
+      margin:
+        60px auto 35px;
+
+      padding:
+        55px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 55px;
+
+      align-items: center;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .salud-imagen {
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .salud-imagen img {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 560px;
+
+      height: auto;
+
+      border-radius: 20px;
+
+      border:
+        2px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .salud-info span {
+
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .salud-info h2 {
+
+      margin-bottom: 20px;
+
+      color:
+        var(--negro);
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+      line-height: 1.15;
+
+    }
+
+
+    .salud-info p {
+
+      margin-bottom: 16px;
+
+      color: #626262;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =====================================================
+       SERVICIOS RÁPIDOS
+    ====================================================== */
+
+    .salud-servicios {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 12px;
+
+      margin-top: 28px;
+
+    }
+
+
+    .salud-servicio {
+
+      padding:
+        20px 10px;
+
+      text-align: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff7f2,
+          #ffffff
+        );
+
+      border:
+        1px solid rgba(255,90,0,.15);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .salud-servicio:hover {
+
+      transform:
+        translateY(-5px);
+
+      border-color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .salud-servicio i {
+
+      display: block;
+
+      margin-bottom: 9px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 1.6rem;
+
+    }
+
+
+    .salud-servicio strong {
+
+      color:
+        var(--negro);
+
+      font-size: .88rem;
+
+    }
+
+
+
+    /* =====================================================
+       SERVICIOS DE SALUD OCUPACIONAL
+    ====================================================== */
+
+    .salud-servicios-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #151515 55%,
+          #211008
+        );
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 50px rgba(0,0,0,.22);
+
+    }
+
+
+    .salud-header {
+
+      max-width: 850px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+
+    }
+
+
+    .salud-header span {
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2.5px;
+
+    }
+
+
+    .salud-header h2 {
+
+      margin:
+        8px 0 12px;
+
+      color: white;
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+    }
+
+
+    .salud-header p {
+
+      color: #cfcfcf;
+
+      line-height: 1.7;
+
+    }
+
+
+    .salud-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+
+    }
+
+
+    .salud-card {
+
+      min-height: 260px;
+
+      padding:
+        32px 22px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      align-items: center;
+
+      text-align: center;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #111111,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.28);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .salud-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      border-color:
+        var(--naranja-electrico);
+
+      box-shadow:
+        0 18px 38px rgba(255,90,0,.15);
+
+    }
+
+
+    .salud-card-icon {
+
+      width: 68px;
+
+      height: 68px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin-bottom: 18px;
+
+      border-radius: 16px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.5rem;
+
+    }
+
+
+    .salud-card h3 {
+
+      margin-bottom: 9px;
+
+      color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .salud-card p {
+
+      color: #d7d7d7;
+
+      line-height: 1.6;
+
+      font-size: .92rem;
+
+    }
+
+
+
+    /* =====================================================
+       FACTORES DE RIESGO
+    ====================================================== */
+
+    .riesgos-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .riesgos-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .riesgo-card {
+
+      padding:
+        30px 20px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      border:
+        1px solid #ededed;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .riesgo-card:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .riesgo-card i {
+
+      width: 62px;
+
+      height: 62px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 17px;
+
+      border-radius: 15px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.4rem;
+
+    }
+
+
+    .riesgo-card h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .riesgo-card p {
+
+      color: #666;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       BIENESTAR LABORAL
+    ====================================================== */
+
+    .bienestar-box {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        50px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        90px 1fr;
+
+      gap: 30px;
+
+      align-items: center;
+
+      border-radius: 20px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          120deg,
+          #050505,
+          #571700,
+          #ff5a00
+        );
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .bienestar-icon {
+
+      width: 82px;
+
+      height: 82px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 20px;
+
+      background:
+        rgba(0,0,0,.25);
+
+      border:
+        1px solid rgba(255,255,255,.15);
+
+      font-size: 2rem;
+
+    }
+
+
+    .bienestar-box span {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+      color:
+        var(--ambar);
+
+      font-size: .8rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .bienestar-box h2 {
+
+      margin-bottom: 10px;
+
+      color: white;
+
+    }
+
+
+    .bienestar-box p {
+
+      color: #f5f5f5;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       PRIMEROS AUXILIOS
+    ====================================================== */
+
+    .auxilios-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .auxilios-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .auxilios-card {
+
+      padding:
+        32px 22px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      border:
+        1px solid #ededed;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .auxilios-card:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .auxilios-card i {
+
+      width: 62px;
+
+      height: 62px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 17px;
+
+      border-radius: 15px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.4rem;
+
+    }
+
+
+    .auxilios-card h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .auxilios-card p {
+
+      color: #666;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       PROCESO
+    ====================================================== */
+
+    .salud-proceso {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #161616
+        );
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+    }
+
+
+    .salud-proceso .section-title h2 {
+
+      color: white;
+
+    }
+
+
+    .salud-proceso .section-title p {
+
+      color: #cfcfcf;
+
+    }
+
+
+    .salud-proceso-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .salud-paso {
+
+      padding:
+        30px 20px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #111111,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.25);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .salud-paso:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .salud-paso-numero {
+
+      width: 54px;
+
+      height: 54px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 18px;
+
+      border-radius: 50%;
+
+      color: white;
+
+      font-weight: 900;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+    }
+
+
+    .salud-paso h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .salud-paso p {
+
+      color: #d5d5d5;
+
+      font-size: .9rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 1000px) {
+
+      .salud-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+
+      .riesgos-grid,
+      .salud-proceso-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+    }
+
+
+    @media (max-width: 900px) {
+
+      .salud-intro {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .bienestar-box {
+
+        grid-template-columns:
+          1fr;
+
+        text-align: center;
+
+      }
+
+
+      .bienestar-icon {
+
+        margin: auto;
+
+      }
+
+    }
+
+
+    @media (max-width: 768px) {
+
+      .salud-intro {
+
+        margin:
+          30px 15px 35px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .salud-servicios-section,
+      .riesgos-section,
+      .auxilios-section,
+      .salud-proceso {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          45px 22px;
+
+      }
+
+
+      .bienestar-box {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .salud-servicios {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+    }
+
+
+    @media (max-width: 560px) {
+
+      .salud-grid,
+      .riesgos-grid,
+      .auxilios-grid,
+      .salud-proceso-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER PRINCIPAL
+===================================================== -->
+
+<header class="main-header">
+
+  <div class="header-container">
+
+
+    <a
+      href="../index.html#inicio"
+      class="brand"
+    >
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+        class="logo"
+      />
+
+
+      <div class="brand-text">
+
+        <span class="brand-name">
+          SOS4 SERVICES
+        </span>
+
+        <small>
+          Safety • Engineering • Solutions
+        </small>
+
+      </div>
+
+    </a>
+
+
+
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+    >
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+
+
+    <nav id="nav-menu">
+
+
+      <a href="../index.html#inicio">
+
+        <i class="fas fa-house"></i>
+
+        Inicio
+
+      </a>
+
+
+
+      <div class="dropdown">
+
+        <a
+          href="../index.html#nosotros"
+          class="dropbtn"
+        >
+
+          <i class="fas fa-building"></i>
+
+          Nosotros
+
+          <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+
+        <div class="dropdown-content">
+
+          <a href="../nosotros/mision.html">
+            Misión, Visión y Valores
+          </a>
+
+          <a href="../nosotros/acerca.html">
+            Acerca de Nosotros
+          </a>
+
+          <a href="../nosotros/filosofia.html">
+            Filosofía Empresarial
+          </a>
+
+          <a href="../nosotros/alcance.html">
+            Alcance
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <a href="../index.html#servicios">
+
+        <i class="fas fa-gears"></i>
+
+        Servicios
+
+      </a>
+
+
+
+      <a href="../index.html#galeria">
+
+        <i class="fas fa-images"></i>
+
+        Galería
+
+      </a>
+
+
+
+      <a href="../index.html#contacto">
+
+        <i class="fas fa-envelope"></i>
+
+        Contacto
+
+      </a>
+
+
+
+      <a
+        href="https://wa.me/529331596397"
+        class="nav-contacto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+        Cotizar
+
+      </a>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="serv-header">
+
+  <div data-aos="fade-up">
+
+    <span class="hero-badge">
+
+      <i class="fas fa-heart-pulse"></i>
+
+      SALUD Y PREVENCIÓN LABORAL
+
+    </span>
+
+
+    <h1>
+      Salud en el Trabajo
+    </h1>
+
+
+    <p>
+      Identificación y prevención de riesgos
+      para contribuir a entornos laborales
+      más seguros, saludables y eficientes.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section
+  class="salud-intro"
+  data-aos="fade-up"
+>
+
+
+  <div
+    class="salud-imagen"
+    data-aos="fade-right"
+  >
+
+    <img
+      src="../img/salud-trabajo.jpeg"
+      alt="Salud en el Trabajo SOS4 SERVICES"
+    />
+
+  </div>
+
+
+
+  <div
+    class="salud-info"
+    data-aos="fade-left"
+  >
+
+    <span>
+      PREVENCIÓN Y BIENESTAR LABORAL
+    </span>
+
+
+    <h2>
+      Protección de la salud del trabajador
+    </h2>
+
+
+    <p>
+
+      En <strong>SOS4 SERVICES</strong>
+      establecemos sistemas orientados
+      a identificar factores de riesgo
+      que puedan afectar la salud
+      de los trabajadores.
+
+    </p>
+
+
+    <p>
+
+      Evaluamos condiciones de trabajo,
+      cumplimiento aplicable
+      y presencia de agentes
+      que puedan representar
+      un riesgo para la salud.
+
+    </p>
+
+
+    <p>
+
+      Nuestro enfoque busca contribuir
+      a entornos laborales seguros,
+      promoviendo la prevención,
+      la capacitación
+      y el bienestar integral del personal.
+
+    </p>
+
+
+
+    <div class="salud-servicios">
+
+
+      <div class="salud-servicio">
+
+        <i class="fas fa-magnifying-glass"></i>
+
+        <strong>
+          Evaluación
+        </strong>
+
+      </div>
+
+
+      <div class="salud-servicio">
+
+        <i class="fas fa-shield-heart"></i>
+
+        <strong>
+          Prevención
+        </strong>
+
+      </div>
+
+
+      <div class="salud-servicio">
+
+        <i class="fas fa-kit-medical"></i>
+
+        <strong>
+          Primeros Auxilios
+        </strong>
+
+      </div>
+
+
+      <div class="salud-servicio">
+
+        <i class="fas fa-people-group"></i>
+
+        <strong>
+          Bienestar
+        </strong>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICIOS
+===================================================== -->
+
+<section
+  class="salud-servicios-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="salud-header">
+
+    <span>
+      SALUD OCUPACIONAL
+    </span>
+
+
+    <h2>
+      Prevención y control de riesgos a la salud
+    </h2>
+
+
+    <p>
+      Desarrollamos acciones orientadas
+      a identificar condiciones que puedan
+      afectar la salud de los trabajadores
+      y fortalecer las medidas preventivas.
+    </p>
+
+  </div>
+
+
+
+  <div class="salud-grid">
+
+
+    <article class="salud-card">
+
+      <div class="salud-card-icon">
+
+        <i class="fas fa-magnifying-glass-chart"></i>
+
+      </div>
+
+
+      <h3>
+        Identificación de Riesgos
+      </h3>
+
+
+      <p>
+        Evaluación de factores
+        y condiciones de trabajo
+        que puedan afectar
+        la salud del personal.
+      </p>
+
+    </article>
+
+
+
+    <article class="salud-card">
+
+      <div class="salud-card-icon">
+
+        <i class="fas fa-clipboard-check"></i>
+
+      </div>
+
+
+      <h3>
+        Cumplimiento
+      </h3>
+
+
+      <p>
+        Revisión de requisitos
+        y condiciones aplicables
+        relacionados con la salud
+        en el trabajo.
+      </p>
+
+    </article>
+
+
+
+    <article class="salud-card">
+
+      <div class="salud-card-icon">
+
+        <i class="fas fa-flask"></i>
+
+      </div>
+
+
+      <h3>
+        Agentes Contaminantes
+      </h3>
+
+
+      <p>
+        Identificación y control
+        de agentes presentes
+        en el ambiente laboral
+        que puedan representar riesgos.
+      </p>
+
+    </article>
+
+
+
+    <article class="salud-card">
+
+      <div class="salud-card-icon">
+
+        <i class="fas fa-kit-medical"></i>
+
+      </div>
+
+
+      <h3>
+        Primeros Auxilios
+      </h3>
+
+
+      <p>
+        Formación del personal
+        para brindar una respuesta inicial
+        ante lesiones o emergencias.
+      </p>
+
+    </article>
+
+
+
+    <article class="salud-card">
+
+      <div class="salud-card-icon">
+
+        <i class="fas fa-person-chalkboard"></i>
+
+      </div>
+
+
+      <h3>
+        Capacitación
+      </h3>
+
+
+      <p>
+        Programas orientados
+        al fortalecimiento de conocimientos
+        y prácticas preventivas.
+      </p>
+
+    </article>
+
+
+
+    <article class="salud-card">
+
+      <div class="salud-card-icon">
+
+        <i class="fas fa-heart-pulse"></i>
+
+      </div>
+
+
+      <h3>
+        Bienestar Laboral
+      </h3>
+
+
+      <p>
+        Promoción de condiciones
+        que contribuyan al cuidado
+        de la salud física
+        y bienestar del trabajador.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FACTORES DE RIESGO
+===================================================== -->
+
+<section
+  class="riesgos-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      FACTORES DE RIESGO
+    </span>
+
+
+    <h2>
+      Identificación de condiciones de exposición
+    </h2>
+
+
+    <p>
+      El análisis de los factores presentes
+      en el entorno laboral permite
+      establecer medidas de prevención
+      y control más efectivas.
+    </p>
+
+  </div>
+
+
+
+  <div class="riesgos-grid">
+
+
+    <article class="riesgo-card">
+
+      <i class="fas fa-volume-high"></i>
+
+      <h3>
+        Agentes Físicos
+      </h3>
+
+      <p>
+        Evaluación de condiciones
+        como ruido, temperatura,
+        iluminación y otros
+        agentes físicos.
+      </p>
+
+    </article>
+
+
+
+    <article class="riesgo-card">
+
+      <i class="fas fa-flask-vial"></i>
+
+      <h3>
+        Agentes Químicos
+      </h3>
+
+      <p>
+        Identificación de sustancias
+        y contaminantes que puedan
+        representar una exposición
+        para el trabajador.
+      </p>
+
+    </article>
+
+
+
+    <article class="riesgo-card">
+
+      <i class="fas fa-chair"></i>
+
+      <h3>
+        Factores Ergonómicos
+      </h3>
+
+      <p>
+        Identificación de condiciones
+        relacionadas con posturas,
+        cargas físicas y diseño
+        del puesto de trabajo.
+      </p>
+
+    </article>
+
+
+
+    <article class="riesgo-card">
+
+      <i class="fas fa-brain"></i>
+
+      <h3>
+        Factores Psicosociales
+      </h3>
+
+      <p>
+        Identificación de condiciones
+        organizacionales que puedan
+        influir en el bienestar
+        del personal.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     BIENESTAR
+===================================================== -->
+
+<section
+  class="bienestar-box"
+  data-aos="zoom-in"
+>
+
+
+  <div class="bienestar-icon">
+
+    <i class="fas fa-heart-circle-check"></i>
+
+  </div>
+
+
+  <div>
+
+    <span>
+      BIENESTAR LABORAL
+    </span>
+
+
+    <h2>
+      Salud física y bienestar integral
+    </h2>
+
+
+    <p>
+      La prevención en el trabajo no se limita
+      únicamente a evitar accidentes.
+      También contempla la identificación
+      de factores que puedan afectar
+      la salud física y el bienestar
+      de las personas durante
+      el desarrollo de sus actividades.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PRIMEROS AUXILIOS
+===================================================== -->
+
+<section
+  class="auxilios-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      PREPARACIÓN ANTE EMERGENCIAS
+    </span>
+
+
+    <h2>
+      Formación en primeros auxilios
+    </h2>
+
+
+    <p>
+      Una respuesta inicial organizada
+      puede ser determinante mientras
+      se recibe atención médica especializada.
+    </p>
+
+  </div>
+
+
+
+  <div class="auxilios-grid">
+
+
+    <article class="auxilios-card">
+
+      <i class="fas fa-hand-holding-medical"></i>
+
+      <h3>
+        Atención Inicial
+      </h3>
+
+      <p>
+        Formación para brindar
+        apoyo inicial ante lesiones
+        o situaciones de emergencia.
+      </p>
+
+    </article>
+
+
+
+    <article class="auxilios-card">
+
+      <i class="fas fa-user-shield"></i>
+
+      <h3>
+        Respuesta Segura
+      </h3>
+
+      <p>
+        Preparación para actuar
+        de forma organizada
+        sin generar riesgos adicionales.
+      </p>
+
+    </article>
+
+
+
+    <article class="auxilios-card">
+
+      <i class="fas fa-people-group"></i>
+
+      <h3>
+        Personal Capacitado
+      </h3>
+
+      <p>
+        Fortalecimiento de las capacidades
+        del personal para responder
+        ante incidentes laborales.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PROCESO
+===================================================== -->
+
+<section
+  class="salud-proceso"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      GESTIÓN PREVENTIVA
+    </span>
+
+
+    <h2>
+      Del análisis a la prevención
+    </h2>
+
+
+    <p>
+      La gestión de salud en el trabajo
+      requiere identificar riesgos,
+      establecer controles
+      y dar seguimiento a las acciones.
+    </p>
+
+  </div>
+
+
+
+  <div class="salud-proceso-grid">
+
+
+    <article class="salud-paso">
+
+      <div class="salud-paso-numero">
+        01
+      </div>
+
+      <h3>
+        Identificar
+      </h3>
+
+      <p>
+        Reconocimiento de factores
+        que puedan afectar
+        la salud del trabajador.
+      </p>
+
+    </article>
+
+
+
+    <article class="salud-paso">
+
+      <div class="salud-paso-numero">
+        02
+      </div>
+
+      <h3>
+        Evaluar
+      </h3>
+
+      <p>
+        Análisis de condiciones
+        y nivel de exposición
+        existente.
+      </p>
+
+    </article>
+
+
+
+    <article class="salud-paso">
+
+      <div class="salud-paso-numero">
+        03
+      </div>
+
+      <h3>
+        Controlar
+      </h3>
+
+      <p>
+        Implementación de acciones
+        preventivas y medidas
+        de control.
+      </p>
+
+    </article>
+
+
+
+    <article class="salud-paso">
+
+      <div class="salud-paso-numero">
+        04
+      </div>
+
+      <h3>
+        Dar Seguimiento
+      </h3>
+
+      <p>
+        Evaluación continua
+        de las acciones implementadas
+        y oportunidades de mejora.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+  class="industrial-cta"
+  data-aos="zoom-in"
+>
+
+
+  <div>
+
+    <span>
+      SALUD EN EL TRABAJO
+    </span>
+
+
+    <h2>
+      ¿Necesitas fortalecer la prevención en tu empresa?
+    </h2>
+
+
+    <p>
+      Podemos apoyarte en la identificación
+      de factores de riesgo,
+      evaluación de condiciones laborales,
+      capacitación y primeros auxilios.
+    </p>
+
+  </div>
+
+
+
+  <a
+    href="https://wa.me/529331596397"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <i class="fab fa-whatsapp"></i>
+
+    Solicitar información
+
+  </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     REGRESAR
+===================================================== -->
+
+<div class="regresar">
+
+  <a href="../index.html">
+
+    <i class="fas fa-arrow-left"></i>
+
+    Regresar a Servicios
+
+  </a>
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+      />
+
+
+      <div>
+
+        <strong>
+          SOS4 SERVICES
+        </strong>
+
+        <p>
+          Seguridad • Innovación • Confianza
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="../index.html#inicio">
+        Inicio
+      </a>
+
+      <a href="../index.html#nosotros">
+        Nosotros
+      </a>
+
+      <a href="../index.html#servicios">
+        Servicios
+      </a>
+
+      <a href="../index.html#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-social">
+
+      <a
+        href="https://wa.me/529331596397"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="current-year"></span>
+      SOS4 SERVICES.
+      Todos los derechos reservados.
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP FLOTANTE
+===================================================== -->
+
+<a
+  href="https://wa.me/529331596397"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  /* AOS */
+
+  AOS.init({
+
+    duration: 800,
+
+    once: true,
+
+    offset: 60
+
+  });
+
+
+
+  /* MENU MOBILE */
+
+  const toggle =
+    document.getElementById("menu-toggle");
+
+  const navMenu =
+    document.getElementById("nav-menu");
+
+
+  if (toggle && navMenu) {
+
+    toggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+
+      const icon =
+        toggle.querySelector("i");
+
+
+      if (navMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+      }
+
+      else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+  }
+
+
+
+  /* AÑO AUTOMÁTICO */
+
+  const year =
+    document.getElementById("current-year");
+
+
+  if (year) {
+
+    year.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,2174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Seguridad Industrial | SOS4 SERVICES</title>
+
+  <meta
+    name="description"
+    content="Servicios de seguridad industrial, análisis de riesgos, confiabilidad operacional, evaluación de procesos críticos y desarrollo de atlas de riesgo."
+  />
+
+  <!-- CSS PRINCIPAL -->
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  />
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+
+  <!-- =====================================================
+       CSS EXCLUSIVO SEGURIDAD INDUSTRIAL
+  ====================================================== -->
+
+  <style>
+
+
+    /* =====================================================
+       INTRODUCCIÓN
+    ====================================================== */
+
+    .seguridad-intro {
+
+      max-width: 1250px;
+
+      margin:
+        60px auto 35px;
+
+      padding:
+        55px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 55px;
+
+      align-items: center;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .seguridad-imagen {
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .seguridad-imagen img {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 560px;
+
+      height: auto;
+
+      border-radius: 20px;
+
+      border:
+        2px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .seguridad-info span {
+
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .seguridad-info h2 {
+
+      margin-bottom: 20px;
+
+      color:
+        var(--negro);
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+      line-height: 1.15;
+
+    }
+
+
+    .seguridad-info p {
+
+      margin-bottom: 16px;
+
+      color: #626262;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =====================================================
+       SERVICIOS RÁPIDOS
+    ====================================================== */
+
+    .seguridad-servicios {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 12px;
+
+      margin-top: 28px;
+
+    }
+
+
+    .seguridad-servicio {
+
+      padding:
+        20px 10px;
+
+      text-align: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff7f2,
+          #ffffff
+        );
+
+      border:
+        1px solid rgba(255,90,0,.15);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .seguridad-servicio:hover {
+
+      transform:
+        translateY(-5px);
+
+      border-color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .seguridad-servicio i {
+
+      display: block;
+
+      margin-bottom: 9px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 1.6rem;
+
+    }
+
+
+    .seguridad-servicio strong {
+
+      color:
+        var(--negro);
+
+      font-size: .88rem;
+
+    }
+
+
+
+    /* =====================================================
+       SERVICIOS PRINCIPALES
+    ====================================================== */
+
+    .seguridad-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #151515 55%,
+          #211008
+        );
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 50px rgba(0,0,0,.22);
+
+    }
+
+
+    .seguridad-header {
+
+      max-width: 850px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+
+    }
+
+
+    .seguridad-header span {
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2.5px;
+
+    }
+
+
+    .seguridad-header h2 {
+
+      margin:
+        8px 0 12px;
+
+      color: white;
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+    }
+
+
+    .seguridad-header p {
+
+      color: #cfcfcf;
+
+      line-height: 1.7;
+
+    }
+
+
+    .seguridad-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 20px;
+
+    }
+
+
+    .seguridad-card {
+
+      min-height: 310px;
+
+      padding:
+        34px 24px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      align-items: center;
+
+      text-align: center;
+
+      border-radius: 19px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #111111,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.28);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .seguridad-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      border-color:
+        var(--naranja-electrico);
+
+      box-shadow:
+        0 18px 38px rgba(255,90,0,.15);
+
+    }
+
+
+    .seguridad-card-icon {
+
+      width: 74px;
+
+      height: 74px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin-bottom: 20px;
+
+      border-radius: 17px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.6rem;
+
+      box-shadow:
+        0 10px 25px rgba(255,90,0,.22);
+
+    }
+
+
+    .seguridad-card h3 {
+
+      margin-bottom: 12px;
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: 1.2rem;
+
+    }
+
+
+    .seguridad-card p {
+
+      color: #d7d7d7;
+
+      font-size: .92rem;
+
+      line-height: 1.65;
+
+    }
+
+
+
+    /* =====================================================
+       ANÁLISIS DE RIESGOS
+    ====================================================== */
+
+    .riesgos-industriales {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .riesgos-industriales-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .riesgo-industrial-card {
+
+      padding:
+        30px 20px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      border:
+        1px solid #ededed;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .riesgo-industrial-card:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .riesgo-industrial-card i {
+
+      width: 62px;
+
+      height: 62px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 17px;
+
+      border-radius: 15px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.4rem;
+
+    }
+
+
+    .riesgo-industrial-card h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .riesgo-industrial-card p {
+
+      color: #666;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       CONFIABILIDAD
+    ====================================================== */
+
+    .confiabilidad-box {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        50px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        90px 1fr;
+
+      gap: 30px;
+
+      align-items: center;
+
+      border-radius: 20px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          120deg,
+          #050505,
+          #571700,
+          #ff5a00
+        );
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .confiabilidad-icon {
+
+      width: 82px;
+
+      height: 82px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 20px;
+
+      background:
+        rgba(0,0,0,.25);
+
+      border:
+        1px solid rgba(255,255,255,.15);
+
+      font-size: 2rem;
+
+    }
+
+
+    .confiabilidad-box span {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+      color:
+        var(--ambar);
+
+      font-size: .8rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .confiabilidad-box h2 {
+
+      margin-bottom: 10px;
+
+      color: white;
+
+    }
+
+
+    .confiabilidad-box p {
+
+      color: #f5f5f5;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       ATLAS DE RIESGO
+    ====================================================== */
+
+    .atlas-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .atlas-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .atlas-card {
+
+      padding:
+        32px 22px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      border:
+        1px solid #ededed;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .atlas-card:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .atlas-card i {
+
+      width: 62px;
+
+      height: 62px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 17px;
+
+      border-radius: 15px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.4rem;
+
+    }
+
+
+    .atlas-card h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .atlas-card p {
+
+      color: #666;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       PROCESO
+    ====================================================== */
+
+    .seguridad-proceso {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #161616
+        );
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+    }
+
+
+    .seguridad-proceso .section-title h2 {
+
+      color: white;
+
+    }
+
+
+    .seguridad-proceso .section-title p {
+
+      color: #cfcfcf;
+
+    }
+
+
+    .seguridad-proceso-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .seguridad-paso {
+
+      padding:
+        30px 20px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #111111,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.25);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .seguridad-paso:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .seguridad-paso-numero {
+
+      width: 54px;
+
+      height: 54px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 18px;
+
+      border-radius: 50%;
+
+      color: white;
+
+      font-weight: 900;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+    }
+
+
+    .seguridad-paso h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .seguridad-paso p {
+
+      color: #d5d5d5;
+
+      font-size: .9rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 1000px) {
+
+      .seguridad-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .riesgos-industriales-grid,
+      .seguridad-proceso-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+    }
+
+
+    @media (max-width: 900px) {
+
+      .seguridad-intro {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .confiabilidad-box {
+
+        grid-template-columns:
+          1fr;
+
+        text-align: center;
+
+      }
+
+
+      .confiabilidad-icon {
+
+        margin: auto;
+
+      }
+
+    }
+
+
+    @media (max-width: 768px) {
+
+      .seguridad-intro {
+
+        margin:
+          30px 15px 35px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .seguridad-section,
+      .riesgos-industriales,
+      .atlas-section,
+      .seguridad-proceso {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          45px 22px;
+
+      }
+
+
+      .confiabilidad-box {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .seguridad-servicios {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+    }
+
+
+    @media (max-width: 560px) {
+
+      .riesgos-industriales-grid,
+      .atlas-grid,
+      .seguridad-proceso-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER PRINCIPAL
+===================================================== -->
+
+<header class="main-header">
+
+  <div class="header-container">
+
+
+    <a
+      href="../index.html#inicio"
+      class="brand"
+    >
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+        class="logo"
+      />
+
+
+      <div class="brand-text">
+
+        <span class="brand-name">
+          SOS4 SERVICES
+        </span>
+
+        <small>
+          Safety • Engineering • Solutions
+        </small>
+
+      </div>
+
+    </a>
+
+
+
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+    >
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+
+
+    <nav id="nav-menu">
+
+
+      <a href="../index.html#inicio">
+
+        <i class="fas fa-house"></i>
+
+        Inicio
+
+      </a>
+
+
+
+      <div class="dropdown">
+
+        <a
+          href="../index.html#nosotros"
+          class="dropbtn"
+        >
+
+          <i class="fas fa-building"></i>
+
+          Nosotros
+
+          <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+
+        <div class="dropdown-content">
+
+          <a href="../nosotros/mision.html">
+            Misión, Visión y Valores
+          </a>
+
+          <a href="../nosotros/acerca.html">
+            Acerca de Nosotros
+          </a>
+
+          <a href="../nosotros/filosofia.html">
+            Filosofía Empresarial
+          </a>
+
+          <a href="../nosotros/alcance.html">
+            Alcance
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <a href="../index.html#servicios">
+
+        <i class="fas fa-gears"></i>
+
+        Servicios
+
+      </a>
+
+
+
+      <a href="../index.html#galeria">
+
+        <i class="fas fa-images"></i>
+
+        Galería
+
+      </a>
+
+
+
+      <a href="../index.html#contacto">
+
+        <i class="fas fa-envelope"></i>
+
+        Contacto
+
+      </a>
+
+
+
+      <a
+        href="https://wa.me/529331596397"
+        class="nav-contacto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+        Cotizar
+
+      </a>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="serv-header">
+
+  <div data-aos="fade-up">
+
+    <span class="hero-badge">
+
+      <i class="fas fa-helmet-safety"></i>
+
+      PREVENCIÓN Y CONTROL DE RIESGOS
+
+    </span>
+
+
+    <h1>
+      Seguridad Industrial
+    </h1>
+
+
+    <p>
+      Identificación, evaluación y control
+      de riesgos para fortalecer la seguridad,
+      integridad y confiabilidad de las operaciones.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section
+  class="seguridad-intro"
+  data-aos="fade-up"
+>
+
+
+  <div
+    class="seguridad-imagen"
+    data-aos="fade-right"
+  >
+
+    <img
+      src="../img/seguridad-industrial.jpeg"
+      alt="Seguridad Industrial SOS4 SERVICES"
+    />
+
+  </div>
+
+
+
+  <div
+    class="seguridad-info"
+    data-aos="fade-left"
+  >
+
+    <span>
+      IDENTIFICACIÓN Y CONTROL DE RIESGOS
+    </span>
+
+
+    <h2>
+      Seguridad aplicada a procesos y operaciones
+    </h2>
+
+
+    <p>
+
+      En <strong>SOS4 SERVICES</strong>
+      desarrollamos soluciones orientadas
+      a identificar, evaluar y controlar
+      riesgos asociados con equipos,
+      procesos y actividades industriales.
+
+    </p>
+
+
+    <p>
+
+      Nuestro enfoque integra análisis
+      de riesgos, confiabilidad operacional
+      y evaluación de condiciones
+      de seguridad e higiene.
+
+    </p>
+
+
+    <p>
+
+      El objetivo es fortalecer
+      la prevención, reducir condiciones
+      peligrosas y contribuir
+      a la integridad de los procesos
+      y equipos de la organización.
+
+    </p>
+
+
+
+    <div class="seguridad-servicios">
+
+
+      <div class="seguridad-servicio">
+
+        <i class="fas fa-magnifying-glass"></i>
+
+        <strong>
+          Identificar
+        </strong>
+
+      </div>
+
+
+      <div class="seguridad-servicio">
+
+        <i class="fas fa-chart-line"></i>
+
+        <strong>
+          Evaluar
+        </strong>
+
+      </div>
+
+
+      <div class="seguridad-servicio">
+
+        <i class="fas fa-shield-halved"></i>
+
+        <strong>
+          Controlar
+        </strong>
+
+      </div>
+
+
+      <div class="seguridad-servicio">
+
+        <i class="fas fa-gears"></i>
+
+        <strong>
+          Mejorar
+        </strong>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICIOS PRINCIPALES
+===================================================== -->
+
+<section
+  class="seguridad-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="seguridad-header">
+
+    <span>
+      SERVICIOS DE SEGURIDAD INDUSTRIAL
+    </span>
+
+
+    <h2>
+      Gestión técnica de riesgos
+    </h2>
+
+
+    <p>
+      Desarrollamos herramientas
+      y evaluaciones orientadas
+      a fortalecer la seguridad
+      y confiabilidad de las operaciones.
+    </p>
+
+  </div>
+
+
+
+  <div class="seguridad-grid">
+
+
+    <!-- CONFIABILIDAD OPERACIONAL -->
+
+    <article class="seguridad-card">
+
+      <div class="seguridad-card-icon">
+
+        <i class="fas fa-gears"></i>
+
+      </div>
+
+
+      <h3>
+        Sistema de Confiabilidad Operacional
+      </h3>
+
+
+      <p>
+        Identificación, evaluación
+        y mitigación de riesgos
+        para fortalecer la integridad
+        de equipos y procesos,
+        contribuyendo al desempeño
+        seguro de las operaciones.
+      </p>
+
+    </article>
+
+
+
+    <!-- ANÁLISIS DE RIESGOS -->
+
+    <article class="seguridad-card">
+
+      <div class="seguridad-card-icon">
+
+        <i class="fas fa-triangle-exclamation"></i>
+
+      </div>
+
+
+      <h3>
+        Análisis de Riesgos
+      </h3>
+
+
+      <p>
+        Evaluación especializada
+        de procesos y equipos críticos
+        que manejan sustancias químicas
+        peligrosas, orientada
+        a identificar escenarios,
+        evaluar riesgos y establecer
+        medidas preventivas y correctivas.
+      </p>
+
+    </article>
+
+
+
+    <!-- ATLAS DE RIESGO -->
+
+    <article class="seguridad-card">
+
+      <div class="seguridad-card-icon">
+
+        <i class="fas fa-map-location-dot"></i>
+
+      </div>
+
+
+      <h3>
+        Atlas de Riesgo
+      </h3>
+
+
+      <p>
+        Desarrollo de atlas de riesgo
+        a partir del diagnóstico
+        de condiciones de seguridad
+        e higiene para identificar
+        peligros y fortalecer
+        las medidas de control.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ANÁLISIS DE RIESGOS
+===================================================== -->
+
+<section
+  class="riesgos-industriales"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      ANÁLISIS DE RIESGOS
+    </span>
+
+
+    <h2>
+      Evaluación de procesos y equipos críticos
+    </h2>
+
+
+    <p>
+      El análisis de riesgos permite
+      identificar escenarios que pueden afectar
+      a las personas, instalaciones,
+      procesos y continuidad operativa.
+    </p>
+
+  </div>
+
+
+
+  <div class="riesgos-industriales-grid">
+
+
+    <article class="riesgo-industrial-card">
+
+      <i class="fas fa-flask-vial"></i>
+
+      <h3>
+        Sustancias Peligrosas
+      </h3>
+
+      <p>
+        Identificación de riesgos
+        asociados al manejo
+        de sustancias químicas
+        peligrosas.
+      </p>
+
+    </article>
+
+
+
+    <article class="riesgo-industrial-card">
+
+      <i class="fas fa-industry"></i>
+
+      <h3>
+        Procesos Críticos
+      </h3>
+
+      <p>
+        Evaluación de procesos
+        cuya falla pueda generar
+        consecuencias importantes
+        para la operación.
+      </p>
+
+    </article>
+
+
+
+    <article class="riesgo-industrial-card">
+
+      <i class="fas fa-gears"></i>
+
+      <h3>
+        Equipos Críticos
+      </h3>
+
+      <p>
+        Identificación de equipos
+        relevantes para la seguridad
+        y continuidad de los procesos.
+      </p>
+
+    </article>
+
+
+
+    <article class="riesgo-industrial-card">
+
+      <i class="fas fa-list-check"></i>
+
+      <h3>
+        Recomendaciones
+      </h3>
+
+      <p>
+        Desarrollo de medidas
+        preventivas y correctivas
+        orientadas a reducir
+        los riesgos identificados.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONFIABILIDAD OPERACIONAL
+===================================================== -->
+
+<section
+  class="confiabilidad-box"
+  data-aos="zoom-in"
+>
+
+
+  <div class="confiabilidad-icon">
+
+    <i class="fas fa-shield-circle-check"></i>
+
+  </div>
+
+
+  <div>
+
+    <span>
+      CONFIABILIDAD OPERACIONAL
+    </span>
+
+
+    <h2>
+      Integridad de equipos, procesos y operaciones
+    </h2>
+
+
+    <p>
+      La confiabilidad operacional integra
+      la identificación y control de riesgos
+      con acciones orientadas a mantener
+      la integridad de los equipos,
+      mejorar el desempeño de los procesos
+      y fortalecer la continuidad
+      de las operaciones.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ATLAS DE RIESGO
+===================================================== -->
+
+<section
+  class="atlas-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      ATLAS DE RIESGO
+    </span>
+
+
+    <h2>
+      Identificación visual de peligros y condiciones
+    </h2>
+
+
+    <p>
+      El desarrollo de un atlas permite
+      organizar y representar información
+      relacionada con riesgos
+      y condiciones peligrosas presentes
+      en una instalación.
+    </p>
+
+  </div>
+
+
+
+  <div class="atlas-grid">
+
+
+    <article class="atlas-card">
+
+      <i class="fas fa-magnifying-glass-location"></i>
+
+      <h3>
+        Diagnóstico
+      </h3>
+
+      <p>
+        Identificación de condiciones
+        de seguridad e higiene
+        dentro de la instalación.
+      </p>
+
+    </article>
+
+
+
+    <article class="atlas-card">
+
+      <i class="fas fa-map"></i>
+
+      <h3>
+        Ubicación de Riesgos
+      </h3>
+
+      <p>
+        Organización de la información
+        para localizar áreas
+        y condiciones relevantes.
+      </p>
+
+    </article>
+
+
+
+    <article class="atlas-card">
+
+      <i class="fas fa-shield-halved"></i>
+
+      <h3>
+        Medidas de Control
+      </h3>
+
+      <p>
+        Definición de acciones
+        orientadas a reducir
+        y controlar condiciones
+        peligrosas identificadas.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PROCESO
+===================================================== -->
+
+<section
+  class="seguridad-proceso"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      GESTIÓN DEL RIESGO
+    </span>
+
+
+    <h2>
+      Del diagnóstico al control
+    </h2>
+
+
+    <p>
+      Aplicamos un enfoque estructurado
+      para identificar peligros,
+      evaluar riesgos
+      y establecer medidas de control.
+    </p>
+
+  </div>
+
+
+
+  <div class="seguridad-proceso-grid">
+
+
+    <article class="seguridad-paso">
+
+      <div class="seguridad-paso-numero">
+        01
+      </div>
+
+      <h3>
+        Identificar
+      </h3>
+
+      <p>
+        Reconocimiento de peligros,
+        condiciones inseguras
+        y escenarios potenciales.
+      </p>
+
+    </article>
+
+
+
+    <article class="seguridad-paso">
+
+      <div class="seguridad-paso-numero">
+        02
+      </div>
+
+      <h3>
+        Evaluar
+      </h3>
+
+      <p>
+        Análisis de riesgos
+        y posibles consecuencias
+        para la operación.
+      </p>
+
+    </article>
+
+
+
+    <article class="seguridad-paso">
+
+      <div class="seguridad-paso-numero">
+        03
+      </div>
+
+      <h3>
+        Mitigar
+      </h3>
+
+      <p>
+        Definición de controles
+        y medidas preventivas
+        para reducir riesgos.
+      </p>
+
+    </article>
+
+
+
+    <article class="seguridad-paso">
+
+      <div class="seguridad-paso-numero">
+        04
+      </div>
+
+      <h3>
+        Mejorar
+      </h3>
+
+      <p>
+        Seguimiento de resultados
+        y fortalecimiento continuo
+        de las condiciones de seguridad.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+  class="industrial-cta"
+  data-aos="zoom-in"
+>
+
+
+  <div>
+
+    <span>
+      SEGURIDAD INDUSTRIAL
+    </span>
+
+
+    <h2>
+      ¿Necesitas identificar y controlar riesgos en tu operación?
+    </h2>
+
+
+    <p>
+      Podemos apoyarte con análisis de riesgos,
+      confiabilidad operacional,
+      diagnósticos y desarrollo
+      de atlas de riesgo.
+    </p>
+
+  </div>
+
+
+
+  <a
+    href="https://wa.me/529331596397"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <i class="fab fa-whatsapp"></i>
+
+    Solicitar información
+
+  </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     REGRESAR
+===================================================== -->
+
+<div class="regresar">
+
+  <a href="../index.html">
+
+    <i class="fas fa-arrow-left"></i>
+
+    Regresar a Servicios
+
+  </a>
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+      />
+
+
+      <div>
+
+        <strong>
+          SOS4 SERVICES
+        </strong>
+
+        <p>
+          Seguridad • Innovación • Confianza
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="../index.html#inicio">
+        Inicio
+      </a>
+
+      <a href="../index.html#nosotros">
+        Nosotros
+      </a>
+
+      <a href="../index.html#servicios">
+        Servicios
+      </a>
+
+      <a href="../index.html#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-social">
+
+      <a
+        href="https://wa.me/529331596397"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="current-year"></span>
+      SOS4 SERVICES.
+      Todos los derechos reservados.
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP FLOTANTE
+===================================================== -->
+
+<a
+  href="https://wa.me/529331596397"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  /* AOS */
+
+  AOS.init({
+
+    duration: 800,
+
+    once: true,
+
+    offset: 60
+
+  });
+
+
+
+  /* MENU MOBILE */
+
+  const toggle =
+    document.getElementById("menu-toggle");
+
+  const navMenu =
+    document.getElementById("nav-menu");
+
+
+  if (toggle && navMenu) {
+
+    toggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+
+      const icon =
+        toggle.querySelector("i");
+
+
+      if (navMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+      }
+
+      else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+  }
+
+
+
+  /* AÑO AUTOMÁTICO */
+
+  const year =
+    document.getElementById("current-year");
+
+
+  if (year) {
+
+    year.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,2080 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Sistemas de Gestión Integral | SOS4 SERVICES</title>
+
+  <meta
+    name="description"
+    content="Implementación de sistemas de gestión integral basados en normas ISO 9001, ISO 14001, ISO 45001, ISO 19011, ISO 37001 e ISO 31000."
+  />
+
+  <!-- CSS PRINCIPAL -->
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  />
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+
+  <!-- =====================================================
+       CSS EXCLUSIVO GESTIÓN INTEGRAL
+  ====================================================== -->
+
+  <style>
+
+
+    /* =====================================================
+       INTRODUCCIÓN
+    ====================================================== */
+
+    .gestion-intro {
+
+      max-width: 1250px;
+
+      margin:
+        60px auto 35px;
+
+      padding:
+        55px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 55px;
+
+      align-items: center;
+
+      background: #ffffff;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .gestion-imagen {
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .gestion-imagen img {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 560px;
+
+      height: auto;
+
+      border-radius: 20px;
+
+      border:
+        2px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .gestion-info span {
+
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .gestion-info h2 {
+
+      margin-bottom: 20px;
+
+      color:
+        var(--negro);
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+      line-height: 1.15;
+
+    }
+
+
+    .gestion-info p {
+
+      margin-bottom: 16px;
+
+      color: #626262;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =====================================================
+       INDICADORES
+    ====================================================== */
+
+    .gestion-stats {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 15px;
+
+      margin-top: 28px;
+
+    }
+
+
+    .gestion-stat {
+
+      padding:
+        20px 12px;
+
+      text-align: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff7f2,
+          #ffffff
+        );
+
+      border:
+        1px solid rgba(255,90,0,.15);
+
+    }
+
+
+    .gestion-stat strong {
+
+      display: block;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 1.55rem;
+
+      font-weight: 900;
+
+    }
+
+
+    .gestion-stat small {
+
+      color: #666;
+
+      font-weight: 700;
+
+    }
+
+
+
+    /* =====================================================
+       SECCIÓN ISO
+    ====================================================== */
+
+    .iso-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #151515 55%,
+          #211008
+        );
+
+      box-shadow:
+        0 18px 50px rgba(0,0,0,.22);
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+    }
+
+
+    .iso-header {
+
+      max-width: 850px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+
+    }
+
+
+    .iso-header > span {
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2.5px;
+
+    }
+
+
+    .iso-header h2 {
+
+      margin:
+        8px 0 12px;
+
+      color: white;
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+    }
+
+
+    .iso-header p {
+
+      color: #cfcfcf;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       TARJETAS ISO
+    ====================================================== */
+
+    .iso-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+
+    }
+
+
+    .iso-card {
+
+      position: relative;
+
+      min-height: 285px;
+
+      padding:
+        30px 24px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      align-items: center;
+
+      text-align: center;
+
+      overflow: hidden;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #111111,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.30);
+
+      transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+    }
+
+
+    .iso-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      border-color:
+        var(--naranja-electrico);
+
+      box-shadow:
+        0 18px 38px rgba(255,90,0,.15);
+
+    }
+
+
+    .iso-card::before {
+
+      content: "";
+
+      position: absolute;
+
+      width: 180px;
+
+      height: 180px;
+
+      right: -80px;
+
+      top: -90px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(255,90,0,.05);
+
+    }
+
+
+    .iso-icon {
+
+      width: 72px;
+
+      height: 72px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin-bottom: 18px;
+
+      border-radius: 16px;
+
+      color: white;
+
+      font-size: 1.6rem;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      box-shadow:
+        0 10px 25px rgba(255,90,0,.25);
+
+    }
+
+
+    .iso-numero {
+
+      display: inline-block;
+
+      margin-bottom: 7px;
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .78rem;
+
+      font-weight: 900;
+
+      letter-spacing: 1.2px;
+
+    }
+
+
+    .iso-card h3 {
+
+      margin-bottom: 10px;
+
+      color: white;
+
+      font-size: 1.15rem;
+
+    }
+
+
+    .iso-card p {
+
+      color: #d5d5d5;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       METODOLOGÍA
+    ====================================================== */
+
+    .gestion-metodologia {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .metodologia-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .metodo {
+
+      position: relative;
+
+      padding:
+        32px 22px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      border:
+        1px solid #ededed;
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .metodo:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .metodo-num {
+
+      width: 52px;
+
+      height: 52px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 18px;
+
+      border-radius: 50%;
+
+      color: white;
+
+      font-weight: 900;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-profundo),
+          var(--naranja-vivo)
+        );
+
+    }
+
+
+    .metodo h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .metodo p {
+
+      color: #666;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       PRINCIPIOS
+    ====================================================== */
+
+    .gestion-principios {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        50px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        90px 1fr;
+
+      gap: 30px;
+
+      align-items: center;
+
+      border-radius: 20px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          120deg,
+          #050505,
+          #571700,
+          #ff5a00
+        );
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .principios-icon {
+
+      width: 82px;
+
+      height: 82px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 20px;
+
+      background:
+        rgba(0,0,0,.25);
+
+      border:
+        1px solid rgba(255,255,255,.15);
+
+      font-size: 2rem;
+
+    }
+
+
+    .gestion-principios span {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+      color:
+        var(--ambar);
+
+      font-size: .8rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .gestion-principios h2 {
+
+      margin-bottom: 10px;
+
+      color: white;
+
+    }
+
+
+    .gestion-principios p {
+
+      color: #f5f5f5;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       BENEFICIOS
+    ====================================================== */
+
+    .gestion-beneficios {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .beneficios-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .beneficio {
+
+      padding:
+        30px 20px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      border:
+        1px solid #ededed;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .beneficio:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .beneficio i {
+
+      width: 62px;
+
+      height: 62px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 17px;
+
+      border-radius: 15px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.4rem;
+
+    }
+
+
+    .beneficio h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .beneficio p {
+
+      color: #666;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 1000px) {
+
+      .iso-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+
+      .metodologia-grid,
+      .beneficios-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+    }
+
+
+    @media (max-width: 900px) {
+
+      .gestion-intro {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .gestion-principios {
+
+        grid-template-columns:
+          1fr;
+
+        text-align: center;
+
+      }
+
+
+      .principios-icon {
+
+        margin: auto;
+
+      }
+
+    }
+
+
+    @media (max-width: 768px) {
+
+      .gestion-intro {
+
+        margin:
+          30px 15px 35px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .iso-section,
+      .gestion-metodologia,
+      .gestion-beneficios {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          45px 22px;
+
+      }
+
+
+      .gestion-principios {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          35px 22px;
+
+      }
+
+    }
+
+
+    @media (max-width: 560px) {
+
+      .gestion-stats {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .iso-grid,
+      .metodologia-grid,
+      .beneficios-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER PRINCIPAL
+===================================================== -->
+
+<header class="main-header">
+
+  <div class="header-container">
+
+
+    <a
+      href="../index.html#inicio"
+      class="brand"
+    >
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+        class="logo"
+      />
+
+
+      <div class="brand-text">
+
+        <span class="brand-name">
+          SOS4 SERVICES
+        </span>
+
+        <small>
+          Safety • Engineering • Solutions
+        </small>
+
+      </div>
+
+    </a>
+
+
+
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+    >
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+
+
+    <nav id="nav-menu">
+
+
+      <a href="../index.html#inicio">
+
+        <i class="fas fa-house"></i>
+
+        Inicio
+
+      </a>
+
+
+
+      <div class="dropdown">
+
+        <a
+          href="../index.html#nosotros"
+          class="dropbtn"
+        >
+
+          <i class="fas fa-building"></i>
+
+          Nosotros
+
+          <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+
+        <div class="dropdown-content">
+
+          <a href="../nosotros/mision.html">
+            Misión, Visión y Valores
+          </a>
+
+          <a href="../nosotros/acerca.html">
+            Acerca de Nosotros
+          </a>
+
+          <a href="../nosotros/filosofia.html">
+            Filosofía Empresarial
+          </a>
+
+          <a href="../nosotros/alcance.html">
+            Alcance
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <a href="../index.html#servicios">
+
+        <i class="fas fa-gears"></i>
+
+        Servicios
+
+      </a>
+
+
+
+      <a href="../index.html#galeria">
+
+        <i class="fas fa-images"></i>
+
+        Galería
+
+      </a>
+
+
+
+      <a href="../index.html#contacto">
+
+        <i class="fas fa-envelope"></i>
+
+        Contacto
+
+      </a>
+
+
+
+      <a
+        href="https://wa.me/529331596397"
+        class="nav-contacto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+        Cotizar
+
+      </a>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="serv-header">
+
+  <div data-aos="fade-up">
+
+    <span class="hero-badge">
+
+      <i class="fas fa-chart-line"></i>
+
+      GESTIÓN Y MEJORA CONTINUA
+
+    </span>
+
+
+    <h1>
+      Sistemas de Gestión Integral
+    </h1>
+
+
+    <p>
+      Implementación de sistemas basados en normas ISO
+      para fortalecer la calidad, seguridad,
+      sostenibilidad y desempeño organizacional.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section
+  class="gestion-intro"
+  data-aos="fade-up"
+>
+
+
+  <div
+    class="gestion-imagen"
+    data-aos="fade-right"
+  >
+
+    <img
+      src="../img/gestion-integral.jpeg"
+      alt="Sistemas de Gestión Integral ISO"
+    />
+
+  </div>
+
+
+
+  <div
+    class="gestion-info"
+    data-aos="fade-left"
+  >
+
+    <span>
+      SISTEMAS DE GESTIÓN ISO
+    </span>
+
+
+    <h2>
+      Implementación de normas internacionales
+    </h2>
+
+
+    <p>
+
+      Las normas ISO son estándares
+      de reconocimiento internacional
+      que permiten a las organizaciones
+      establecer criterios estructurados
+      para la gestión de sus procesos.
+
+    </p>
+
+
+    <p>
+
+      En <strong>SOS4 SERVICES</strong>
+      apoyamos a las organizaciones
+      en la implementación de Sistemas
+      de Gestión Integral adaptados
+      a sus necesidades y actividades.
+
+    </p>
+
+
+    <p>
+
+      El objetivo es fortalecer
+      la eficiencia operativa,
+      el cumplimiento normativo
+      y la mejora continua en todas
+      las áreas de la organización.
+
+    </p>
+
+
+
+    <div class="gestion-stats">
+
+
+      <div class="gestion-stat">
+
+        <strong>
+          ISO
+        </strong>
+
+        <small>
+          Estándares
+        </small>
+
+      </div>
+
+
+      <div class="gestion-stat">
+
+        <strong>
+          SGI
+        </strong>
+
+        <small>
+          Gestión Integral
+        </small>
+
+      </div>
+
+
+      <div class="gestion-stat">
+
+        <strong>
+          PHVA
+        </strong>
+
+        <small>
+          Mejora Continua
+        </small>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     NORMAS ISO
+===================================================== -->
+
+<section
+  class="iso-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="iso-header">
+
+    <span>
+      NORMAS DE REFERENCIA
+    </span>
+
+
+    <h2>
+      Sistemas que podemos implementar
+    </h2>
+
+
+    <p>
+      Integramos diferentes estándares
+      de gestión de acuerdo con los objetivos,
+      riesgos y necesidades de cada organización.
+    </p>
+
+  </div>
+
+
+
+  <div class="iso-grid">
+
+
+    <!-- ISO 9001 -->
+
+    <article
+      class="iso-card"
+      data-aos="zoom-in"
+    >
+
+      <div class="iso-icon">
+
+        <i class="fas fa-award"></i>
+
+      </div>
+
+
+      <span class="iso-numero">
+        ISO 9001
+      </span>
+
+
+      <h3>
+        Gestión de la Calidad
+      </h3>
+
+
+      <p>
+        Orientada a fortalecer
+        la calidad de los procesos,
+        productos y servicios,
+        así como la satisfacción del cliente.
+      </p>
+
+    </article>
+
+
+
+    <!-- ISO 14001 -->
+
+    <article
+      class="iso-card"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+    >
+
+      <div class="iso-icon">
+
+        <i class="fas fa-leaf"></i>
+
+      </div>
+
+
+      <span class="iso-numero">
+        ISO 14001
+      </span>
+
+
+      <h3>
+        Gestión Ambiental
+      </h3>
+
+
+      <p>
+        Permite establecer controles
+        para gestionar aspectos ambientales
+        y mejorar el desempeño ambiental
+        de la organización.
+      </p>
+
+    </article>
+
+
+
+    <!-- ISO 45001 -->
+
+    <article
+      class="iso-card"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+
+      <div class="iso-icon">
+
+        <i class="fas fa-helmet-safety"></i>
+
+      </div>
+
+
+      <span class="iso-numero">
+        ISO 45001
+      </span>
+
+
+      <h3>
+        Seguridad y Salud en el Trabajo
+      </h3>
+
+
+      <p>
+        Orientada a controlar riesgos laborales,
+        prevenir lesiones y mejorar
+        las condiciones de seguridad
+        y salud en el trabajo.
+      </p>
+
+    </article>
+
+
+
+    <!-- ISO 19011 -->
+
+    <article
+      class="iso-card"
+      data-aos="zoom-in"
+    >
+
+      <div class="iso-icon">
+
+        <i class="fas fa-clipboard-check"></i>
+
+      </div>
+
+
+      <span class="iso-numero">
+        ISO 19011
+      </span>
+
+
+      <h3>
+        Auditoría de Sistemas de Gestión
+      </h3>
+
+
+      <p>
+        Proporciona directrices
+        para la planificación,
+        realización y gestión
+        de auditorías de sistemas.
+      </p>
+
+    </article>
+
+
+
+    <!-- ISO 37001 -->
+
+    <article
+      class="iso-card"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+    >
+
+      <div class="iso-icon">
+
+        <i class="fas fa-scale-balanced"></i>
+
+      </div>
+
+
+      <span class="iso-numero">
+        ISO 37001
+      </span>
+
+
+      <h3>
+        Gestión Antisoborno
+      </h3>
+
+
+      <p>
+        Sistema orientado a establecer
+        controles para prevenir,
+        detectar y gestionar riesgos
+        relacionados con el soborno.
+      </p>
+
+    </article>
+
+
+
+    <!-- ISO 31000 -->
+
+    <article
+      class="iso-card"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+
+      <div class="iso-icon">
+
+        <i class="fas fa-triangle-exclamation"></i>
+
+      </div>
+
+
+      <span class="iso-numero">
+        ISO 31000
+      </span>
+
+
+      <h3>
+        Gestión del Riesgo
+      </h3>
+
+
+      <p>
+        Proporciona principios
+        y directrices para identificar,
+        evaluar y gestionar riesgos
+        dentro de la organización.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     METODOLOGÍA
+===================================================== -->
+
+<section
+  class="gestion-metodologia"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      METODOLOGÍA DE IMPLEMENTACIÓN
+    </span>
+
+
+    <h2>
+      Del diagnóstico a la mejora continua
+    </h2>
+
+
+    <p>
+      Un proceso estructurado para integrar
+      el sistema de gestión a las operaciones
+      reales de la organización.
+    </p>
+
+  </div>
+
+
+
+  <div class="metodologia-grid">
+
+
+    <article class="metodo">
+
+      <div class="metodo-num">
+        01
+      </div>
+
+      <h3>
+        Diagnóstico
+      </h3>
+
+      <p>
+        Evaluación inicial
+        de procesos, documentación,
+        riesgos y cumplimiento existente.
+      </p>
+
+    </article>
+
+
+
+    <article class="metodo">
+
+      <div class="metodo-num">
+        02
+      </div>
+
+      <h3>
+        Planificación
+      </h3>
+
+      <p>
+        Definición de objetivos,
+        responsabilidades, controles
+        y acciones necesarias.
+      </p>
+
+    </article>
+
+
+
+    <article class="metodo">
+
+      <div class="metodo-num">
+        03
+      </div>
+
+      <h3>
+        Implementación
+      </h3>
+
+      <p>
+        Desarrollo de procedimientos,
+        controles, capacitación
+        y documentación del sistema.
+      </p>
+
+    </article>
+
+
+
+    <article class="metodo">
+
+      <div class="metodo-num">
+        04
+      </div>
+
+      <h3>
+        Seguimiento
+      </h3>
+
+      <p>
+        Evaluación del desempeño,
+        auditoría y establecimiento
+        de acciones de mejora continua.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PRINCIPIOS
+===================================================== -->
+
+<section
+  class="gestion-principios"
+  data-aos="zoom-in"
+>
+
+
+  <div class="principios-icon">
+
+    <i class="fas fa-arrows-rotate"></i>
+
+  </div>
+
+
+  <div>
+
+    <span>
+      MEJORA CONTINUA
+    </span>
+
+
+    <h2>
+      Gestión, liderazgo, planificación y mejora
+    </h2>
+
+
+    <p>
+      Los sistemas de gestión permiten integrar
+      procesos, responsabilidades y objetivos
+      dentro de una estructura organizada,
+      promoviendo el liderazgo, la planificación,
+      la evaluación del desempeño y la mejora continua.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     BENEFICIOS
+===================================================== -->
+
+<section
+  class="gestion-beneficios"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      BENEFICIOS
+    </span>
+
+
+    <h2>
+      Fortalece el desempeño de tu organización
+    </h2>
+
+
+    <p>
+      La integración de sistemas de gestión
+      permite establecer procesos más sólidos,
+      medibles y orientados a resultados.
+    </p>
+
+  </div>
+
+
+
+  <div class="beneficios-grid">
+
+
+    <article class="beneficio">
+
+      <i class="fas fa-gears"></i>
+
+      <h3>
+        Eficiencia Operativa
+      </h3>
+
+      <p>
+        Procesos organizados,
+        responsabilidades definidas
+        y mejores controles operativos.
+      </p>
+
+    </article>
+
+
+
+    <article class="beneficio">
+
+      <i class="fas fa-file-shield"></i>
+
+      <h3>
+        Cumplimiento
+      </h3>
+
+      <p>
+        Mayor control sobre requisitos
+        normativos, internos
+        y contractuales.
+      </p>
+
+    </article>
+
+
+
+    <article class="beneficio">
+
+      <i class="fas fa-chart-line"></i>
+
+      <h3>
+        Mejora Continua
+      </h3>
+
+      <p>
+        Evaluación constante
+        para identificar oportunidades
+        y fortalecer el desempeño.
+      </p>
+
+    </article>
+
+
+
+    <article class="beneficio">
+
+      <i class="fas fa-shield-halved"></i>
+
+      <h3>
+        Gestión de Riesgos
+      </h3>
+
+      <p>
+        Identificación y control
+        de riesgos que pueden afectar
+        los objetivos de la organización.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+  class="industrial-cta"
+  data-aos="zoom-in"
+>
+
+
+  <div>
+
+    <span>
+      SISTEMAS DE GESTIÓN ISO
+    </span>
+
+
+    <h2>
+      ¿Necesitas implementar un sistema de gestión?
+    </h2>
+
+
+    <p>
+      Podemos ayudarte a estructurar
+      e integrar un sistema de gestión
+      de acuerdo con las necesidades
+      y objetivos de tu organización.
+    </p>
+
+  </div>
+
+
+
+  <a
+    href="https://wa.me/529331596397"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <i class="fab fa-whatsapp"></i>
+
+    Solicitar información
+
+  </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     REGRESAR
+===================================================== -->
+
+<div class="regresar">
+
+  <a href="../index.html">
+
+    <i class="fas fa-arrow-left"></i>
+
+    Regresar a Servicios
+
+  </a>
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+      />
+
+
+      <div>
+
+        <strong>
+          SOS4 SERVICES
+        </strong>
+
+        <p>
+          Seguridad • Innovación • Confianza
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="../index.html#inicio">
+        Inicio
+      </a>
+
+      <a href="../index.html#nosotros">
+        Nosotros
+      </a>
+
+      <a href="../index.html#servicios">
+        Servicios
+      </a>
+
+      <a href="../index.html#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-social">
+
+      <a
+        href="https://wa.me/529331596397"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="current-year"></span>
+      SOS4 SERVICES.
+      Todos los derechos reservados.
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP FLOTANTE
+===================================================== -->
+
+<a
+  href="https://wa.me/529331596397"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  /* AOS */
+
+  AOS.init({
+
+    duration: 800,
+
+    once: true,
+
+    offset: 60
+
+  });
+
+
+
+  /* MENU MOBILE */
+
+  const toggle =
+    document.getElementById("menu-toggle");
+
+  const navMenu =
+    document.getElementById("nav-menu");
+
+
+  if (toggle && navMenu) {
+
+    toggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+
+      const icon =
+        toggle.querySelector("i");
+
+
+      if (navMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+      }
+
+      else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+  }
+
+
+
+  /* AÑO AUTOMÁTICO */
+
+  const year =
+    document.getElementById("current-year");
+
+
+  if (year) {
+
+    year.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

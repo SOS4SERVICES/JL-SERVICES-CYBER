@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Protección Ambiental | SOS4 SERVICES</title>
+
+  <meta
+    name="description"
+    content="Servicios de protección ambiental, trámites, diagnósticos, cumplimiento, manejo de residuos y gestión ambiental para empresas e instalaciones industriales."
+  />
+
+  <!-- CSS PRINCIPAL -->
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  />
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+
+  <!-- =====================================================
+       CSS EXCLUSIVO PROTECCIÓN AMBIENTAL
+  ====================================================== -->
+
+  <style>
+
+
+    /* =====================================================
+       INTRODUCCIÓN
+    ====================================================== */
+
+    .ambiental-intro {
+
+      max-width: 1250px;
+
+      margin:
+        60px auto 35px;
+
+      padding:
+        55px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 55px;
+
+      align-items: center;
+
+      background: #ffffff;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .ambiental-imagen {
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .ambiental-imagen img {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 560px;
+
+      height: auto;
+
+      border-radius: 20px;
+
+      border:
+        2px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .ambiental-info span {
+
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .ambiental-info h2 {
+
+      margin-bottom: 20px;
+
+      color:
+        var(--negro);
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+      line-height: 1.15;
+
+    }
+
+
+    .ambiental-info p {
+
+      margin-bottom: 16px;
+
+      color: #626262;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =====================================================
+       INDICADORES
+    ====================================================== */
+
+    .ambiental-stats {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 15px;
+
+      margin-top: 28px;
+
+    }
+
+
+    .ambiental-stat {
+
+      padding:
+        20px 12px;
+
+      text-align: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff7f2,
+          #ffffff
+        );
+
+      border:
+        1px solid rgba(255,90,0,.15);
+
+    }
+
+
+    .ambiental-stat strong {
+
+      display: block;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 1.5rem;
+
+      font-weight: 900;
+
+    }
+
+
+    .ambiental-stat small {
+
+      color: #666;
+
+      font-weight: 700;
+
+    }
+
+
+
+    /* =====================================================
+       SERVICIOS AMBIENTALES
+    ====================================================== */
+
+    .ambiental-servicios {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #151515 55%,
+          #211008
+        );
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 50px rgba(0,0,0,.22);
+
+    }
+
+
+    .ambiental-header {
+
+      max-width: 850px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+
+    }
+
+
+    .ambiental-header > span {
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2.5px;
+
+    }
+
+
+    .ambiental-header h2 {
+
+      margin:
+        8px 0 12px;
+
+      color: white;
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+    }
+
+
+    .ambiental-header p {
+
+      color: #cfcfcf;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       GRID DE SERVICIOS
+    ====================================================== */
+
+    .ambiental-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+
+    }
+
+
+    .ambiental-card {
+
+      position: relative;
+
+      min-height: 235px;
+
+      padding:
+        30px 22px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      align-items: center;
+
+      text-align: center;
+
+      overflow: hidden;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #111111,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.28);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .ambiental-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      border-color:
+        var(--naranja-electrico);
+
+      box-shadow:
+        0 18px 38px rgba(255,90,0,.15);
+
+    }
+
+
+    .ambiental-card::before {
+
+      content: "";
+
+      position: absolute;
+
+      width: 170px;
+
+      height: 170px;
+
+      right: -80px;
+
+      top: -85px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(255,90,0,.05);
+
+    }
+
+
+    .ambiental-card-icon {
+
+      width: 68px;
+
+      height: 68px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin-bottom: 18px;
+
+      border-radius: 16px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.5rem;
+
+      box-shadow:
+        0 10px 25px rgba(255,90,0,.22);
+
+    }
+
+
+    .ambiental-card h3 {
+
+      margin-bottom: 9px;
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: 1.08rem;
+
+    }
+
+
+    .ambiental-card p {
+
+      color: #d7d7d7;
+
+      font-size: .9rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       GESTIÓN DE RESIDUOS
+    ====================================================== */
+
+    .residuos-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .residuos-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .residuo-card {
+
+      padding:
+        32px 22px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      border:
+        1px solid #ededed;
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .residuo-card:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .residuo-card i {
+
+      width: 62px;
+
+      height: 62px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 17px;
+
+      border-radius: 15px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.4rem;
+
+    }
+
+
+    .residuo-card h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .residuo-card p {
+
+      color: #666;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       ASPECTOS E IMPACTOS
+    ====================================================== */
+
+    .impactos-box {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        50px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        90px 1fr;
+
+      gap: 30px;
+
+      align-items: center;
+
+      border-radius: 20px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          120deg,
+          #050505,
+          #571700,
+          #ff5a00
+        );
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .impactos-icon {
+
+      width: 82px;
+
+      height: 82px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 20px;
+
+      background:
+        rgba(0,0,0,.25);
+
+      border:
+        1px solid rgba(255,255,255,.15);
+
+      font-size: 2rem;
+
+    }
+
+
+    .impactos-box span {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+      color:
+        var(--ambar);
+
+      font-size: .8rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .impactos-box h2 {
+
+      margin-bottom: 10px;
+
+      color: white;
+
+    }
+
+
+    .impactos-box p {
+
+      color: #f5f5f5;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       PROCESO DE GESTIÓN
+    ====================================================== */
+
+    .proceso-ambiental {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .proceso-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .proceso-item {
+
+      padding:
+        32px 22px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      border:
+        1px solid #ededed;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .proceso-item:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .proceso-numero {
+
+      width: 54px;
+
+      height: 54px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 18px;
+
+      border-radius: 50%;
+
+      color: white;
+
+      font-weight: 900;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-profundo),
+          var(--naranja-vivo)
+        );
+
+    }
+
+
+    .proceso-item h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .proceso-item p {
+
+      color: #666;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 1000px) {
+
+      .ambiental-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+
+      .residuos-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+
+      .proceso-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+    }
+
+
+    @media (max-width: 900px) {
+
+      .ambiental-intro {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .impactos-box {
+
+        grid-template-columns:
+          1fr;
+
+        text-align: center;
+
+      }
+
+
+      .impactos-icon {
+
+        margin: auto;
+
+      }
+
+    }
+
+
+    @media (max-width: 768px) {
+
+      .ambiental-intro {
+
+        margin:
+          30px 15px 35px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .ambiental-servicios,
+      .residuos-section,
+      .proceso-ambiental {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          45px 22px;
+
+      }
+
+
+      .impactos-box {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          35px 22px;
+
+      }
+
+    }
+
+
+    @media (max-width: 560px) {
+
+      .ambiental-stats {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .ambiental-grid,
+      .residuos-grid,
+      .proceso-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER PRINCIPAL
+===================================================== -->
+
+<header class="main-header">
+
+  <div class="header-container">
+
+
+    <a
+      href="../index.html#inicio"
+      class="brand"
+    >
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+        class="logo"
+      />
+
+
+      <div class="brand-text">
+
+        <span class="brand-name">
+          SOS4 SERVICES
+        </span>
+
+        <small>
+          Safety • Engineering • Solutions
+        </small>
+
+      </div>
+
+    </a>
+
+
+
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+    >
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+
+
+    <nav id="nav-menu">
+
+
+      <a href="../index.html#inicio">
+
+        <i class="fas fa-house"></i>
+
+        Inicio
+
+      </a>
+
+
+
+      <div class="dropdown">
+
+        <a
+          href="../index.html#nosotros"
+          class="dropbtn"
+        >
+
+          <i class="fas fa-building"></i>
+
+          Nosotros
+
+          <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+
+        <div class="dropdown-content">
+
+          <a href="../nosotros/mision.html">
+            Misión, Visión y Valores
+          </a>
+
+          <a href="../nosotros/acerca.html">
+            Acerca de Nosotros
+          </a>
+
+          <a href="../nosotros/filosofia.html">
+            Filosofía Empresarial
+          </a>
+
+          <a href="../nosotros/alcance.html">
+            Alcance
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <a href="../index.html#servicios">
+
+        <i class="fas fa-gears"></i>
+
+        Servicios
+
+      </a>
+
+
+
+      <a href="../index.html#galeria">
+
+        <i class="fas fa-images"></i>
+
+        Galería
+
+      </a>
+
+
+
+      <a href="../index.html#contacto">
+
+        <i class="fas fa-envelope"></i>
+
+        Contacto
+
+      </a>
+
+
+
+      <a
+        href="https://wa.me/529331596397"
+        class="nav-contacto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+        Cotizar
+
+      </a>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="serv-header">
+
+  <div data-aos="fade-up">
+
+    <span class="hero-badge">
+
+      <i class="fas fa-leaf"></i>
+
+      GESTIÓN Y SOSTENIBILIDAD
+
+    </span>
+
+
+    <h1>
+      Protección Ambiental
+    </h1>
+
+
+    <p>
+      Gestión ambiental, cumplimiento regulatorio
+      y soluciones para reducir impactos
+      y fortalecer la sostenibilidad empresarial.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section
+  class="ambiental-intro"
+  data-aos="fade-up"
+>
+
+
+  <div
+    class="ambiental-imagen"
+    data-aos="fade-right"
+  >
+
+    <img
+      src="../img/proteccion-ambiental.jpeg"
+      alt="Protección Ambiental SOS4 SERVICES"
+    />
+
+  </div>
+
+
+
+  <div
+    class="ambiental-info"
+    data-aos="fade-left"
+  >
+
+    <span>
+      GESTIÓN AMBIENTAL
+    </span>
+
+
+    <h2>
+      Cumplimiento, prevención y sostenibilidad
+    </h2>
+
+
+    <p>
+
+      <strong>SOS4 SERVICES</strong>
+      ofrece servicios de gestión ambiental
+      orientados al cumplimiento de requisitos
+      aplicables y a la prevención de impactos
+      ambientales derivados de las operaciones.
+
+    </p>
+
+
+    <p>
+
+      Apoyamos a las organizaciones
+      en trámites, diagnósticos, registros,
+      informes y programas de manejo
+      de residuos.
+
+    </p>
+
+
+    <p>
+
+      Nuestro objetivo es fortalecer
+      el desempeño ambiental mediante
+      controles operacionales,
+      gestión de riesgos y mejora continua.
+
+    </p>
+
+
+
+    <div class="ambiental-stats">
+
+
+      <div class="ambiental-stat">
+
+        <strong>
+          RME
+        </strong>
+
+        <small>
+          Manejo Especial
+        </small>
+
+      </div>
+
+
+      <div class="ambiental-stat">
+
+        <strong>
+          RP
+        </strong>
+
+        <small>
+          Residuos Peligrosos
+        </small>
+
+      </div>
+
+
+      <div class="ambiental-stat">
+
+        <strong>
+          ESG
+        </strong>
+
+        <small>
+          Sostenibilidad
+        </small>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICIOS AMBIENTALES
+===================================================== -->
+
+<section
+  class="ambiental-servicios"
+  data-aos="fade-up"
+>
+
+
+  <div class="ambiental-header">
+
+    <span>
+      SERVICIOS AMBIENTALES
+    </span>
+
+
+    <h2>
+      Gestión y cumplimiento ambiental
+    </h2>
+
+
+    <p>
+      Apoyamos a las organizaciones
+      en diferentes procesos regulatorios
+      y administrativos relacionados
+      con sus obligaciones ambientales.
+    </p>
+
+  </div>
+
+
+
+  <div class="ambiental-grid">
+
+
+    <article class="ambiental-card">
+
+      <div class="ambiental-card-icon">
+        <i class="fas fa-building-columns"></i>
+      </div>
+
+      <h3>
+        Trámites Ambientales
+      </h3>
+
+      <p>
+        Gestión de trámites ante
+        instancias federales,
+        estatales y municipales.
+      </p>
+
+    </article>
+
+
+
+    <article class="ambiental-card">
+
+      <div class="ambiental-card-icon">
+        <i class="fas fa-clipboard-check"></i>
+      </div>
+
+      <h3>
+        Diagnósticos Ambientales
+      </h3>
+
+      <p>
+        Evaluación de condiciones,
+        obligaciones y nivel
+        de cumplimiento ambiental.
+      </p>
+
+    </article>
+
+
+
+    <article class="ambiental-card">
+
+      <div class="ambiental-card-icon">
+        <i class="fas fa-map-location-dot"></i>
+      </div>
+
+      <h3>
+        Factibilidad de Uso de Suelo
+      </h3>
+
+      <p>
+        Gestión documental relacionada
+        con la factibilidad
+        y uso de suelo.
+      </p>
+
+    </article>
+
+
+
+    <article class="ambiental-card">
+
+      <div class="ambiental-card-icon">
+        <i class="fas fa-tree"></i>
+      </div>
+
+      <h3>
+        No Alteración Ambiental
+      </h3>
+
+      <p>
+        Gestión de constancias
+        relacionadas con la no alteración
+        del medio ambiente
+        y entorno ecológico.
+      </p>
+
+    </article>
+
+
+
+    <article class="ambiental-card">
+
+      <div class="ambiental-card-icon">
+        <i class="fas fa-triangle-exclamation"></i>
+      </div>
+
+      <h3>
+        Generador de Residuos Peligrosos
+      </h3>
+
+      <p>
+        Apoyo en procesos de registro
+        como empresa generadora
+        de residuos peligrosos.
+      </p>
+
+    </article>
+
+
+
+    <article class="ambiental-card">
+
+      <div class="ambiental-card-icon">
+        <i class="fas fa-recycle"></i>
+      </div>
+
+      <h3>
+        Residuos de Manejo Especial
+      </h3>
+
+      <p>
+        Gestión de registro
+        como empresa generadora
+        de residuos de manejo especial.
+      </p>
+
+    </article>
+
+
+
+    <article class="ambiental-card">
+
+      <div class="ambiental-card-icon">
+        <i class="fas fa-id-card"></i>
+      </div>
+
+      <h3>
+        Registro REPSE
+      </h3>
+
+      <p>
+        Apoyo documental
+        en procesos administrativos
+        relacionados con el registro REPSE.
+      </p>
+
+    </article>
+
+
+
+    <article class="ambiental-card">
+
+      <div class="ambiental-card-icon">
+        <i class="fas fa-file-lines"></i>
+      </div>
+
+      <h3>
+        Informes Anuales
+      </h3>
+
+      <p>
+        Elaboración de informes
+        correspondientes a RME y RP
+        de acuerdo con los requerimientos aplicables.
+      </p>
+
+    </article>
+
+
+
+    <article class="ambiental-card">
+
+      <div class="ambiental-card-icon">
+        <i class="fas fa-seedling"></i>
+      </div>
+
+      <h3>
+        Cumplimiento Ambiental
+      </h3>
+
+      <p>
+        Seguimiento de obligaciones
+        y acciones orientadas
+        al desempeño ambiental
+        de la organización.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     GESTIÓN DE RESIDUOS
+===================================================== -->
+
+<section
+  class="residuos-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      MANEJO INTEGRAL DE RESIDUOS
+    </span>
+
+
+    <h2>
+      Gestión desde la generación hasta la disposición
+    </h2>
+
+
+    <p>
+      Desarrollamos programas orientados
+      al manejo responsable de residuos
+      dentro de las operaciones.
+    </p>
+
+  </div>
+
+
+
+  <div class="residuos-grid">
+
+
+    <article class="residuo-card">
+
+      <i class="fas fa-boxes-stacked"></i>
+
+      <h3>
+        Clasificación
+      </h3>
+
+      <p>
+        Identificación y separación
+        de residuos de acuerdo
+        con sus características.
+      </p>
+
+    </article>
+
+
+
+    <article class="residuo-card">
+
+      <i class="fas fa-flask-vial"></i>
+
+      <h3>
+        Tratamiento
+      </h3>
+
+      <p>
+        Definición de alternativas
+        de manejo y tratamiento
+        según el tipo de residuo.
+      </p>
+
+    </article>
+
+
+
+    <article class="residuo-card">
+
+      <i class="fas fa-truck"></i>
+
+      <h3>
+        Disposición
+      </h3>
+
+      <p>
+        Seguimiento de procesos
+        para una disposición adecuada
+        y controlada.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ASPECTOS E IMPACTOS
+===================================================== -->
+
+<section
+  class="impactos-box"
+  data-aos="zoom-in"
+>
+
+
+  <div class="impactos-icon">
+
+    <i class="fas fa-earth-americas"></i>
+
+  </div>
+
+
+  <div>
+
+    <span>
+      ASPECTOS E IMPACTOS AMBIENTALES
+    </span>
+
+
+    <h2>
+      Identificación, evaluación y control
+    </h2>
+
+
+    <p>
+      Desarrollamos procesos para identificar
+      y evaluar aspectos e impactos ambientales,
+      permitiendo establecer controles operacionales
+      orientados a mitigar riesgos, fortalecer
+      el cumplimiento y mejorar el desempeño
+      ambiental de las actividades empresariales.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PROCESO
+===================================================== -->
+
+<section
+  class="proceso-ambiental"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      ENFOQUE DE GESTIÓN
+    </span>
+
+
+    <h2>
+      Un proceso orientado a la prevención
+    </h2>
+
+
+    <p>
+      La gestión ambiental requiere identificar
+      riesgos, establecer controles
+      y mantener un seguimiento continuo.
+    </p>
+
+  </div>
+
+
+
+  <div class="proceso-grid">
+
+
+    <article class="proceso-item">
+
+      <div class="proceso-numero">
+        01
+      </div>
+
+      <h3>
+        Identificar
+      </h3>
+
+      <p>
+        Reconocimiento de aspectos,
+        impactos y obligaciones
+        aplicables a la operación.
+      </p>
+
+    </article>
+
+
+
+    <article class="proceso-item">
+
+      <div class="proceso-numero">
+        02
+      </div>
+
+      <h3>
+        Evaluar
+      </h3>
+
+      <p>
+        Determinación de riesgos,
+        prioridades y posibles
+        afectaciones ambientales.
+      </p>
+
+    </article>
+
+
+
+    <article class="proceso-item">
+
+      <div class="proceso-numero">
+        03
+      </div>
+
+      <h3>
+        Controlar
+      </h3>
+
+      <p>
+        Implementación de medidas
+        y controles operacionales
+        para prevenir impactos.
+      </p>
+
+    </article>
+
+
+
+    <article class="proceso-item">
+
+      <div class="proceso-numero">
+        04
+      </div>
+
+      <h3>
+        Mejorar
+      </h3>
+
+      <p>
+        Seguimiento de resultados
+        y establecimiento de acciones
+        de mejora continua.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+  class="industrial-cta"
+  data-aos="zoom-in"
+>
+
+
+  <div>
+
+    <span>
+      PROTECCIÓN AMBIENTAL
+    </span>
+
+
+    <h2>
+      ¿Necesitas apoyo en gestión ambiental?
+    </h2>
+
+
+    <p>
+      Podemos ayudarte con trámites,
+      diagnósticos, residuos,
+      cumplimiento y programas
+      de gestión ambiental.
+    </p>
+
+  </div>
+
+
+
+  <a
+    href="https://wa.me/529331596397"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <i class="fab fa-whatsapp"></i>
+
+    Solicitar información
+
+  </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     REGRESAR
+===================================================== -->
+
+<div class="regresar">
+
+  <a href="../index.html">
+
+    <i class="fas fa-arrow-left"></i>
+
+    Regresar a Servicios
+
+  </a>
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+      />
+
+
+      <div>
+
+        <strong>
+          SOS4 SERVICES
+        </strong>
+
+        <p>
+          Seguridad • Innovación • Confianza
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="../index.html#inicio">
+        Inicio
+      </a>
+
+      <a href="../index.html#nosotros">
+        Nosotros
+      </a>
+
+      <a href="../index.html#servicios">
+        Servicios
+      </a>
+
+      <a href="../index.html#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-social">
+
+      <a
+        href="https://wa.me/529331596397"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="current-year"></span>
+      SOS4 SERVICES.
+      Todos los derechos reservados.
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP FLOTANTE
+===================================================== -->
+
+<a
+  href="https://wa.me/529331596397"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  /* AOS */
+
+  AOS.init({
+
+    duration: 800,
+
+    once: true,
+
+    offset: 60
+
+  });
+
+
+
+  /* MENU MOBILE */
+
+  const toggle =
+    document.getElementById("menu-toggle");
+
+  const navMenu =
+    document.getElementById("nav-menu");
+
+
+  if (toggle && navMenu) {
+
+    toggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+
+      const icon =
+        toggle.querySelector("i");
+
+
+      if (navMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+      }
+
+      else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+  }
+
+
+
+  /* AÑO AUTOMÁTICO */
+
+  const year =
+    document.getElementById("current-year");
+
+
+  if (year) {
+
+    year.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

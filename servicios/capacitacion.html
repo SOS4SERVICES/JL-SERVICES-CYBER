@@ -1,0 +1,2839 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Capacitación | SOS4 SERVICES</title>
+
+  <meta
+    name="description"
+    content="Cursos de capacitación en seguridad industrial, SSPA, protección ambiental, primeros auxilios, trabajos de alto riesgo y operaciones petroleras."
+  />
+
+
+  <!-- CSS PRINCIPAL -->
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  />
+
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+
+
+  <!-- =====================================================
+       CSS EXCLUSIVO DE CAPACITACIÓN
+  ====================================================== -->
+
+  <style>
+
+
+    /* =====================================================
+       INTRODUCCIÓN
+    ====================================================== */
+
+    .capacitacion-intro {
+
+      max-width: 1250px;
+
+      margin:
+        60px auto 35px;
+
+      padding:
+        55px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 55px;
+
+      align-items: center;
+
+      background:
+        #ffffff;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .capacitacion-imagen {
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .capacitacion-imagen img {
+
+      width: 100%;
+
+      max-width: 560px;
+
+      height: auto;
+
+      display: block;
+
+      border-radius: 20px;
+
+      border:
+        2px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .capacitacion-info span {
+
+      display: inline-block;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 12px;
+
+    }
+
+
+    .capacitacion-info h2 {
+
+      color:
+        var(--negro);
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+      line-height: 1.15;
+
+      margin-bottom: 20px;
+
+    }
+
+
+    .capacitacion-info p {
+
+      color: #626262;
+
+      line-height: 1.8;
+
+      margin-bottom: 16px;
+
+    }
+
+
+
+    /* =====================================================
+       ESTADÍSTICAS
+    ====================================================== */
+
+    .capacitacion-stats {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 15px;
+
+      margin-top: 28px;
+
+    }
+
+
+    .cap-stat {
+
+      padding:
+        20px 12px;
+
+      text-align: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff7f2,
+          #ffffff
+        );
+
+      border:
+        1px solid rgba(255,90,0,.15);
+
+    }
+
+
+    .cap-stat strong {
+
+      display: block;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 1.8rem;
+
+      font-weight: 900;
+
+    }
+
+
+    .cap-stat small {
+
+      color: #666;
+
+      font-weight: 700;
+
+    }
+
+
+
+    /* =====================================================
+       CATÁLOGO
+    ====================================================== */
+
+    .catalogo-capacitacion {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #151515 55%,
+          #211008
+        );
+
+      box-shadow:
+        0 18px 50px rgba(0,0,0,.22);
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+    }
+
+
+
+    /* =====================================================
+       ENCABEZADO DEL CATÁLOGO
+    ====================================================== */
+
+    .catalogo-header {
+
+      max-width: 850px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+
+    }
+
+
+    .catalogo-header > span {
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2.5px;
+
+    }
+
+
+    .catalogo-header h2 {
+
+      color: white;
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+      margin:
+        8px 0 12px;
+
+    }
+
+
+    .catalogo-header p {
+
+      color: #cfcfcf;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       BUSCADOR
+    ====================================================== */
+
+    .curso-buscador {
+
+      max-width: 700px;
+
+      margin:
+        0 auto 25px;
+
+      position: relative;
+
+    }
+
+
+    .curso-buscador i {
+
+      position: absolute;
+
+      left: 20px;
+
+      top: 50%;
+
+      transform:
+        translateY(-50%);
+
+      color:
+        var(--naranja-vivo);
+
+    }
+
+
+    .curso-buscador input {
+
+      width: 100%;
+
+      height: 58px;
+
+      padding:
+        0 20px 0 52px;
+
+      border: none;
+
+      outline: none;
+
+      border-radius: 30px;
+
+      color: #222;
+
+      background: white;
+
+      font-size: 1rem;
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,.2);
+
+    }
+
+
+
+    /* =====================================================
+       FILTROS
+    ====================================================== */
+
+    .curso-filtros {
+
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+
+      margin-bottom: 40px;
+
+    }
+
+
+    .filtro-btn {
+
+      border:
+        1px solid rgba(255,122,0,.35);
+
+      padding:
+        10px 20px;
+
+      border-radius: 30px;
+
+      color: #ddd;
+
+      background: #181818;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+      transition:
+        .25s ease;
+
+    }
+
+
+    .filtro-btn:hover,
+    .filtro-btn.active {
+
+      color: white;
+
+      border-color:
+        var(--naranja-electrico);
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-profundo),
+          var(--naranja-vivo)
+        );
+
+    }
+
+
+
+    /* =====================================================
+       LISTADO DE CURSOS
+    ====================================================== */
+
+    .cursos-lista {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0,1fr));
+
+      gap: 16px;
+
+    }
+
+
+
+    /* =====================================================
+       TARJETA CURSO
+    ====================================================== */
+
+    .curso-item {
+
+      position: relative;
+
+      min-height: 160px;
+
+      display: grid;
+
+      grid-template-columns:
+        72px 1fr;
+
+      gap: 20px;
+
+      align-items: center;
+
+      padding:
+        25px;
+
+      overflow: hidden;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #151515,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.22);
+
+      transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+    }
+
+
+    .curso-item:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        var(--naranja-electrico);
+
+      box-shadow:
+        0 18px 38px rgba(255,90,0,.13);
+
+    }
+
+
+
+    /* NÚMERO */
+
+    .curso-numero {
+
+      position: absolute;
+
+      right: 15px;
+
+      top: 8px;
+
+      font-size: 3.5rem;
+
+      line-height: 1;
+
+      font-weight: 900;
+
+      color:
+        rgba(255,255,255,.035);
+
+      pointer-events: none;
+
+    }
+
+
+
+    /* ICONO */
+
+    .curso-icono {
+
+      width: 68px;
+
+      height: 68px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 16px;
+
+      color: white;
+
+      font-size: 1.55rem;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      box-shadow:
+        0 8px 20px rgba(255,90,0,.22);
+
+    }
+
+
+
+    /* TEXTO */
+
+    .curso-contenido {
+
+      position: relative;
+
+      z-index: 2;
+
+    }
+
+
+    .curso-categoria {
+
+      display: inline-block;
+
+      margin-bottom: 6px;
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .72rem;
+
+      font-weight: 900;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .curso-contenido h3 {
+
+      margin-bottom: 7px;
+
+      color: white;
+
+      font-size: 1.08rem;
+
+    }
+
+
+    .curso-contenido p {
+
+      color: #cfcfcf;
+
+      font-size: .9rem;
+
+      line-height: 1.55;
+
+    }
+
+
+
+    /* =====================================================
+       MENSAJE SIN RESULTADOS
+    ====================================================== */
+
+    .sin-resultados {
+
+      display: none;
+
+      padding:
+        35px 20px;
+
+      grid-column:
+        1 / -1;
+
+      text-align: center;
+
+      color: #ccc;
+
+    }
+
+
+    .sin-resultados i {
+
+      display: block;
+
+      margin-bottom: 15px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 2.5rem;
+
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 900px) {
+
+      .capacitacion-intro {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .cursos-lista {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+
+
+    @media (max-width: 768px) {
+
+      .capacitacion-intro {
+
+        margin:
+          30px 15px 35px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .catalogo-capacitacion {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          45px 20px;
+
+      }
+
+
+      .capacitacion-stats {
+
+        grid-template-columns:
+          1fr 1fr 1fr;
+
+      }
+
+    }
+
+
+
+    @media (max-width: 520px) {
+
+      .capacitacion-stats {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .curso-item {
+
+        grid-template-columns:
+          55px 1fr;
+
+        padding:
+          20px 16px;
+
+        gap: 14px;
+
+      }
+
+
+      .curso-icono {
+
+        width: 54px;
+
+        height: 54px;
+
+        font-size: 1.25rem;
+
+      }
+
+
+      .curso-contenido h3 {
+
+        font-size: 1rem;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER PRINCIPAL
+===================================================== -->
+
+<header class="main-header">
+
+  <div class="header-container">
+
+
+    <a
+      href="../index.html#inicio"
+      class="brand"
+    >
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+        class="logo"
+      />
+
+
+      <div class="brand-text">
+
+        <span class="brand-name">
+          SOS4 SERVICES
+        </span>
+
+        <small>
+          Safety • Engineering • Solutions
+        </small>
+
+      </div>
+
+    </a>
+
+
+
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+    >
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+
+
+    <nav id="nav-menu">
+
+
+      <a href="../index.html#inicio">
+
+        <i class="fas fa-house"></i>
+
+        Inicio
+
+      </a>
+
+
+
+      <div class="dropdown">
+
+        <a
+          href="../index.html#nosotros"
+          class="dropbtn"
+        >
+
+          <i class="fas fa-building"></i>
+
+          Nosotros
+
+          <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+
+        <div class="dropdown-content">
+
+          <a href="../nosotros/mision.html">
+            Misión, Visión y Valores
+          </a>
+
+          <a href="../nosotros/acerca.html">
+            Acerca de Nosotros
+          </a>
+
+          <a href="../nosotros/filosofia.html">
+            Filosofía Empresarial
+          </a>
+
+          <a href="../nosotros/alcance.html">
+            Alcance
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <a href="../index.html#servicios">
+
+        <i class="fas fa-gears"></i>
+
+        Servicios
+
+      </a>
+
+
+
+      <a href="../index.html#galeria">
+
+        <i class="fas fa-images"></i>
+
+        Galería
+
+      </a>
+
+
+
+      <a href="../index.html#contacto">
+
+        <i class="fas fa-envelope"></i>
+
+        Contacto
+
+      </a>
+
+
+
+      <a
+        href="https://wa.me/529331596397"
+        class="nav-contacto"
+        target="_blank"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+        Cotizar
+
+      </a>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="serv-header">
+
+
+  <div data-aos="fade-up">
+
+
+    <span class="hero-badge">
+
+      <i class="fas fa-graduation-cap"></i>
+
+      FORMACIÓN PROFESIONAL
+
+    </span>
+
+
+    <h1>
+      Capacitación
+    </h1>
+
+
+    <p>
+      Programas especializados para fortalecer
+      la seguridad, competencia y desempeño
+      del personal industrial.
+    </p>
+
+
+  </div>
+
+
+</section>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section
+  class="capacitacion-intro"
+  data-aos="fade-up"
+>
+
+
+  <div
+    class="capacitacion-imagen"
+    data-aos="fade-right"
+  >
+
+    <img
+      src="../img/curso.jpeg"
+      alt="Capacitación SOS4 SERVICES"
+    />
+
+  </div>
+
+
+
+  <div
+    class="capacitacion-info"
+    data-aos="fade-left"
+  >
+
+    <span>
+      CAPACITACIÓN INDUSTRIAL
+    </span>
+
+
+    <h2>
+      Formación enfocada en seguridad y prevención
+    </h2>
+
+
+    <p>
+
+      En <strong>SOS4 SERVICES</strong>
+      ofrecemos programas de capacitación orientados
+      a la seguridad industrial, salud ocupacional,
+      protección ambiental y prevención de riesgos.
+
+    </p>
+
+
+    <p>
+
+      Nuestros programas están dirigidos al personal
+      que desarrolla actividades en instalaciones
+      industriales, petroleras, energéticas,
+      terrestres y costa afuera.
+
+    </p>
+
+
+
+    <div class="capacitacion-stats">
+
+
+      <div class="cap-stat">
+
+        <strong>
+          30+
+        </strong>
+
+        <small>
+          Cursos
+        </small>
+
+      </div>
+
+
+
+      <div class="cap-stat">
+
+        <strong>
+          SSPA
+        </strong>
+
+        <small>
+          Seguridad
+        </small>
+
+      </div>
+
+
+
+      <div class="cap-stat">
+
+        <strong>
+          HSE
+        </strong>
+
+        <small>
+          Formación
+        </small>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CATÁLOGO DE CURSOS
+===================================================== -->
+
+<section
+  class="catalogo-capacitacion"
+  data-aos="fade-up"
+>
+
+
+  <div class="catalogo-header">
+
+
+    <span>
+      CATÁLOGO DE CAPACITACIÓN
+    </span>
+
+
+    <h2>
+      Encuentra el curso que necesitas
+    </h2>
+
+
+    <p>
+      Consulta nuestros programas de capacitación
+      y filtra por área de especialización.
+    </p>
+
+
+  </div>
+
+
+
+  <!-- BUSCADOR -->
+
+  <div class="curso-buscador">
+
+
+    <i class="fas fa-magnifying-glass"></i>
+
+
+    <input
+      type="text"
+      id="buscarCurso"
+      placeholder="Buscar curso..."
+      autocomplete="off"
+    />
+
+
+  </div>
+
+
+
+  <!-- FILTROS -->
+
+  <div class="curso-filtros">
+
+
+    <button
+      class="filtro-btn active"
+      data-filter="todos"
+    >
+      Todos
+    </button>
+
+
+    <button
+      class="filtro-btn"
+      data-filter="seguridad"
+    >
+      Seguridad
+    </button>
+
+
+    <button
+      class="filtro-btn"
+      data-filter="emergencias"
+    >
+      Emergencias
+    </button>
+
+
+    <button
+      class="filtro-btn"
+      data-filter="ambiental"
+    >
+      Ambiental
+    </button>
+
+
+    <button
+      class="filtro-btn"
+      data-filter="operacion"
+    >
+      Operaciones
+    </button>
+
+
+    <button
+      class="filtro-btn"
+      data-filter="petrolero"
+    >
+      Petrolero
+    </button>
+
+
+  </div>
+
+
+
+  <!-- =====================================================
+       CURSOS
+  ====================================================== -->
+
+  <div class="cursos-lista">
+
+
+
+    <!-- 01 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad petrolero"
+      data-aos="fade-up"
+    >
+
+      <span class="curso-numero">
+        01
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-shield-halved"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Seguridad
+        </span>
+
+        <h3>
+          SSPA
+        </h3>
+
+        <p>
+          Seguridad, Salud en el Trabajo
+          y Protección Ambiental conforme
+          al Anexo SSPA.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 02 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad"
+    >
+
+      <span class="curso-numero">
+        02
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-book-open"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Normatividad
+        </span>
+
+        <h3>
+          Reglamento Federal
+        </h3>
+
+        <p>
+          Seguridad, higiene y medio
+          ambiente de trabajo.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 03 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad petrolero"
+    >
+
+      <span class="curso-numero">
+        03
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-oil-well"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Sector Petrolero
+        </span>
+
+        <h3>
+          Reglamento PEMEX
+        </h3>
+
+        <p>
+          Reglamento de Seguridad e Higiene
+          de PEMEX y organismos subsidiarios.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 04 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad"
+    >
+
+      <span class="curso-numero">
+        04
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-user-shield"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Seguridad
+        </span>
+
+        <h3>
+          Básico de Seguridad
+        </h3>
+
+        <p>
+          Fundamentos esenciales para
+          la prevención de accidentes laborales.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 05 -->
+
+    <article
+      class="curso-item"
+      data-category="emergencias seguridad"
+    >
+
+      <span class="curso-numero">
+        05
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-triangle-exclamation"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Emergencias
+        </span>
+
+        <h3>
+          Respuesta a Emergencias
+        </h3>
+
+        <p>
+          Planes de respuesta y acciones
+          durante situaciones de emergencia.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 06 -->
+
+    <article
+      class="curso-item"
+      data-category="ambiental"
+    >
+
+      <span class="curso-numero">
+        06
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-leaf"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Ambiental
+        </span>
+
+        <h3>
+          Protección Ambiental
+        </h3>
+
+        <p>
+          Conceptos fundamentales
+          para la protección del medio ambiente.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 07 -->
+
+    <article
+      class="curso-item"
+      data-category="emergencias"
+    >
+
+      <span class="curso-numero">
+        07
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-kit-medical"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Emergencias
+        </span>
+
+        <h3>
+          Primeros Auxilios
+        </h3>
+
+        <p>
+          Hemorragias, RCP y atención
+          inicial ante emergencias.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 08 -->
+
+    <article
+      class="curso-item"
+      data-category="emergencias seguridad"
+    >
+
+      <span class="curso-numero">
+        08
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-fire-extinguisher"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Emergencias
+        </span>
+
+        <h3>
+          Uso de Extintores
+        </h3>
+
+        <p>
+          Técnicas y prácticas seguras
+          para combatir principios de incendio.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 09 -->
+
+    <article
+      class="curso-item"
+      data-category="operacion seguridad"
+    >
+
+      <span class="curso-numero">
+        09
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-car-side"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Operaciones
+        </span>
+
+        <h3>
+          Manejo Defensivo
+        </h3>
+
+        <p>
+          Conducción segura y prevención
+          de accidentes vehiculares.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 10 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad operacion"
+    >
+
+      <span class="curso-numero">
+        10
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-file-signature"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Seguridad
+        </span>
+
+        <h3>
+          Permisos de Trabajo
+        </h3>
+
+        <p>
+          Sistemas de permisos
+          para trabajos con riesgo.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 11 -->
+
+    <article
+      class="curso-item"
+      data-category="emergencias seguridad"
+    >
+
+      <span class="curso-numero">
+        11
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-mask-face"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Emergencias
+        </span>
+
+        <h3>
+          Equipo de Respiración Autónoma
+        </h3>
+
+        <p>
+          Uso y manejo seguro de ERA
+          en ambientes peligrosos.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 12 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad petrolero"
+    >
+
+      <span class="curso-numero">
+        12
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-wind"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Seguridad
+        </span>
+
+        <h3>
+          Detección de Gases
+        </h3>
+
+        <p>
+          Uso de explosímetros, sensores
+          de oxígeno y detectores de gases tóxicos.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 13 -->
+
+    <article
+      class="curso-item"
+      data-category="emergencias petrolero"
+    >
+
+      <span class="curso-numero">
+        13
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-water"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Supervivencia
+        </span>
+
+        <h3>
+          Sobrevivencia en el Mar
+        </h3>
+
+        <p>
+          Técnicas esenciales para
+          supervivencia y respuesta en el agua.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 14 -->
+
+    <article
+      class="curso-item"
+      data-category="ambiental seguridad"
+    >
+
+      <span class="curso-numero">
+        14
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-flask"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Sustancias
+        </span>
+
+        <h3>
+          Hojas de Seguridad
+        </h3>
+
+        <p>
+          Manejo e interpretación de hojas
+          de datos de sustancias químicas.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 15 -->
+
+    <article
+      class="curso-item"
+      data-category="ambiental"
+    >
+
+      <span class="curso-numero">
+        15
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-recycle"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Ambiental
+        </span>
+
+        <h3>
+          Residuos Peligrosos
+        </h3>
+
+        <p>
+          Clasificación, almacenamiento
+          y manejo seguro de residuos.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 16 -->
+
+    <article
+      class="curso-item"
+      data-category="emergencias"
+    >
+
+      <span class="curso-numero">
+        16
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-heart-pulse"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Emergencias
+        </span>
+
+        <h3>
+          Dispositivos y Primeros Auxilios
+        </h3>
+
+        <p>
+          Uso de dispositivos para atención
+          inicial de emergencias.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 17 -->
+
+    <article
+      class="curso-item"
+      data-category="ambiental"
+    >
+
+      <span class="curso-numero">
+        17
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-scale-balanced"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Ambiental
+        </span>
+
+        <h3>
+          Legislación Ambiental
+        </h3>
+
+        <p>
+          Ley General del Equilibrio Ecológico
+          y su aplicación.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 18 -->
+
+    <article
+      class="curso-item"
+      data-category="ambiental"
+    >
+
+      <span class="curso-numero">
+        18
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-trash-can"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Ambiental
+        </span>
+
+        <h3>
+          Gestión de Residuos
+        </h3>
+
+        <p>
+          Prevención y manejo integral
+          de residuos.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 19 -->
+
+    <article
+      class="curso-item"
+      data-category="emergencias seguridad"
+    >
+
+      <span class="curso-numero">
+        19
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-fire-flame-curved"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Incendios
+        </span>
+
+        <h3>
+          Teoría de la Combustión
+        </h3>
+
+        <p>
+          Principios del fuego,
+          combustión y prevención de incendios.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 20 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad"
+    >
+
+      <span class="curso-numero">
+        20
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-lungs"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Seguridad
+        </span>
+
+        <h3>
+          Protección Respiratoria
+        </h3>
+
+        <p>
+          Clasificación, selección
+          y uso de protección respiratoria.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 21 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad"
+    >
+
+      <span class="curso-numero">
+        21
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-cloud"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Seguridad
+        </span>
+
+        <h3>
+          Riesgos Atmosféricos
+        </h3>
+
+        <p>
+          Prevención de daños por exposición
+          a atmósferas peligrosas.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 22 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad operacion"
+    >
+
+      <span class="curso-numero">
+        22
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-door-closed"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Alto Riesgo
+        </span>
+
+        <h3>
+          Espacios Confinados
+        </h3>
+
+        <p>
+          Identificación de peligros
+          y protocolos de trabajo seguro.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 23 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad"
+    >
+
+      <span class="curso-numero">
+        23
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-map-location-dot"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Seguridad
+        </span>
+
+        <h3>
+          Áreas de Riesgo
+        </h3>
+
+        <p>
+          Reconocimiento y clasificación
+          de zonas peligrosas.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 24 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad operacion"
+    >
+
+      <span class="curso-numero">
+        24
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-screwdriver-wrench"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Alto Riesgo
+        </span>
+
+        <h3>
+          Procedimientos Críticos
+        </h3>
+
+        <p>
+          Aplicación segura de procedimientos
+          en procesos de alto riesgo.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 25 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad operacion"
+    >
+
+      <span class="curso-numero">
+        25
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-magnifying-glass-chart"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Seguridad
+        </span>
+
+        <h3>
+          AST
+        </h3>
+
+        <p>
+          Análisis de Seguridad en el Trabajo
+          paso a paso.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 26 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad operacion"
+    >
+
+      <span class="curso-numero">
+        26
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-clipboard-check"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Gestión
+        </span>
+
+        <h3>
+          Auditorías Efectivas
+        </h3>
+
+        <p>
+          Estrategias para desarrollar
+          auditorías eficientes y productivas.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 27 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad operacion"
+    >
+
+      <span class="curso-numero">
+        27
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-diagram-project"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Investigación
+        </span>
+
+        <h3>
+          Análisis de Causa Raíz
+        </h3>
+
+        <p>
+          Metodología para identificar
+          el origen de incidentes.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 28 -->
+
+    <article
+      class="curso-item"
+      data-category="petrolero seguridad"
+    >
+
+      <span class="curso-numero">
+        28
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-id-card"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Sector Petrolero
+        </span>
+
+        <h3>
+          RIG PASS
+        </h3>
+
+        <p>
+          Programa de orientación
+          en seguridad para operaciones petroleras.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 29 -->
+
+    <article
+      class="curso-item"
+      data-category="petrolero seguridad"
+    >
+
+      <span class="curso-numero">
+        29
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-skull-crossbones"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Sector Petrolero
+        </span>
+
+        <h3>
+          H₂S
+        </h3>
+
+        <p>
+          Prevención, identificación
+          y manejo seguro del sulfuro de hidrógeno.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 30 -->
+
+    <article
+      class="curso-item"
+      data-category="seguridad operacion"
+    >
+
+      <span class="curso-numero">
+        30
+      </span>
+
+
+      <div class="curso-icono">
+
+        <i class="fas fa-person-arrow-up-from-line"></i>
+
+      </div>
+
+
+      <div class="curso-contenido">
+
+        <span class="curso-categoria">
+          Alto Riesgo
+        </span>
+
+        <h3>
+          Trabajos en Alturas
+        </h3>
+
+        <p>
+          Técnicas, controles y prácticas seguras
+          para realizar trabajos en altura.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- SIN RESULTADOS -->
+
+    <div
+      class="sin-resultados"
+      id="sinResultados"
+    >
+
+      <i class="fas fa-magnifying-glass"></i>
+
+      No se encontraron cursos
+      con ese criterio.
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+  class="industrial-cta"
+  data-aos="zoom-in"
+>
+
+
+  <div>
+
+
+    <span>
+      CAPACITACIÓN SOS4 SERVICES
+    </span>
+
+
+    <h2>
+      ¿Necesitas capacitar a tu personal?
+    </h2>
+
+
+    <p>
+      Podemos ayudarte a seleccionar
+      los cursos adecuados de acuerdo
+      con las necesidades de tu operación.
+    </p>
+
+
+  </div>
+
+
+
+  <a
+    href="https://wa.me/529331596397"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <i class="fab fa-whatsapp"></i>
+
+    Solicitar información
+
+  </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     REGRESAR
+===================================================== -->
+
+<div class="regresar">
+
+
+  <a href="../index.html">
+
+    <i class="fas fa-arrow-left"></i>
+
+    Regresar a Servicios
+
+  </a>
+
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+      />
+
+
+      <div>
+
+        <strong>
+          SOS4 SERVICES
+        </strong>
+
+        <p>
+          Seguridad • Innovación • Confianza
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="../index.html#inicio">
+        Inicio
+      </a>
+
+      <a href="../index.html#nosotros">
+        Nosotros
+      </a>
+
+      <a href="../index.html#servicios">
+        Servicios
+      </a>
+
+      <a href="../index.html#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-social">
+
+      <a
+        href="https://wa.me/529331596397"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <p>
+
+      &copy;
+      <span id="current-year"></span>
+
+      SOS4 SERVICES.
+      Todos los derechos reservados.
+
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
+
+<a
+  href="https://wa.me/529331596397"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  /* =====================================================
+     AOS
+  ====================================================== */
+
+  AOS.init({
+
+    duration: 800,
+
+    once: true,
+
+    offset: 60
+
+  });
+
+
+
+  /* =====================================================
+     MENU MOBILE
+  ====================================================== */
+
+  const toggle =
+    document.getElementById("menu-toggle");
+
+  const navMenu =
+    document.getElementById("nav-menu");
+
+
+  if (toggle && navMenu) {
+
+    toggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+
+      const icon =
+        toggle.querySelector("i");
+
+
+      if (navMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+      }
+
+      else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+  }
+
+
+
+  /* =====================================================
+     AÑO
+  ====================================================== */
+
+  const year =
+    document.getElementById("current-year");
+
+
+  if (year) {
+
+    year.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+
+  /* =====================================================
+     FILTRADO DE CURSOS
+  ====================================================== */
+
+  const botones =
+    document.querySelectorAll(".filtro-btn");
+
+  const cursos =
+    document.querySelectorAll(".curso-item");
+
+  const buscador =
+    document.getElementById("buscarCurso");
+
+  const sinResultados =
+    document.getElementById("sinResultados");
+
+
+  let filtroActivo =
+    "todos";
+
+
+  function filtrarCursos() {
+
+
+    const texto =
+      buscador.value
+        .toLowerCase()
+        .trim();
+
+
+    let visibles = 0;
+
+
+    cursos.forEach(curso => {
+
+
+      const categoria =
+        curso.dataset.category;
+
+
+      const contenido =
+        curso.textContent.toLowerCase();
+
+
+      const coincideCategoria =
+
+        filtroActivo === "todos" ||
+
+        categoria.includes(filtroActivo);
+
+
+      const coincideBusqueda =
+
+        contenido.includes(texto);
+
+
+      if (
+        coincideCategoria &&
+        coincideBusqueda
+      ) {
+
+        curso.style.display = "grid";
+
+        visibles++;
+
+      }
+
+      else {
+
+        curso.style.display = "none";
+
+      }
+
+
+    });
+
+
+
+    sinResultados.style.display =
+      visibles === 0
+        ? "block"
+        : "none";
+
+  }
+
+
+
+  /* BOTONES */
+
+  botones.forEach(boton => {
+
+
+    boton.addEventListener("click", () => {
+
+
+      botones.forEach(btn =>
+
+        btn.classList.remove("active")
+
+      );
+
+
+      boton.classList.add("active");
+
+
+      filtroActivo =
+        boton.dataset.filter;
+
+
+      filtrarCursos();
+
+
+    });
+
+
+  });
+
+
+
+  /* BUSCADOR */
+
+  buscador.addEventListener(
+
+    "input",
+
+    filtrarCursos
+
+  );
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

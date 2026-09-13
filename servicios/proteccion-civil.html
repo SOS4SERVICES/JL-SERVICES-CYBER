@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Protección Civil | SOS4 SERVICES</title>
+
+  <meta
+    name="description"
+    content="Elaboración, implementación y actualización de Programas Internos de Protección Civil, planes de contingencia, capacitación de brigadas y gestión de riesgos."
+  />
+
+  <!-- CSS PRINCIPAL -->
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  />
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+
+  <!-- =====================================================
+       CSS EXCLUSIVO PROTECCIÓN CIVIL
+  ====================================================== -->
+
+  <style>
+
+
+    /* =====================================================
+       INTRODUCCIÓN
+    ====================================================== */
+
+    .pc-intro {
+
+      max-width: 1250px;
+
+      margin:
+        60px auto 35px;
+
+      padding:
+        55px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 55px;
+
+      align-items: center;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .pc-imagen {
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .pc-imagen img {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 560px;
+
+      height: auto;
+
+      border-radius: 20px;
+
+      border:
+        2px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .pc-info span {
+
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .pc-info h2 {
+
+      margin-bottom: 20px;
+
+      color:
+        var(--negro);
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+      line-height: 1.15;
+
+    }
+
+
+    .pc-info p {
+
+      margin-bottom: 16px;
+
+      color: #626262;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =====================================================
+       SERVICIOS RÁPIDOS
+    ====================================================== */
+
+    .pc-servicios {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 12px;
+
+      margin-top: 28px;
+
+    }
+
+
+    .pc-servicio {
+
+      padding:
+        20px 10px;
+
+      text-align: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff7f2,
+          #ffffff
+        );
+
+      border:
+        1px solid rgba(255,90,0,.15);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .pc-servicio:hover {
+
+      transform:
+        translateY(-5px);
+
+      border-color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .pc-servicio i {
+
+      display: block;
+
+      margin-bottom: 9px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 1.6rem;
+
+    }
+
+
+    .pc-servicio strong {
+
+      color:
+        var(--negro);
+
+      font-size: .88rem;
+
+    }
+
+
+
+    /* =====================================================
+       SERVICIOS DE PROTECCIÓN CIVIL
+    ====================================================== */
+
+    .pc-servicios-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #151515 55%,
+          #211008
+        );
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 50px rgba(0,0,0,.22);
+
+    }
+
+
+    .pc-section-header {
+
+      max-width: 850px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+
+    }
+
+
+    .pc-section-header span {
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2.5px;
+
+    }
+
+
+    .pc-section-header h2 {
+
+      margin:
+        8px 0 12px;
+
+      color: white;
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+    }
+
+
+    .pc-section-header p {
+
+      color: #cfcfcf;
+
+      line-height: 1.7;
+
+    }
+
+
+    .pc-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+
+    }
+
+
+    .pc-card {
+
+      min-height: 255px;
+
+      padding:
+        32px 22px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #111111,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.28);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .pc-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      border-color:
+        var(--naranja-electrico);
+
+      box-shadow:
+        0 18px 38px rgba(255,90,0,.15);
+
+    }
+
+
+    .pc-card-icon {
+
+      width: 68px;
+
+      height: 68px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin-bottom: 18px;
+
+      border-radius: 16px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.5rem;
+
+    }
+
+
+    .pc-card h3 {
+
+      margin-bottom: 9px;
+
+      color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .pc-card p {
+
+      color: #d7d7d7;
+
+      line-height: 1.6;
+
+      font-size: .92rem;
+
+    }
+
+
+
+    /* =====================================================
+       BRIGADAS
+    ====================================================== */
+
+    .brigadas-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .brigadas-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .brigada-card {
+
+      padding:
+        30px 20px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      border:
+        1px solid #ededed;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .brigada-card:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .brigada-card i {
+
+      width: 62px;
+
+      height: 62px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 17px;
+
+      border-radius: 15px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.4rem;
+
+    }
+
+
+    .brigada-card h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .brigada-card p {
+
+      color: #666;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       HAZMAT
+    ====================================================== */
+
+    .hazmat-box {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        50px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        90px 1fr;
+
+      gap: 30px;
+
+      align-items: center;
+
+      border-radius: 20px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          120deg,
+          #050505,
+          #571700,
+          #ff5a00
+        );
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .hazmat-icon {
+
+      width: 82px;
+
+      height: 82px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 20px;
+
+      background:
+        rgba(0,0,0,.25);
+
+      border:
+        1px solid rgba(255,255,255,.15);
+
+      font-size: 2rem;
+
+    }
+
+
+    .hazmat-box span {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+      color:
+        var(--ambar);
+
+      font-size: .8rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .hazmat-box h2 {
+
+      margin-bottom: 10px;
+
+      color: white;
+
+    }
+
+
+    .hazmat-box p {
+
+      color: #f5f5f5;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       PROGRAMAS ESPECIALES
+    ====================================================== */
+
+    .programas-section {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .programas-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(2,1fr);
+
+      gap: 22px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .programa-card {
+
+      position: relative;
+
+      min-height: 280px;
+
+      padding:
+        38px 30px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      align-items: center;
+
+      text-align: center;
+
+      border-radius: 20px;
+
+      overflow: hidden;
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fff7f2
+        );
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .programa-card:hover {
+
+      transform:
+        translateY(-7px);
+
+      border-color:
+        var(--naranja-electrico);
+
+      box-shadow:
+        0 18px 38px rgba(0,0,0,.10);
+
+    }
+
+
+    .programa-icon {
+
+      width: 78px;
+
+      height: 78px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin-bottom: 20px;
+
+      border-radius: 18px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-profundo),
+          var(--naranja-vivo)
+        );
+
+      font-size: 1.8rem;
+
+    }
+
+
+    .programa-card h3 {
+
+      margin-bottom: 10px;
+
+      color:
+        var(--naranja-profundo);
+
+      font-size: 1.35rem;
+
+    }
+
+
+    .programa-card p {
+
+      color: #626262;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       PROCESO
+    ====================================================== */
+
+    .pc-proceso {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #161616
+        );
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+    }
+
+
+    .pc-proceso .section-title h2 {
+
+      color: white;
+
+    }
+
+
+    .pc-proceso .section-title p {
+
+      color: #cfcfcf;
+
+    }
+
+
+    .pc-proceso-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .pc-paso {
+
+      padding:
+        30px 20px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #111111,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.25);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .pc-paso:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .pc-paso-numero {
+
+      width: 54px;
+
+      height: 54px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 18px;
+
+      border-radius: 50%;
+
+      color: white;
+
+      font-weight: 900;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+    }
+
+
+    .pc-paso h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .pc-paso p {
+
+      color: #d5d5d5;
+
+      font-size: .9rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 1000px) {
+
+      .pc-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+
+      .brigadas-grid,
+      .pc-proceso-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+    }
+
+
+    @media (max-width: 900px) {
+
+      .pc-intro {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .hazmat-box {
+
+        grid-template-columns:
+          1fr;
+
+        text-align: center;
+
+      }
+
+
+      .hazmat-icon {
+
+        margin: auto;
+
+      }
+
+    }
+
+
+    @media (max-width: 768px) {
+
+      .pc-intro {
+
+        margin:
+          30px 15px 35px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .pc-servicios-section,
+      .brigadas-section,
+      .programas-section,
+      .pc-proceso {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          45px 22px;
+
+      }
+
+
+      .hazmat-box {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .pc-servicios {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+    }
+
+
+    @media (max-width: 560px) {
+
+      .pc-grid,
+      .brigadas-grid,
+      .programas-grid,
+      .pc-proceso-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER PRINCIPAL
+===================================================== -->
+
+<header class="main-header">
+
+  <div class="header-container">
+
+
+    <a
+      href="../index.html#inicio"
+      class="brand"
+    >
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+        class="logo"
+      />
+
+
+      <div class="brand-text">
+
+        <span class="brand-name">
+          SOS4 SERVICES
+        </span>
+
+        <small>
+          Safety • Engineering • Solutions
+        </small>
+
+      </div>
+
+    </a>
+
+
+
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+    >
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+
+
+    <nav id="nav-menu">
+
+
+      <a href="../index.html#inicio">
+
+        <i class="fas fa-house"></i>
+
+        Inicio
+
+      </a>
+
+
+
+      <div class="dropdown">
+
+        <a
+          href="../index.html#nosotros"
+          class="dropbtn"
+        >
+
+          <i class="fas fa-building"></i>
+
+          Nosotros
+
+          <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+
+        <div class="dropdown-content">
+
+          <a href="../nosotros/mision.html">
+            Misión, Visión y Valores
+          </a>
+
+          <a href="../nosotros/acerca.html">
+            Acerca de Nosotros
+          </a>
+
+          <a href="../nosotros/filosofia.html">
+            Filosofía Empresarial
+          </a>
+
+          <a href="../nosotros/alcance.html">
+            Alcance
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <a href="../index.html#servicios">
+
+        <i class="fas fa-gears"></i>
+
+        Servicios
+
+      </a>
+
+
+
+      <a href="../index.html#galeria">
+
+        <i class="fas fa-images"></i>
+
+        Galería
+
+      </a>
+
+
+
+      <a href="../index.html#contacto">
+
+        <i class="fas fa-envelope"></i>
+
+        Contacto
+
+      </a>
+
+
+
+      <a
+        href="https://wa.me/529331596397"
+        class="nav-contacto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+        Cotizar
+
+      </a>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="serv-header">
+
+  <div data-aos="fade-up">
+
+    <span class="hero-badge">
+
+      <i class="fas fa-shield-halved"></i>
+
+      PREVENCIÓN Y RESPUESTA
+
+    </span>
+
+
+    <h1>
+      Protección Civil
+    </h1>
+
+
+    <p>
+      Gestión de riesgos, preparación ante emergencias
+      y fortalecimiento de capacidades para proteger
+      a las personas, instalaciones y operaciones.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section
+  class="pc-intro"
+  data-aos="fade-up"
+>
+
+
+  <div
+    class="pc-imagen"
+    data-aos="fade-right"
+  >
+
+    <img
+      src="../img/proteccion-civil.jpeg"
+      alt="Protección Civil SOS4 SERVICES"
+    />
+
+  </div>
+
+
+
+  <div
+    class="pc-info"
+    data-aos="fade-left"
+  >
+
+    <span>
+      GESTIÓN DE RIESGOS Y CONTINGENCIAS
+    </span>
+
+
+    <h2>
+      Preparación integral ante emergencias
+    </h2>
+
+
+    <p>
+
+      En <strong>SOS4 SERVICES</strong>
+      nos especializamos en la elaboración,
+      implementación y actualización
+      de Programas Internos de Protección Civil
+      y Planes de Contingencia.
+
+    </p>
+
+
+    <p>
+
+      Desarrollamos programas de capacitación
+      y adiestramiento orientados a la formación
+      de Unidades Internas de Protección Civil,
+      con enfoque preventivo y multifuncional.
+
+    </p>
+
+
+    <p>
+
+      Nuestro objetivo es fortalecer
+      la preparación de las organizaciones
+      ante diferentes escenarios de emergencia,
+      reduciendo riesgos y mejorando
+      la capacidad de respuesta.
+
+    </p>
+
+
+
+    <div class="pc-servicios">
+
+
+      <div class="pc-servicio">
+
+        <i class="fas fa-file-shield"></i>
+
+        <strong>
+          Programas
+        </strong>
+
+      </div>
+
+
+      <div class="pc-servicio">
+
+        <i class="fas fa-people-group"></i>
+
+        <strong>
+          Brigadas
+        </strong>
+
+      </div>
+
+
+      <div class="pc-servicio">
+
+        <i class="fas fa-person-chalkboard"></i>
+
+        <strong>
+          Capacitación
+        </strong>
+
+      </div>
+
+
+      <div class="pc-servicio">
+
+        <i class="fas fa-triangle-exclamation"></i>
+
+        <strong>
+          Contingencias
+        </strong>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICIOS
+===================================================== -->
+
+<section
+  class="pc-servicios-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="pc-section-header">
+
+    <span>
+      SERVICIOS DE PROTECCIÓN CIVIL
+    </span>
+
+
+    <h2>
+      Prevención, preparación y respuesta
+    </h2>
+
+
+    <p>
+      Desarrollamos soluciones orientadas
+      a fortalecer la capacidad preventiva
+      y de respuesta de cada organización.
+    </p>
+
+  </div>
+
+
+
+  <div class="pc-grid">
+
+
+    <article class="pc-card">
+
+      <div class="pc-card-icon">
+        <i class="fas fa-file-circle-check"></i>
+      </div>
+
+      <h3>
+        Programa Interno
+      </h3>
+
+      <p>
+        Elaboración, implementación
+        y actualización de Programas
+        Internos de Protección Civil.
+      </p>
+
+    </article>
+
+
+
+    <article class="pc-card">
+
+      <div class="pc-card-icon">
+        <i class="fas fa-map"></i>
+      </div>
+
+      <h3>
+        Planes de Contingencia
+      </h3>
+
+      <p>
+        Desarrollo de planes para organizar
+        acciones y responsabilidades
+        ante posibles emergencias.
+      </p>
+
+    </article>
+
+
+
+    <article class="pc-card">
+
+      <div class="pc-card-icon">
+        <i class="fas fa-users-gear"></i>
+      </div>
+
+      <h3>
+        Unidad Interna
+      </h3>
+
+      <p>
+        Formación y fortalecimiento
+        de Unidades Internas
+        de Protección Civil.
+      </p>
+
+    </article>
+
+
+
+    <article class="pc-card">
+
+      <div class="pc-card-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+
+      <h3>
+        Capacitación
+      </h3>
+
+      <p>
+        Formación del personal
+        para actuar de manera organizada
+        ante situaciones de emergencia.
+      </p>
+
+    </article>
+
+
+
+    <article class="pc-card">
+
+      <div class="pc-card-icon">
+        <i class="fas fa-magnifying-glass"></i>
+      </div>
+
+      <h3>
+        Identificación de Riesgos
+      </h3>
+
+      <p>
+        Reconocimiento de condiciones
+        y escenarios que puedan afectar
+        a personas e instalaciones.
+      </p>
+
+    </article>
+
+
+
+    <article class="pc-card">
+
+      <div class="pc-card-icon">
+        <i class="fas fa-clipboard-list"></i>
+      </div>
+
+      <h3>
+        Procedimientos de Emergencia
+      </h3>
+
+      <p>
+        Definición de acciones,
+        responsabilidades y protocolos
+        para responder ante contingencias.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     BRIGADAS
+===================================================== -->
+
+<section
+  class="brigadas-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      FORMACIÓN DE BRIGADAS
+    </span>
+
+
+    <h2>
+      Preparación del personal ante emergencias
+    </h2>
+
+
+    <p>
+      La capacitación de las brigadas permite
+      fortalecer la respuesta inicial
+      y la coordinación durante una contingencia.
+    </p>
+
+  </div>
+
+
+
+  <div class="brigadas-grid">
+
+
+    <article class="brigada-card">
+
+      <i class="fas fa-fire-extinguisher"></i>
+
+      <h3>
+        Contra Incendios
+      </h3>
+
+      <p>
+        Preparación para la respuesta
+        inicial ante incendios
+        y uso de equipos disponibles.
+      </p>
+
+    </article>
+
+
+
+    <article class="brigada-card">
+
+      <i class="fas fa-person-walking-arrow-right"></i>
+
+      <h3>
+        Evacuación
+      </h3>
+
+      <p>
+        Organización y ejecución
+        de procedimientos de evacuación
+        durante una emergencia.
+      </p>
+
+    </article>
+
+
+
+    <article class="brigada-card">
+
+      <i class="fas fa-kit-medical"></i>
+
+      <h3>
+        Primeros Auxilios
+      </h3>
+
+      <p>
+        Preparación inicial
+        para la atención de personas
+        lesionadas o afectadas.
+      </p>
+
+    </article>
+
+
+
+    <article class="brigada-card">
+
+      <i class="fas fa-magnifying-glass-location"></i>
+
+      <h3>
+        Búsqueda y Rescate
+      </h3>
+
+      <p>
+        Formación para apoyar
+        en acciones de localización,
+        evacuación y rescate.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     HAZMAT
+===================================================== -->
+
+<section
+  class="hazmat-box"
+  data-aos="zoom-in"
+>
+
+
+  <div class="hazmat-icon">
+
+    <i class="fas fa-biohazard"></i>
+
+  </div>
+
+
+  <div>
+
+    <span>
+      MATERIALES PELIGROSOS
+    </span>
+
+
+    <h2>
+      Formación especializada HAZMAT
+    </h2>
+
+
+    <p>
+      Contamos con formación avanzada
+      para brigadas internas orientada
+      a la preparación ante incidentes
+      con materiales peligrosos,
+      fortaleciendo una respuesta segura
+      y organizada para reducir riesgos
+      a las personas, instalaciones
+      y medio ambiente.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PROGRAMAS INSTITUCIONALES
+===================================================== -->
+
+<section
+  class="programas-section"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      PROGRAMAS INSTITUCIONALES
+    </span>
+
+
+    <h2>
+      Asesoría especializada
+    </h2>
+
+
+    <p>
+      Desarrollamos soluciones adaptadas
+      a instalaciones educativas
+      y del sector salud.
+    </p>
+
+  </div>
+
+
+
+  <div class="programas-grid">
+
+
+    <!-- ESCUELA SEGURA -->
+
+    <article
+      class="programa-card"
+      data-aos="fade-right"
+    >
+
+      <div class="programa-icon">
+
+        <i class="fas fa-school"></i>
+
+      </div>
+
+
+      <h3>
+        Escuela Segura
+      </h3>
+
+
+      <p>
+        Implementación de acciones
+        de seguridad que incluyen
+        prevención de riesgos,
+        capacitación ante emergencias
+        y protocolos orientados
+        a mantener un entorno educativo seguro.
+      </p>
+
+    </article>
+
+
+
+    <!-- HOSPITAL SEGURO -->
+
+    <article
+      class="programa-card"
+      data-aos="fade-left"
+    >
+
+      <div class="programa-icon">
+
+        <i class="fas fa-hospital"></i>
+
+      </div>
+
+
+      <h3>
+        Hospital Seguro
+      </h3>
+
+
+      <p>
+        Desarrollo de planes
+        de gestión de riesgos,
+        protocolos y capacitación
+        para fortalecer la preparación
+        de instalaciones hospitalarias
+        ante situaciones de contingencia.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PROCESO
+===================================================== -->
+
+<section
+  class="pc-proceso"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      GESTIÓN DEL RIESGO
+    </span>
+
+
+    <h2>
+      Del análisis a la preparación
+    </h2>
+
+
+    <p>
+      Un proceso estructurado para fortalecer
+      la prevención y capacidad de respuesta
+      de la organización.
+    </p>
+
+  </div>
+
+
+
+  <div class="pc-proceso-grid">
+
+
+    <article class="pc-paso">
+
+      <div class="pc-paso-numero">
+        01
+      </div>
+
+      <h3>
+        Identificar
+      </h3>
+
+      <p>
+        Reconocimiento de riesgos,
+        amenazas y escenarios
+        potenciales de emergencia.
+      </p>
+
+    </article>
+
+
+
+    <article class="pc-paso">
+
+      <div class="pc-paso-numero">
+        02
+      </div>
+
+      <h3>
+        Planificar
+      </h3>
+
+      <p>
+        Desarrollo de procedimientos,
+        responsabilidades y planes
+        de respuesta.
+      </p>
+
+    </article>
+
+
+
+    <article class="pc-paso">
+
+      <div class="pc-paso-numero">
+        03
+      </div>
+
+      <h3>
+        Capacitar
+      </h3>
+
+      <p>
+        Preparación del personal
+        y formación de brigadas
+        internas.
+      </p>
+
+    </article>
+
+
+
+    <article class="pc-paso">
+
+      <div class="pc-paso-numero">
+        04
+      </div>
+
+      <h3>
+        Responder
+      </h3>
+
+      <p>
+        Aplicación organizada
+        de protocolos ante
+        una situación de emergencia.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+  class="industrial-cta"
+  data-aos="zoom-in"
+>
+
+
+  <div>
+
+    <span>
+      PROTECCIÓN CIVIL
+    </span>
+
+
+    <h2>
+      ¿Necesitas fortalecer tu programa de emergencias?
+    </h2>
+
+
+    <p>
+      Podemos apoyarte con Programas Internos,
+      planes de contingencia,
+      capacitación y formación de brigadas.
+    </p>
+
+  </div>
+
+
+
+  <a
+    href="https://wa.me/529331596397"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <i class="fab fa-whatsapp"></i>
+
+    Solicitar información
+
+  </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     REGRESAR
+===================================================== -->
+
+<div class="regresar">
+
+  <a href="../index.html">
+
+    <i class="fas fa-arrow-left"></i>
+
+    Regresar a Servicios
+
+  </a>
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+      />
+
+
+      <div>
+
+        <strong>
+          SOS4 SERVICES
+        </strong>
+
+        <p>
+          Seguridad • Innovación • Confianza
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="../index.html#inicio">
+        Inicio
+      </a>
+
+      <a href="../index.html#nosotros">
+        Nosotros
+      </a>
+
+      <a href="../index.html#servicios">
+        Servicios
+      </a>
+
+      <a href="../index.html#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-social">
+
+      <a
+        href="https://wa.me/529331596397"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="current-year"></span>
+      SOS4 SERVICES.
+      Todos los derechos reservados.
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP FLOTANTE
+===================================================== -->
+
+<a
+  href="https://wa.me/529331596397"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  /* AOS */
+
+  AOS.init({
+
+    duration: 800,
+
+    once: true,
+
+    offset: 60
+
+  });
+
+
+
+  /* MENU MOBILE */
+
+  const toggle =
+    document.getElementById("menu-toggle");
+
+  const navMenu =
+    document.getElementById("nav-menu");
+
+
+  if (toggle && navMenu) {
+
+    toggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+
+      const icon =
+        toggle.querySelector("i");
+
+
+      if (navMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+      }
+
+      else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+  }
+
+
+
+  /* AÑO AUTOMÁTICO */
+
+  const year =
+    document.getElementById("current-year");
+
+
+  if (year) {
+
+    year.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

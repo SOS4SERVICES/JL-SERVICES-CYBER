@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Extintores PQS | SOS4 SERVICES</title>
+
+  <meta
+    name="description"
+    content="Venta, renta, mantenimiento y recarga de extintores PQS tipo ABC para protección contra incendios en instalaciones industriales."
+  />
+
+  <!-- CSS PRINCIPAL -->
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  />
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+
+  <!-- =====================================================
+       CSS EXCLUSIVO EXTINTORES PQS
+  ====================================================== -->
+
+  <style>
+
+
+    /* =====================================================
+       INTRODUCCIÓN
+    ====================================================== */
+
+    .pqs-intro {
+
+      max-width: 1250px;
+
+      margin:
+        60px auto 35px;
+
+      padding:
+        55px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 55px;
+
+      align-items: center;
+
+      background: #ffffff;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .pqs-imagen {
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .pqs-imagen img {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 560px;
+
+      height: auto;
+
+      border-radius: 20px;
+
+      border:
+        2px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .pqs-info span {
+
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .pqs-info h2 {
+
+      margin-bottom: 20px;
+
+      color:
+        var(--negro);
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+      line-height: 1.15;
+
+    }
+
+
+    .pqs-info p {
+
+      margin-bottom: 16px;
+
+      color: #626262;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =====================================================
+       SERVICIOS
+    ====================================================== */
+
+    .pqs-servicios {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 12px;
+
+      margin-top: 28px;
+
+    }
+
+
+    .pqs-servicio {
+
+      padding:
+        20px 10px;
+
+      text-align: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff7f2,
+          #ffffff
+        );
+
+      border:
+        1px solid rgba(255,90,0,.15);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .pqs-servicio:hover {
+
+      transform:
+        translateY(-5px);
+
+      border-color:
+        var(--naranja-electrico);
+
+    }
+
+
+    .pqs-servicio i {
+
+      display: block;
+
+      margin-bottom: 9px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 1.6rem;
+
+    }
+
+
+    .pqs-servicio strong {
+
+      color:
+        var(--negro);
+
+      font-size: .9rem;
+
+    }
+
+
+
+    /* =====================================================
+       CLASES DE FUEGO
+    ====================================================== */
+
+    .pqs-clases {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #151515 55%,
+          #211008
+        );
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 50px rgba(0,0,0,.22);
+
+    }
+
+
+    .pqs-clases-header {
+
+      max-width: 850px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+
+    }
+
+
+    .pqs-clases-header > span {
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2.5px;
+
+    }
+
+
+    .pqs-clases-header h2 {
+
+      margin:
+        8px 0 12px;
+
+      color: white;
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+    }
+
+
+    .pqs-clases-header p {
+
+      color: #cfcfcf;
+
+      line-height: 1.7;
+
+    }
+
+
+    .pqs-clases-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 20px;
+
+    }
+
+
+    .pqs-clase-card {
+
+      min-height: 270px;
+
+      padding:
+        35px 25px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      align-items: center;
+
+      text-align: center;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #111111,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.30);
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .pqs-clase-card:hover {
+
+      transform:
+        translateY(-8px);
+
+      border-color:
+        var(--naranja-electrico);
+
+      box-shadow:
+        0 18px 38px rgba(255,90,0,.15);
+
+    }
+
+
+    .pqs-clase-letra {
+
+      width: 90px;
+
+      height: 90px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin-bottom: 20px;
+
+      border-radius: 50%;
+
+      color: white;
+
+      font-size: 2.1rem;
+
+      font-weight: 900;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      box-shadow:
+        0 10px 28px rgba(255,90,0,.25);
+
+    }
+
+
+    .pqs-clase-card h3 {
+
+      margin-bottom: 10px;
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: 1.2rem;
+
+    }
+
+
+    .pqs-clase-card p {
+
+      color: #d7d7d7;
+
+      line-height: 1.65;
+
+    }
+
+
+
+    /* =====================================================
+       PQS DESTACADO
+    ====================================================== */
+
+    .pqs-destacado {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        50px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        90px 1fr;
+
+      gap: 30px;
+
+      align-items: center;
+
+      border-radius: 20px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          120deg,
+          #050505,
+          #571700,
+          #ff5a00
+        );
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .pqs-destacado-icon {
+
+      width: 82px;
+
+      height: 82px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 20px;
+
+      background:
+        rgba(0,0,0,.25);
+
+      border:
+        1px solid rgba(255,255,255,.15);
+
+      font-size: 2rem;
+
+    }
+
+
+    .pqs-destacado span {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+      color:
+        var(--ambar);
+
+      font-size: .8rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .pqs-destacado h2 {
+
+      margin-bottom: 10px;
+
+      color: white;
+
+    }
+
+
+    .pqs-destacado p {
+
+      color: #f5f5f5;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       BENEFICIOS
+    ====================================================== */
+
+    .pqs-beneficios {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      background: white;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .pqs-beneficios-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+
+      margin-top: 40px;
+
+    }
+
+
+    .pqs-beneficio {
+
+      padding:
+        30px 20px;
+
+      text-align: center;
+
+      border-radius: 16px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fafafa
+        );
+
+      border:
+        1px solid #ededed;
+
+      transition:
+        .3s ease;
+
+    }
+
+
+    .pqs-beneficio:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(255,90,0,.35);
+
+      box-shadow:
+        0 15px 32px rgba(0,0,0,.08);
+
+    }
+
+
+    .pqs-beneficio i {
+
+      width: 62px;
+
+      height: 62px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin:
+        0 auto 17px;
+
+      border-radius: 15px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      font-size: 1.4rem;
+
+    }
+
+
+    .pqs-beneficio h3 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--naranja-profundo);
+
+    }
+
+
+    .pqs-beneficio p {
+
+      color: #666;
+
+      font-size: .92rem;
+
+      line-height: 1.6;
+
+    }
+
+
+
+    /* =====================================================
+       NORMATIVA
+    ====================================================== */
+
+    .pqs-normativa {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        45px;
+
+      display: grid;
+
+      grid-template-columns:
+        80px 1fr;
+
+      gap: 25px;
+
+      align-items: center;
+
+      background:
+        #fff8f3;
+
+      border-radius: 18px;
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+      border-left:
+        5px solid var(--naranja-vivo);
+
+    }
+
+
+    .pqs-normativa-icon {
+
+      width: 72px;
+
+      height: 72px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 16px;
+
+      color: white;
+
+      font-size: 1.8rem;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-profundo),
+          var(--naranja-vivo)
+        );
+
+    }
+
+
+    .pqs-normativa span {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: .78rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .pqs-normativa h2 {
+
+      margin-bottom: 8px;
+
+      color:
+        var(--negro);
+
+    }
+
+
+    .pqs-normativa p {
+
+      color: #626262;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 1000px) {
+
+      .pqs-beneficios-grid {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+    }
+
+
+    @media (max-width: 900px) {
+
+      .pqs-intro {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .pqs-destacado,
+      .pqs-normativa {
+
+        grid-template-columns:
+          1fr;
+
+        text-align: center;
+
+      }
+
+
+      .pqs-destacado-icon,
+      .pqs-normativa-icon {
+
+        margin: auto;
+
+      }
+
+    }
+
+
+    @media (max-width: 768px) {
+
+      .pqs-intro {
+
+        margin:
+          30px 15px 35px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .pqs-clases,
+      .pqs-beneficios {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          45px 22px;
+
+      }
+
+
+      .pqs-destacado,
+      .pqs-normativa {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .pqs-clases-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+
+    @media (max-width: 560px) {
+
+      .pqs-servicios {
+
+        grid-template-columns:
+          repeat(2,1fr);
+
+      }
+
+
+      .pqs-beneficios-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER PRINCIPAL
+===================================================== -->
+
+<header class="main-header">
+
+  <div class="header-container">
+
+
+    <a
+      href="../index.html#inicio"
+      class="brand"
+    >
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+        class="logo"
+      />
+
+
+      <div class="brand-text">
+
+        <span class="brand-name">
+          SOS4 SERVICES
+        </span>
+
+        <small>
+          Safety • Engineering • Solutions
+        </small>
+
+      </div>
+
+    </a>
+
+
+
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+    >
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+
+
+    <nav id="nav-menu">
+
+
+      <a href="../index.html#inicio">
+
+        <i class="fas fa-house"></i>
+
+        Inicio
+
+      </a>
+
+
+
+      <div class="dropdown">
+
+        <a
+          href="../index.html#nosotros"
+          class="dropbtn"
+        >
+
+          <i class="fas fa-building"></i>
+
+          Nosotros
+
+          <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+
+        <div class="dropdown-content">
+
+          <a href="../nosotros/mision.html">
+            Misión, Visión y Valores
+          </a>
+
+          <a href="../nosotros/acerca.html">
+            Acerca de Nosotros
+          </a>
+
+          <a href="../nosotros/filosofia.html">
+            Filosofía Empresarial
+          </a>
+
+          <a href="../nosotros/alcance.html">
+            Alcance
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <a href="../index.html#servicios">
+
+        <i class="fas fa-gears"></i>
+
+        Servicios
+
+      </a>
+
+
+
+      <a href="../index.html#galeria">
+
+        <i class="fas fa-images"></i>
+
+        Galería
+
+      </a>
+
+
+
+      <a href="../index.html#contacto">
+
+        <i class="fas fa-envelope"></i>
+
+        Contacto
+
+      </a>
+
+
+
+      <a
+        href="https://wa.me/529331596397"
+        class="nav-contacto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+        Cotizar
+
+      </a>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="serv-header">
+
+  <div data-aos="fade-up">
+
+    <span class="hero-badge">
+
+      <i class="fas fa-fire-extinguisher"></i>
+
+      PROTECCIÓN CONTRA INCENDIOS
+
+    </span>
+
+
+    <h1>
+      Extintores PQS
+    </h1>
+
+
+    <p>
+      Protección multipropósito con polvo químico seco
+      para aplicaciones industriales, comerciales
+      y operativas.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section
+  class="pqs-intro"
+  data-aos="fade-up"
+>
+
+
+  <div
+    class="pqs-imagen"
+    data-aos="fade-right"
+  >
+
+    <img
+      src="../img/ext-pqs.jpeg"
+      alt="Extintores PQS SOS4 SERVICES"
+    />
+
+  </div>
+
+
+
+  <div
+    class="pqs-info"
+    data-aos="fade-left"
+  >
+
+    <span>
+      POLVO QUÍMICO SECO ABC
+    </span>
+
+
+    <h2>
+      Venta, renta, mantenimiento y recarga
+    </h2>
+
+
+    <p>
+
+      <strong>SOS4 SERVICES</strong>
+      ofrece soluciones especializadas
+      con extintores de polvo químico seco
+      tipo ABC para protección contra
+      diferentes tipos de incendio.
+
+    </p>
+
+
+    <p>
+
+      Estos equipos ofrecen una solución
+      multipropósito para instalaciones donde
+      pueden presentarse riesgos asociados
+      con materiales combustibles, líquidos
+      inflamables y equipos eléctricos energizados.
+
+    </p>
+
+
+    <p>
+
+      Realizamos mantenimiento y recarga
+      para contribuir a mantener los equipos
+      disponibles y en condiciones adecuadas
+      de funcionamiento ante una emergencia.
+
+    </p>
+
+
+
+    <div class="pqs-servicios">
+
+
+      <div class="pqs-servicio">
+
+        <i class="fas fa-cart-shopping"></i>
+
+        <strong>
+          Venta
+        </strong>
+
+      </div>
+
+
+      <div class="pqs-servicio">
+
+        <i class="fas fa-handshake"></i>
+
+        <strong>
+          Renta
+        </strong>
+
+      </div>
+
+
+      <div class="pqs-servicio">
+
+        <i class="fas fa-screwdriver-wrench"></i>
+
+        <strong>
+          Mantenimiento
+        </strong>
+
+      </div>
+
+
+      <div class="pqs-servicio">
+
+        <i class="fas fa-arrows-rotate"></i>
+
+        <strong>
+          Recarga
+        </strong>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CLASES DE FUEGO
+===================================================== -->
+
+<section
+  class="pqs-clases"
+  data-aos="fade-up"
+>
+
+
+  <div class="pqs-clases-header">
+
+    <span>
+      EXTINTOR MULTIPROPÓSITO
+    </span>
+
+
+    <h2>
+      Protección ABC
+    </h2>
+
+
+    <p>
+      Los extintores PQS tipo ABC permiten responder
+      ante diferentes riesgos de incendio presentes
+      en instalaciones y áreas de trabajo.
+    </p>
+
+  </div>
+
+
+
+  <div class="pqs-clases-grid">
+
+
+    <!-- CLASE A -->
+
+    <article
+      class="pqs-clase-card"
+      data-aos="zoom-in"
+    >
+
+      <div class="pqs-clase-letra">
+        A
+      </div>
+
+
+      <h3>
+        Materiales Combustibles
+      </h3>
+
+
+      <p>
+        Incendios relacionados con materiales
+        sólidos combustibles como madera,
+        papel, cartón y otros materiales similares.
+      </p>
+
+    </article>
+
+
+
+    <!-- CLASE B -->
+
+    <article
+      class="pqs-clase-card"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+    >
+
+      <div class="pqs-clase-letra">
+        B
+      </div>
+
+
+      <h3>
+        Líquidos Inflamables
+      </h3>
+
+
+      <p>
+        Protección ante determinados incendios
+        asociados con líquidos inflamables
+        y combustibles.
+      </p>
+
+    </article>
+
+
+
+    <!-- RIESGO ELÉCTRICO -->
+
+    <article
+      class="pqs-clase-card"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+
+      <div class="pqs-clase-letra">
+
+        <i class="fas fa-bolt"></i>
+
+      </div>
+
+
+      <h3>
+        Equipos Eléctricos
+      </h3>
+
+
+      <p>
+        Aplicaciones donde existe presencia
+        de equipos eléctricos energizados
+        y riesgo de incendio.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     DESTACADO
+===================================================== -->
+
+<section
+  class="pqs-destacado"
+  data-aos="zoom-in"
+>
+
+
+  <div class="pqs-destacado-icon">
+
+    <i class="fas fa-shield-halved"></i>
+
+  </div>
+
+
+  <div>
+
+    <span>
+      PROTECCIÓN MULTIPROPÓSITO
+    </span>
+
+
+    <h2>
+      Una solución para distintos riesgos
+    </h2>
+
+
+    <p>
+      Los extintores de polvo químico seco ABC
+      son ampliamente utilizados en instalaciones
+      industriales debido a su capacidad para
+      responder ante diferentes escenarios de incendio
+      con un solo tipo de equipo.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     BENEFICIOS
+===================================================== -->
+
+<section
+  class="pqs-beneficios"
+  data-aos="fade-up"
+>
+
+
+  <div class="section-title">
+
+    <span>
+      SERVICIO SOS4 SERVICES
+    </span>
+
+
+    <h2>
+      Protección y disponibilidad operativa
+    </h2>
+
+
+    <p>
+      Servicios orientados a mantener
+      los equipos contra incendio listos
+      para responder cuando sean requeridos.
+    </p>
+
+  </div>
+
+
+
+  <div class="pqs-beneficios-grid">
+
+
+    <article class="pqs-beneficio">
+
+      <i class="fas fa-fire-extinguisher"></i>
+
+      <h3>
+        Multipropósito
+      </h3>
+
+      <p>
+        Cobertura para diferentes
+        tipos de riesgo de incendio.
+      </p>
+
+    </article>
+
+
+
+    <article class="pqs-beneficio">
+
+      <i class="fas fa-magnifying-glass"></i>
+
+      <h3>
+        Inspección
+      </h3>
+
+      <p>
+        Revisión del estado general
+        y condiciones del equipo.
+      </p>
+
+    </article>
+
+
+
+    <article class="pqs-beneficio">
+
+      <i class="fas fa-screwdriver-wrench"></i>
+
+      <h3>
+        Mantenimiento
+      </h3>
+
+      <p>
+        Servicio preventivo y correctivo
+        según las condiciones del equipo.
+      </p>
+
+    </article>
+
+
+
+    <article class="pqs-beneficio">
+
+      <i class="fas fa-arrows-rotate"></i>
+
+      <h3>
+        Recarga
+      </h3>
+
+      <p>
+        Servicio para restablecer
+        la capacidad operativa del extintor.
+      </p>
+
+    </article>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     NORMATIVA
+===================================================== -->
+
+<section
+  class="pqs-normativa"
+  data-aos="fade-up"
+>
+
+
+  <div class="pqs-normativa-icon">
+
+    <i class="fas fa-file-shield"></i>
+
+  </div>
+
+
+  <div>
+
+    <span>
+      CUMPLIMIENTO NORMATIVO
+    </span>
+
+
+    <h2>
+      Servicio conforme a requisitos aplicables
+    </h2>
+
+
+    <p>
+      Los servicios relacionados con mantenimiento
+      y recarga de extintores se realizan considerando
+      los requisitos técnicos y normativos aplicables
+      en México, incluyendo la NOM-154-SCFI-2005
+      cuando corresponda.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+  class="industrial-cta"
+  data-aos="zoom-in"
+>
+
+
+  <div>
+
+    <span>
+      EXTINTORES PQS
+    </span>
+
+
+    <h2>
+      ¿Necesitas extintores ABC?
+    </h2>
+
+
+    <p>
+      Consulta opciones de venta, renta,
+      mantenimiento y recarga de acuerdo
+      con las necesidades de tu instalación.
+    </p>
+
+  </div>
+
+
+
+  <a
+    href="https://wa.me/529331596397"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <i class="fab fa-whatsapp"></i>
+
+    Solicitar información
+
+  </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     REGRESAR
+===================================================== -->
+
+<div class="regresar">
+
+  <a href="../index.html">
+
+    <i class="fas fa-arrow-left"></i>
+
+    Regresar a Servicios
+
+  </a>
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+      />
+
+
+      <div>
+
+        <strong>
+          SOS4 SERVICES
+        </strong>
+
+        <p>
+          Seguridad • Innovación • Confianza
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="../index.html#inicio">
+        Inicio
+      </a>
+
+      <a href="../index.html#nosotros">
+        Nosotros
+      </a>
+
+      <a href="../index.html#servicios">
+        Servicios
+      </a>
+
+      <a href="../index.html#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-social">
+
+      <a
+        href="https://wa.me/529331596397"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="current-year"></span>
+      SOS4 SERVICES.
+      Todos los derechos reservados.
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP FLOTANTE
+===================================================== -->
+
+<a
+  href="https://wa.me/529331596397"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  /* AOS */
+
+  AOS.init({
+
+    duration: 800,
+
+    once: true,
+
+    offset: 60
+
+  });
+
+
+
+  /* MENU MOBILE */
+
+  const toggle =
+    document.getElementById("menu-toggle");
+
+  const navMenu =
+    document.getElementById("nav-menu");
+
+
+  if (toggle && navMenu) {
+
+    toggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+
+      const icon =
+        toggle.querySelector("i");
+
+
+      if (navMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+      }
+
+      else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+  }
+
+
+
+  /* AÑO AUTOMÁTICO */
+
+  const year =
+    document.getElementById("current-year");
+
+
+  if (year) {
+
+    year.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,2557 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Certificación | SOS4 SERVICES</title>
+
+  <meta
+    name="description"
+    content="Servicios de certificación de operadores, dictaminación de grúas y certificación de equipos industriales, petroleros y de proceso."
+  />
+
+
+  <!-- CSS PRINCIPAL -->
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  />
+
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+
+
+  <!-- =====================================================
+       CSS EXCLUSIVO DE CERTIFICACIÓN
+  ====================================================== -->
+
+  <style>
+
+
+    /* =====================================================
+       INTRODUCCIÓN
+    ====================================================== */
+
+    .certificacion-intro {
+
+      max-width: 1250px;
+
+      margin:
+        60px auto 35px;
+
+      padding:
+        55px 45px;
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 55px;
+
+      align-items: center;
+
+      background: #ffffff;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.10);
+
+    }
+
+
+    .certificacion-imagen {
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+
+    .certificacion-imagen img {
+
+      display: block;
+
+      width: 100%;
+
+      max-width: 560px;
+
+      height: auto;
+
+      border-radius: 20px;
+
+      border:
+        2px solid rgba(255,90,0,.18);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .certificacion-info span {
+
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .certificacion-info h2 {
+
+      margin-bottom: 20px;
+
+      color:
+        var(--negro);
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+      line-height: 1.15;
+
+    }
+
+
+    .certificacion-info p {
+
+      margin-bottom: 16px;
+
+      color: #626262;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =====================================================
+       INDICADORES
+    ====================================================== */
+
+    .certificacion-stats {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 15px;
+
+      margin-top: 28px;
+
+    }
+
+
+    .cert-stat {
+
+      padding:
+        20px 12px;
+
+      text-align: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff7f2,
+          #ffffff
+        );
+
+      border:
+        1px solid rgba(255,90,0,.15);
+
+    }
+
+
+    .cert-stat strong {
+
+      display: block;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 1.6rem;
+
+      font-weight: 900;
+
+    }
+
+
+    .cert-stat small {
+
+      color: #666;
+
+      font-weight: 700;
+
+    }
+
+
+
+    /* =====================================================
+       CATÁLOGO
+    ====================================================== */
+
+    .catalogo-certificacion {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        60px 45px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #080808,
+          #151515 55%,
+          #211008
+        );
+
+      box-shadow:
+        0 18px 50px rgba(0,0,0,.22);
+
+      border:
+        1px solid rgba(255,90,0,.18);
+
+    }
+
+
+    .catalogo-header {
+
+      max-width: 850px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+
+    }
+
+
+    .catalogo-header > span {
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .82rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2.5px;
+
+    }
+
+
+    .catalogo-header h2 {
+
+      margin:
+        8px 0 12px;
+
+      color: white;
+
+      font-size:
+        clamp(2rem,4vw,3rem);
+
+    }
+
+
+    .catalogo-header p {
+
+      color: #cfcfcf;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       BUSCADOR
+    ====================================================== */
+
+    .cert-buscador {
+
+      max-width: 700px;
+
+      margin:
+        0 auto 25px;
+
+      position: relative;
+
+    }
+
+
+    .cert-buscador i {
+
+      position: absolute;
+
+      left: 20px;
+
+      top: 50%;
+
+      transform:
+        translateY(-50%);
+
+      color:
+        var(--naranja-vivo);
+
+    }
+
+
+    .cert-buscador input {
+
+      width: 100%;
+
+      height: 58px;
+
+      padding:
+        0 20px 0 52px;
+
+      border: none;
+
+      outline: none;
+
+      border-radius: 30px;
+
+      background: white;
+
+      color: #222;
+
+      font-size: 1rem;
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,.2);
+
+    }
+
+
+
+    /* =====================================================
+       FILTROS
+    ====================================================== */
+
+    .cert-filtros {
+
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+
+      margin-bottom: 40px;
+
+    }
+
+
+    .cert-filtro-btn {
+
+      padding:
+        10px 20px;
+
+      border-radius: 30px;
+
+      border:
+        1px solid rgba(255,122,0,.35);
+
+      color: #ddd;
+
+      background: #181818;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+      transition:
+        .25s ease;
+
+    }
+
+
+    .cert-filtro-btn:hover,
+    .cert-filtro-btn.active {
+
+      color: white;
+
+      border-color:
+        var(--naranja-electrico);
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-profundo),
+          var(--naranja-vivo)
+        );
+
+    }
+
+
+
+    /* =====================================================
+       LISTADO
+    ====================================================== */
+
+    .certificacion-lista {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+      gap: 16px;
+
+    }
+
+
+
+    /* =====================================================
+       TARJETAS
+    ====================================================== */
+
+    .cert-item {
+
+      position: relative;
+
+      min-height: 160px;
+
+      display: grid;
+
+      grid-template-columns:
+        72px 1fr;
+
+      gap: 20px;
+
+      align-items: center;
+
+      padding:
+        25px;
+
+      overflow: hidden;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #151515,
+          #242424
+        );
+
+      border:
+        1px solid rgba(255,122,0,.22);
+
+      transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+    }
+
+
+    .cert-item:hover {
+
+      transform:
+        translateY(-6px);
+
+      border-color:
+        var(--naranja-electrico);
+
+      box-shadow:
+        0 18px 38px rgba(255,90,0,.13);
+
+    }
+
+
+    .cert-numero {
+
+      position: absolute;
+
+      right: 15px;
+
+      top: 8px;
+
+      color:
+        rgba(255,255,255,.035);
+
+      font-size: 3.5rem;
+
+      font-weight: 900;
+
+      line-height: 1;
+
+      pointer-events: none;
+
+    }
+
+
+    .cert-icono {
+
+      width: 68px;
+
+      height: 68px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 16px;
+
+      color: white;
+
+      font-size: 1.55rem;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--naranja-vivo),
+          var(--naranja-electrico)
+        );
+
+      box-shadow:
+        0 8px 20px rgba(255,90,0,.22);
+
+    }
+
+
+    .cert-contenido {
+
+      position: relative;
+
+      z-index: 2;
+
+    }
+
+
+    .cert-categoria {
+
+      display: inline-block;
+
+      margin-bottom: 6px;
+
+      color:
+        var(--naranja-electrico);
+
+      font-size: .72rem;
+
+      font-weight: 900;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .cert-contenido h3 {
+
+      margin-bottom: 7px;
+
+      color: white;
+
+      font-size: 1.08rem;
+
+    }
+
+
+    .cert-contenido p {
+
+      color: #cfcfcf;
+
+      font-size: .9rem;
+
+      line-height: 1.55;
+
+    }
+
+
+
+    /* =====================================================
+       DICTAMINACIÓN DESTACADA
+    ====================================================== */
+
+    .dictaminacion-box {
+
+      max-width: 1250px;
+
+      margin:
+        0 auto 70px;
+
+      padding:
+        45px;
+
+      display: grid;
+
+      grid-template-columns:
+        90px 1fr;
+
+      gap: 30px;
+
+      align-items: center;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          120deg,
+          #050505,
+          #571700,
+          #ff5a00
+        );
+
+      color: white;
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.18);
+
+    }
+
+
+    .dictaminacion-icon {
+
+      width: 82px;
+
+      height: 82px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 20px;
+
+      background:
+        rgba(0,0,0,.25);
+
+      border:
+        1px solid rgba(255,255,255,.15);
+
+      font-size: 2rem;
+
+    }
+
+
+    .dictaminacion-box span {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+      color:
+        var(--ambar);
+
+      font-size: .8rem;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .dictaminacion-box h2 {
+
+      margin-bottom: 10px;
+
+      color: white;
+
+    }
+
+
+    .dictaminacion-box p {
+
+      color: #f3f3f3;
+
+      line-height: 1.7;
+
+    }
+
+
+
+    /* =====================================================
+       SIN RESULTADOS
+    ====================================================== */
+
+    .sin-resultados-cert {
+
+      display: none;
+
+      padding:
+        35px 20px;
+
+      grid-column:
+        1 / -1;
+
+      text-align: center;
+
+      color: #ccc;
+
+    }
+
+
+    .sin-resultados-cert i {
+
+      display: block;
+
+      margin-bottom: 15px;
+
+      color:
+        var(--naranja-vivo);
+
+      font-size: 2.5rem;
+
+    }
+
+
+
+    /* =====================================================
+       RESPONSIVE
+    ====================================================== */
+
+    @media (max-width: 900px) {
+
+      .certificacion-intro {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .certificacion-lista {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .dictaminacion-box {
+
+        grid-template-columns:
+          1fr;
+
+        text-align: center;
+
+      }
+
+
+      .dictaminacion-icon {
+
+        margin: auto;
+
+      }
+
+    }
+
+
+    @media (max-width: 768px) {
+
+      .certificacion-intro {
+
+        margin:
+          30px 15px 35px;
+
+        padding:
+          35px 22px;
+
+      }
+
+
+      .catalogo-certificacion {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          45px 20px;
+
+      }
+
+
+      .dictaminacion-box {
+
+        margin:
+          0 15px 45px;
+
+        padding:
+          35px 22px;
+
+      }
+
+    }
+
+
+    @media (max-width: 520px) {
+
+      .certificacion-stats {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .cert-item {
+
+        grid-template-columns:
+          55px 1fr;
+
+        gap: 14px;
+
+        padding:
+          20px 16px;
+
+      }
+
+
+      .cert-icono {
+
+        width: 54px;
+
+        height: 54px;
+
+        font-size: 1.25rem;
+
+      }
+
+
+      .cert-contenido h3 {
+
+        font-size: 1rem;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER PRINCIPAL
+===================================================== -->
+
+<header class="main-header">
+
+  <div class="header-container">
+
+
+    <a
+      href="../index.html#inicio"
+      class="brand"
+    >
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+        class="logo"
+      />
+
+
+      <div class="brand-text">
+
+        <span class="brand-name">
+          SOS4 SERVICES
+        </span>
+
+        <small>
+          Safety • Engineering • Solutions
+        </small>
+
+      </div>
+
+    </a>
+
+
+
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+    >
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+
+
+    <nav id="nav-menu">
+
+
+      <a href="../index.html#inicio">
+
+        <i class="fas fa-house"></i>
+
+        Inicio
+
+      </a>
+
+
+
+      <div class="dropdown">
+
+        <a
+          href="../index.html#nosotros"
+          class="dropbtn"
+        >
+
+          <i class="fas fa-building"></i>
+
+          Nosotros
+
+          <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+
+        <div class="dropdown-content">
+
+          <a href="../nosotros/mision.html">
+            Misión, Visión y Valores
+          </a>
+
+          <a href="../nosotros/acerca.html">
+            Acerca de Nosotros
+          </a>
+
+          <a href="../nosotros/filosofia.html">
+            Filosofía Empresarial
+          </a>
+
+          <a href="../nosotros/alcance.html">
+            Alcance
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <a href="../index.html#servicios">
+
+        <i class="fas fa-gears"></i>
+
+        Servicios
+
+      </a>
+
+
+
+      <a href="../index.html#galeria">
+
+        <i class="fas fa-images"></i>
+
+        Galería
+
+      </a>
+
+
+
+      <a href="../index.html#contacto">
+
+        <i class="fas fa-envelope"></i>
+
+        Contacto
+
+      </a>
+
+
+
+      <a
+        href="https://wa.me/529331596397"
+        class="nav-contacto"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+        Cotizar
+
+      </a>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="serv-header">
+
+  <div data-aos="fade-up">
+
+    <span class="hero-badge">
+
+      <i class="fas fa-certificate"></i>
+
+      EVALUACIÓN Y CERTIFICACIÓN
+
+    </span>
+
+
+    <h1>
+      Certificación
+    </h1>
+
+
+    <p>
+      Evaluación de personal y equipos para fortalecer
+      la seguridad, confiabilidad y continuidad operacional.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section
+  class="certificacion-intro"
+  data-aos="fade-up"
+>
+
+
+  <div
+    class="certificacion-imagen"
+    data-aos="fade-right"
+  >
+
+    <img
+      src="../img/certificacion.jpeg"
+      alt="Certificación SOS4 SERVICES"
+    />
+
+  </div>
+
+
+
+  <div
+    class="certificacion-info"
+    data-aos="fade-left"
+  >
+
+    <span>
+      SERVICIOS DE CERTIFICACIÓN
+    </span>
+
+
+    <h2>
+      Certificación de operadores y equipos
+    </h2>
+
+
+    <p>
+
+      En <strong>SOS4 SERVICES</strong>
+      realizamos procesos de evaluación y certificación
+      para operadores, equipos y sistemas utilizados
+      en actividades industriales y petroleras.
+
+    </p>
+
+
+    <p>
+
+      Nuestros servicios están orientados a contribuir
+      con la seguridad, confiabilidad y continuidad
+      de las operaciones mediante evaluaciones
+      técnicas y criterios aplicables a cada servicio.
+
+    </p>
+
+
+    <div class="certificacion-stats">
+
+
+      <div class="cert-stat">
+
+        <strong>
+          Personal
+        </strong>
+
+        <small>
+          Operadores
+        </small>
+
+      </div>
+
+
+      <div class="cert-stat">
+
+        <strong>
+          Equipos
+        </strong>
+
+        <small>
+          Industriales
+        </small>
+
+      </div>
+
+
+      <div class="cert-stat">
+
+        <strong>
+          UIG
+        </strong>
+
+        <small>
+          Dictaminación
+        </small>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     DICTAMINACIÓN
+===================================================== -->
+
+<section
+  class="dictaminacion-box"
+  data-aos="zoom-in"
+>
+
+
+  <div class="dictaminacion-icon">
+
+    <i class="fas fa-clipboard-check"></i>
+
+  </div>
+
+
+  <div>
+
+    <span>
+      DICTAMINACIÓN
+    </span>
+
+
+    <h2>
+      Dictaminación de Grúas
+    </h2>
+
+
+    <p>
+      Servicio de dictaminación de grúas con base
+      en condiciones de mantenimiento y criterios
+      aplicables de UIG, orientado a verificar
+      sus condiciones técnicas y operativas.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CATÁLOGO DE CERTIFICACIÓN
+===================================================== -->
+
+<section
+  class="catalogo-certificacion"
+  data-aos="fade-up"
+>
+
+
+  <div class="catalogo-header">
+
+
+    <span>
+      CATÁLOGO DE SERVICIOS
+    </span>
+
+
+    <h2>
+      ¿Qué podemos certificar?
+    </h2>
+
+
+    <p>
+      Consulta nuestros servicios de certificación
+      para operadores, sistemas y equipos industriales.
+    </p>
+
+
+  </div>
+
+
+
+  <!-- BUSCADOR -->
+
+  <div class="cert-buscador">
+
+
+    <i class="fas fa-magnifying-glass"></i>
+
+
+    <input
+      type="text"
+      id="buscarCertificacion"
+      placeholder="Buscar operador o equipo..."
+      autocomplete="off"
+    />
+
+
+  </div>
+
+
+
+  <!-- FILTROS -->
+
+  <div class="cert-filtros">
+
+
+    <button
+      class="cert-filtro-btn active"
+      data-filter="todos"
+    >
+      Todos
+    </button>
+
+
+    <button
+      class="cert-filtro-btn"
+      data-filter="personal"
+    >
+      Personal
+    </button>
+
+
+    <button
+      class="cert-filtro-btn"
+      data-filter="izaje"
+    >
+      Izaje
+    </button>
+
+
+    <button
+      class="cert-filtro-btn"
+      data-filter="petrolero"
+    >
+      Petrolero
+    </button>
+
+
+    <button
+      class="cert-filtro-btn"
+      data-filter="proceso"
+    >
+      Proceso
+    </button>
+
+
+    <button
+      class="cert-filtro-btn"
+      data-filter="industrial"
+    >
+      Industrial
+    </button>
+
+
+  </div>
+
+
+
+  <div class="certificacion-lista">
+
+
+    <!-- 01 -->
+
+    <article
+      class="cert-item"
+      data-category="personal izaje"
+      data-aos="fade-up"
+    >
+
+      <span class="cert-numero">
+        01
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-crane"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Personal
+        </span>
+
+
+        <h3>
+          Operadores de Grúas
+        </h3>
+
+
+        <p>
+          Evaluación y certificación
+          de operadores de equipos de izaje.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 02 -->
+
+    <article
+      class="cert-item"
+      data-category="personal industrial"
+    >
+
+      <span class="cert-numero">
+        02
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-truck-ramp-box"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Personal
+        </span>
+
+
+        <h3>
+          Operadores de Montacargas
+        </h3>
+
+
+        <p>
+          Evaluación de competencias
+          para operación segura de montacargas.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 03 -->
+
+    <article
+      class="cert-item"
+      data-category="personal izaje"
+    >
+
+      <span class="cert-numero">
+        03
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-people-carry-box"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Personal
+        </span>
+
+
+        <h3>
+          Maniobristas
+        </h3>
+
+
+        <p>
+          Evaluación del personal involucrado
+          en maniobras e izaje de cargas.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 04 -->
+
+    <article
+      class="cert-item"
+      data-category="personal industrial"
+    >
+
+      <span class="cert-numero">
+        04
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-tractor"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Personal
+        </span>
+
+
+        <h3>
+          Maquinaria Pesada
+        </h3>
+
+
+        <p>
+          Evaluación y certificación
+          de operadores de maquinaria pesada.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 05 -->
+
+    <article
+      class="cert-item"
+      data-category="personal industrial"
+    >
+
+      <span class="cert-numero">
+        05
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-person-rays"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Personal
+        </span>
+
+
+        <h3>
+          Operadores de Soldadura
+        </h3>
+
+
+        <p>
+          Evaluación de personal
+          involucrado en procesos de soldadura.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 06 -->
+
+    <article
+      class="cert-item"
+      data-category="proceso industrial"
+    >
+
+      <span class="cert-numero">
+        06
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-industry"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Proceso
+        </span>
+
+
+        <h3>
+          Tuberías de Proceso
+        </h3>
+
+
+        <p>
+          Evaluación de integridad
+          de sistemas de tuberías industriales.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 07 -->
+
+    <article
+      class="cert-item"
+      data-category="proceso industrial"
+    >
+
+      <span class="cert-numero">
+        07
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-gauge-high"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Proceso
+        </span>
+
+
+        <h3>
+          Recipientes a Presión
+        </h3>
+
+
+        <p>
+          Evaluación de equipos sometidos
+          a condiciones de presión.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 08 -->
+
+    <article
+      class="cert-item"
+      data-category="izaje industrial"
+    >
+
+      <span class="cert-numero">
+        08
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-weight-hanging"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Izaje
+        </span>
+
+
+        <h3>
+          Pruebas de Carga
+        </h3>
+
+
+        <p>
+          Evaluación mediante pruebas
+          de carga en estructuras metálicas.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 09 -->
+
+    <article
+      class="cert-item"
+      data-category="petrolero proceso"
+    >
+
+      <span class="cert-numero">
+        09
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-gears"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Petrolero
+        </span>
+
+
+        <h3>
+          Equipos de Superficie de Control
+        </h3>
+
+
+        <p>
+          Inspección y certificación
+          de sistemas de control de superficie.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 10 -->
+
+    <article
+      class="cert-item"
+      data-category="petrolero"
+    >
+
+      <span class="cert-numero">
+        10
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-screwdriver-wrench"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Petrolero
+        </span>
+
+
+        <h3>
+          Herramientas de Fondo
+        </h3>
+
+
+        <p>
+          Evaluación técnica de herramientas
+          utilizadas en operaciones de pozo.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 11 -->
+
+    <article
+      class="cert-item"
+      data-category="petrolero"
+    >
+
+      <span class="cert-numero">
+        11
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-oil-well"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Petrolero
+        </span>
+
+
+        <h3>
+          Equipo de Perforación
+        </h3>
+
+
+        <p>
+          Evaluación de equipos utilizados
+          en operaciones de perforación.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 12 -->
+
+    <article
+      class="cert-item"
+      data-category="petrolero"
+    >
+
+      <span class="cert-numero">
+        12
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-arrows-spin"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Petrolero
+        </span>
+
+
+        <h3>
+          Equipo de Tubería Flexible
+        </h3>
+
+
+        <p>
+          Evaluación de equipos
+          utilizados en operaciones de coiled tubing.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 13 -->
+
+    <article
+      class="cert-item"
+      data-category="petrolero proceso"
+    >
+
+      <span class="cert-numero">
+        13
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-gas-pump"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Petrolero
+        </span>
+
+
+        <h3>
+          Equipos de Inyección de Nitrógeno
+        </h3>
+
+
+        <p>
+          Evaluación de sistemas empleados
+          en servicios de pozos petroleros.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 14 -->
+
+    <article
+      class="cert-item"
+      data-category="petrolero proceso"
+    >
+
+      <span class="cert-numero">
+        14
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-circle-nodes"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Alta Presión
+        </span>
+
+
+        <h3>
+          Válvulas y Preventores
+        </h3>
+
+
+        <p>
+          Evaluación de válvulas, preventores
+          y unidades de alta presión.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 15 -->
+
+    <article
+      class="cert-item"
+      data-category="petrolero proceso"
+    >
+
+      <span class="cert-numero">
+        15
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-network-wired"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Petrolero
+        </span>
+
+
+        <h3>
+          Choke Manifold y Cabezas Inyectoras
+        </h3>
+
+
+        <p>
+          Evaluación de equipos
+          y componentes asociados a alta presión.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 16 -->
+
+    <article
+      class="cert-item"
+      data-category="izaje industrial"
+    >
+
+      <span class="cert-numero">
+        16
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-link"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Izaje
+        </span>
+
+
+        <h3>
+          Accesorios y Equipos de Izaje
+        </h3>
+
+
+        <p>
+          Evaluación de elementos,
+          accesorios y sistemas de izaje.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 17 -->
+
+    <article
+      class="cert-item"
+      data-category="industrial proceso"
+    >
+
+      <span class="cert-numero">
+        17
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-water"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Industrial
+        </span>
+
+
+        <h3>
+          Plantas de Tratamiento de Aguas
+        </h3>
+
+
+        <p>
+          Evaluación de equipos
+          de plantas de tratamiento de aguas residuales.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 18 -->
+
+    <article
+      class="cert-item"
+      data-category="proceso industrial"
+    >
+
+      <span class="cert-numero">
+        18
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-fire-flame-simple"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Gas Natural
+        </span>
+
+
+        <h3>
+          Medición y Regulación de Gas Natural
+        </h3>
+
+
+        <p>
+          Evaluación de equipos durante
+          su proceso de fabricación.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- 19 -->
+
+    <article
+      class="cert-item"
+      data-category="industrial proceso"
+    >
+
+      <span class="cert-numero">
+        19
+      </span>
+
+
+      <div class="cert-icono">
+
+        <i class="fas fa-microchip"></i>
+
+      </div>
+
+
+      <div class="cert-contenido">
+
+        <span class="cert-categoria">
+          Industrial
+        </span>
+
+
+        <h3>
+          Equipos de Plantas de Proceso
+        </h3>
+
+
+        <p>
+          Evaluación de equipos utilizados
+          en plantas de procesos productivos.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- SIN RESULTADOS -->
+
+    <div
+      class="sin-resultados-cert"
+      id="sinResultadosCert"
+    >
+
+      <i class="fas fa-magnifying-glass"></i>
+
+      No se encontraron servicios
+      con ese criterio.
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+  class="industrial-cta"
+  data-aos="zoom-in"
+>
+
+
+  <div>
+
+    <span>
+      CERTIFICACIÓN SOS4 SERVICES
+    </span>
+
+
+    <h2>
+      ¿Necesitas certificar personal o equipos?
+    </h2>
+
+
+    <p>
+      Nuestro equipo puede orientarte
+      de acuerdo con el tipo de operación,
+      equipo o servicio requerido.
+    </p>
+
+  </div>
+
+
+
+  <a
+    href="https://wa.me/529331596397"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+
+    <i class="fab fa-whatsapp"></i>
+
+    Solicitar información
+
+  </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     REGRESAR
+===================================================== -->
+
+<div class="regresar">
+
+  <a href="../index.html">
+
+    <i class="fas fa-arrow-left"></i>
+
+    Regresar a Servicios
+
+  </a>
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+  <div class="footer-container">
+
+
+    <div class="footer-brand">
+
+
+      <img
+        src="../img/logo.ico"
+        alt="SOS4 SERVICES"
+      />
+
+
+      <div>
+
+        <strong>
+          SOS4 SERVICES
+        </strong>
+
+        <p>
+          Seguridad • Innovación • Confianza
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="../index.html#inicio">
+        Inicio
+      </a>
+
+      <a href="../index.html#nosotros">
+        Nosotros
+      </a>
+
+      <a href="../index.html#servicios">
+        Servicios
+      </a>
+
+      <a href="../index.html#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-social">
+
+      <a
+        href="https://wa.me/529331596397"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+
+        <i class="fab fa-whatsapp"></i>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="current-year"></span>
+      SOS4 SERVICES.
+      Todos los derechos reservados.
+    </p>
+
+  </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP FLOTANTE
+===================================================== -->
+
+<a
+  href="https://wa.me/529331596397"
+  class="floating-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  /* AOS */
+
+  AOS.init({
+
+    duration: 800,
+
+    once: true,
+
+    offset: 60
+
+  });
+
+
+
+  /* =====================================================
+     MENU MOBILE
+  ====================================================== */
+
+  const toggle =
+    document.getElementById("menu-toggle");
+
+  const navMenu =
+    document.getElementById("nav-menu");
+
+
+  if (toggle && navMenu) {
+
+    toggle.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+
+      const icon =
+        toggle.querySelector("i");
+
+
+      if (navMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+      }
+
+      else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+  }
+
+
+
+  /* =====================================================
+     AÑO AUTOMÁTICO
+  ====================================================== */
+
+  const year =
+    document.getElementById("current-year");
+
+
+  if (year) {
+
+    year.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+
+  /* =====================================================
+     FILTRADO
+  ====================================================== */
+
+  const botones =
+    document.querySelectorAll(".cert-filtro-btn");
+
+  const servicios =
+    document.querySelectorAll(".cert-item");
+
+  const buscador =
+    document.getElementById("buscarCertificacion");
+
+  const sinResultados =
+    document.getElementById("sinResultadosCert");
+
+
+  let filtroActivo =
+    "todos";
+
+
+  function filtrarServicios() {
+
+
+    const texto =
+      buscador.value
+        .toLowerCase()
+        .trim();
+
+
+    let visibles = 0;
+
+
+    servicios.forEach(servicio => {
+
+
+      const categoria =
+        servicio.dataset.category;
+
+
+      const contenido =
+        servicio.textContent.toLowerCase();
+
+
+      const coincideCategoria =
+
+        filtroActivo === "todos" ||
+
+        categoria.includes(filtroActivo);
+
+
+      const coincideBusqueda =
+
+        contenido.includes(texto);
+
+
+      if (
+        coincideCategoria &&
+        coincideBusqueda
+      ) {
+
+        servicio.style.display = "grid";
+
+        visibles++;
+
+      }
+
+      else {
+
+        servicio.style.display = "none";
+
+      }
+
+
+    });
+
+
+    sinResultados.style.display =
+      visibles === 0
+        ? "block"
+        : "none";
+
+  }
+
+
+
+  botones.forEach(boton => {
+
+
+    boton.addEventListener("click", () => {
+
+
+      botones.forEach(btn =>
+
+        btn.classList.remove("active")
+
+      );
+
+
+      boton.classList.add("active");
+
+
+      filtroActivo =
+        boton.dataset.filter;
+
+
+      filtrarServicios();
+
+    });
+
+
+  });
+
+
+
+  buscador.addEventListener(
+
+    "input",
+
+    filtrarServicios
+
+  );
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>
